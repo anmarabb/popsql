@@ -9,6 +9,4 @@ left join  `floranow.erp_prod.master_shipments` as msh on sh.master_shipment_id 
 left join `floranow.erp_prod.warehouses` as w on msh.warehouse_id = w.id
 group by msh.id
 
-
-
 )
