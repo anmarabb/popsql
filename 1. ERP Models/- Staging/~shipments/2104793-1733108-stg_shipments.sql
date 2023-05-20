@@ -1,6 +1,6 @@
 create or replace view `floranow.Floranow_ERP.stg_shipments` as
 
-
+with 
 
 select
 msh.id,
