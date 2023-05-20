@@ -86,7 +86,6 @@ ii.meta_data.supplier as meta_supplier,  --bullk but here
 li_suppliers.supplier_name as li_erp_supplier_name,
 parent_li_suppliers.supplier_name as parent_li_supplier, --to discover orginal supplier
 
-
 --refactor
 case 
 when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name 
