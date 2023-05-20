@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.master_shipments` as 
+--create or replace view `floranow.Floranow_ERP.master_shipments` as 
 
 
 
