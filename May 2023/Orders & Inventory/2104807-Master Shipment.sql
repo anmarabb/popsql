@@ -62,7 +62,7 @@ left join prep_packing as p on msh.id = p.master_shipment_id
 
 
 
-left join `floranow.Floranow_ERP.stg_shipments` as stg_shipments on stg_shipments.id = msh.id
+left join stg_shipments as stg_shipments on stg_shipments.id = msh.id
 --left join `floranow.erp_prod.shipments` as s2 on msh.id = s2.master_shipment_id
 --left join prep_packing as p on s2.id = p.shipment_id
 
