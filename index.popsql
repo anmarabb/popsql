@@ -41,5 +41,6 @@
   "1675052": "4. Test/1675052-invoice_items.sql",
   "1675112": "4. Test/1675112-users.sql",
   "1675087": "Tables Test/1675087-invoices.sql",
-  "1699110": "Ad Hock/1699110-Monthly active users (MAU).sql"
+  "1699110": "Ad Hock/1699110-Monthly active users (MAU).sql",
+  "1520396": "Ad Hock/1520396-Comparing groups - countrycity.sql"
 }
