@@ -1,5 +1,7 @@
 create or replace view `floranow.Floranow_ERP.stg_shipments` as
 
+
+
 select
 msh.id,
 sum(sh.total_quantity) as calc_total_quantity,
