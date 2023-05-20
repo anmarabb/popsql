@@ -83,7 +83,6 @@ case when i.invoice_type = 1 then (ii.price_without_tax + ii.total_tax) else 0 e
 ii.meta_data.supplier_code as meta_supplier_code,
 ii.meta_data.supplier_name as meta_supplier_name, 
 li_suppliers.supplier_name as li_erp_supplier_name,
-
 parent_li_suppliers.supplier_name as parent_li_supplier, --to discover orginal supplier
 ii.meta_data.supplier as meta_supplier,  --bullk but here
 
