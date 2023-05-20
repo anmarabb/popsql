@@ -20,7 +20,7 @@
   "2104789": "1. ERP Models/- Staging/~customer_id/1726389-stg_invoice_items.sql",
   "2104790": "1. ERP Models/- Staging/~invoice_id/1714381-stg_paymnets.sql",
   "2104791": "1. ERP Models/- Staging/~invoice_id/1714622-stg_invoice_items.sql",
-  "2104792": "1. ERP Models/- Staging/~order_number/1694497-stg_orders.sql",
+  "2104792": "Ad Hock/2104792-1694497-stg_orders.sql",
   "2104793": "1. ERP Models/- Staging/~shipments/1733108-stg_shipments.sql",
   "2104794": "1. ERP Models/- Staging/~supplier_id/1702133-stg_orders.sql",
   "2104800": "1. ERP Models/Payments/1570747-payment_transactions.sql",
