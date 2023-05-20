@@ -12,6 +12,7 @@ where (`floranow.erp_prod.packages`.fulfillment <> 'FAILED' and `floranow.erp_pr
 and `floranow.erp_prod.packages`.__hevo__marked_deleted is false group by s2.master_shipment_id ),
 
 
+
 select 
 
 concat( "https://erp.floranow.com/master_shipments/", msh.id) as link,
