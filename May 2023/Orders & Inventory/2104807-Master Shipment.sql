@@ -9,7 +9,7 @@ prep_shipment as (select master_shipment_id , sum(shipping_boxes_count) as shipp
 prep_packing as (select count(*) as number_of_packages,s2.master_shipment_id from `floranow.erp_prod.packages` 
 left join `floranow.erp_prod.shipments` as s2 on s2.id = `floranow.erp_prod.packages`.shipment_id
 where (`floranow.erp_prod.packages`.fulfillment <> 'FAILED' and `floranow.erp_prod.packages`.status <> 'INSPECTED') 
-and `floranow.erp_prod.packages`.__hevo__marked_deleted is false group by s2.master_shipment_id )
+and `floranow.erp_prod.packages`.__hevo__marked_deleted is false group by s2.master_shipment_id ),
 
 
 select 
