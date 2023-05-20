@@ -37,5 +37,8 @@
   "2104817": "1. ERP Models/incidents/2007819-~product_incidents_stg1.sql",
   "2104818": "1. ERP Models/incidents/2008917-incidents attachmnets .sql",
   "1694512": "Ad Hock/1694512-order level.sql",
-  "1674942": "May 2023/4. Test/1674942-line_item.sql"
+  "1674942": "4. Test/1674942-line_item.sql",
+  "1675052": "4. Test/1675052-invoice_items.sql",
+  "1675112": "4. Test/1675112-users.sql",
+  "1675087": "4. Test/1675087-invoices.sql"
 }
