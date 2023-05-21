@@ -7,7 +7,8 @@ WITH daily_budget AS (
         b.city,
         b.date,
         b.client_category,
-        FORMAT_TIMESTAMP('%Y-%m', b.date) as year_month,
+        PARSE_DATE('%Y-%m-%d', CONCAT(FORMAT_TIMESTAMP('%Y-%m', b.date), '-01')) as year_month,
+
         b.budget,
         b.budget / CAST(DATETIME_DIFF(DATETIME_ADD(DATETIME_TRUNC(b.date, MONTH), INTERVAL 1 MONTH), DATETIME_TRUNC(b.date, MONTH), DAY) AS FLOAT64) AS daily_budget,
 
