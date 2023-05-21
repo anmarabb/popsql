@@ -28,7 +28,7 @@ SELECT
     db.account_manager,
     db.city,
     db.client_category,
-    days_total_current_month,
+    ddays_total_current_month,
     days_remaining_current_month,
     days_left_current_month,
 
