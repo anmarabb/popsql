@@ -29,7 +29,7 @@ SELECT
     db.city,
     db.client_category,
     db.days_total_current_month,
-    days_remaining_current_month,
+    ddays_remaining_current_month,
     days_left_current_month,
 
 FROM daily_budget db
