@@ -28,5 +28,6 @@ SELECT
     db.account_manager,
     db.city,
     db.client_category,
+    days_total_current_month
 FROM daily_budget db
 JOIN UNNEST(db.date_range) AS d
