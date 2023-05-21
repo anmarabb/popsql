@@ -19,7 +19,7 @@ monthly_budget AS (
         db.year_month,
         SUM((db.daily_budget) over (partition by db.year_month,db.financial_administration)) AS total_monthly_budget,
     FROM daily_budget db
-    GROUP BY db.year_month
+    --GROUP BY db.year_month
 )
 SELECT 
     db.year_month,
