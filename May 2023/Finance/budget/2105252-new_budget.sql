@@ -13,12 +13,7 @@ WITH daily_budget AS (
         GENERATE_DATE_ARRAY(DATE(DATETIME_TRUNC(b.date, MONTH)), DATE(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(b.date, MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY))) AS date_range
     FROM `floranow.erp_prod.budget` as b
 
-),
-monthly_budget AS (
-   SELECT 
-    db.year_month,
-    SUM(db.daily_budget) over() AS total_monthly_budget,
-FROM daily_budget db
+)
 
     --GROUP BY db.year_month
 )
