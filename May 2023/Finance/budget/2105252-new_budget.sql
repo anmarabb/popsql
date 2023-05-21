@@ -16,10 +16,11 @@ WITH daily_budget AS (
 ),
 monthly_budget AS (
     SELECT 
-        year_month,
-        SUM(daily_budget) AS total_monthly_budget
-    FROM daily_budget
-    GROUP BY year_month
+        db.year_month,
+        SUM(db.daily_budget) AS total_monthly_budget
+    FROM daily_budget db
+    GROUP BY db.year_month
+)
 )
 SELECT 
     db.year_month,
