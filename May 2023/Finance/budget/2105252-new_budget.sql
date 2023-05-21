@@ -21,7 +21,6 @@ monthly_budget AS (
     FROM daily_budget db
     GROUP BY db.year_month
 )
-
 SELECT 
     db.year_month,
     d AS date,  
