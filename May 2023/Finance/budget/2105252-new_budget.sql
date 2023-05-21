@@ -28,5 +28,5 @@ SELECT
 
     case when date_diff(date(db.d) , current_date() , MONTH) = 0 then db.daily_budget else 0 end as MTD_budget,
     
-FROM daily_budget db
+FROM daily_budget d
 JOIN UNNEST(db.date_range) AS d
