@@ -20,7 +20,7 @@ monthly_budget AS (
     SUM(db.daily_budget) AS total_monthly_budget,
 FROM daily_budget db
 
-    GROUP BY 1,2
+    GROUP BY 1
 )
 SELECT 
     db.year_month,
