@@ -15,6 +15,7 @@ DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(CURRENT_DATE(),MONTH), IN
 
 DATETIME_DIFF(CURRENT_DATE(),DATE_TRUNC( current_date(),month),day) as days_left_current_month,  --days_passed_current_month
 
+DATETIME_DIFF(date(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(i.invoice_header_printed_at,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC(i.invoice_header_printed_at,MONTH),DAY)+1 as days_total_invoice_month,
 
 
 FROM `floranow.erp_prod.budget` as bud
