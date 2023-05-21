@@ -18,7 +18,7 @@ SELECT
     d AS date,  
     db.daily_budget,
     db.budget,
-    max(db.budget) over (parti)
+    max(db.budget) over (partition)
     db.financial_administration,
     db.account_manager,
     db.city,
