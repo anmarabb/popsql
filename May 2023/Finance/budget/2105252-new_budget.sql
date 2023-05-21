@@ -20,6 +20,7 @@ SELECT
     db.year_month,
     d AS date,  
     db.daily_budget, -- daily_budget
+    
     db.financial_administration,
     db.account_manager,
     db.city,
