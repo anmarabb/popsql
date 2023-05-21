@@ -18,7 +18,7 @@ SELECT
     d AS date,  
     db.daily_budget,
     db.budget,
-    sum(db.budget) over (partition by month()) as monthly_budget,
+    sum(db.budget) over (partition by month(d)) as monthly_budget,
     db.financial_administration,
     db.account_manager,
     db.city,
