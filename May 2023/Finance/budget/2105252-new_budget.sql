@@ -39,4 +39,4 @@ JOIN UNNEST(db.date_range) AS d
 LEFT JOIN monthly_budget mb
 ON db.year_month = mb.year_month
 
-where
+where financial_administration =
