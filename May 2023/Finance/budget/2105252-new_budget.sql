@@ -18,7 +18,6 @@ monthly_budget AS (
    SELECT 
     db.year_month,
     db.financial_administration,
-    
     SUM(db.daily_budget)) AS total_monthly_budget
 FROM daily_budget db
 
