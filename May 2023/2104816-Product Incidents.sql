@@ -1,5 +1,4 @@
---
-create or replace table `floranow.Floranow_ERP.product_incidents` as
+--create or replace table `floranow.Floranow_ERP.product_incidents` as
 
 select 
 
