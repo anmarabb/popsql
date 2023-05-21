@@ -1,3 +1,5 @@
+create or replace view `floranow.Floranow_ERP.budget` as
+
 WITH daily_budget AS (
     SELECT 
         b.financial_administration,
