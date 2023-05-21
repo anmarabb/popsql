@@ -30,6 +30,7 @@ SELECT
     db.client_category,
     days_total_current_month,
     days_remaining_current_month,
+    days_left_current_month
 
 FROM daily_budget db
 JOIN UNNEST(db.date_range) AS d
