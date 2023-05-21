@@ -24,7 +24,7 @@ SELECT
     db.client_category,
     DATETIME_DIFF(DATE(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC(d,MONTH),DAY)+1 as days_total,
     DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY) as days_remaining,
-    DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY) as days_passed
+    DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY) as days_passed,
 
     case when date_diff(date(db.d) , current_date() , MONTH) = 0 then db.daily_budget else 0 end as MTD_budget,
     
