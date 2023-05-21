@@ -18,6 +18,7 @@ SELECT
     d AS date,  
     db.daily_budget,
     db.budget,
+    
     db.financial_administration,
     db.account_manager,
     db.city,
@@ -25,6 +26,6 @@ SELECT
     DATETIME_DIFF(DATE(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC(d,MONTH),DAY)+1 as days_total,
     DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY) as days_remaining,
     DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY) as days_passed
-    
+
 FROM daily_budget db
 JOIN UNNEST(db.date_range) AS d
