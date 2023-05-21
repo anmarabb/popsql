@@ -15,7 +15,6 @@ WITH daily_budget AS (
 
 )
 
-    --GROUP BY db.year_month
 )
 SELECT 
     db.year_month,
