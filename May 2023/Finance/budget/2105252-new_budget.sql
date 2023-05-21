@@ -17,7 +17,7 @@ WITH daily_budget AS (
 monthly_budget AS (
    SELECT 
     db.year_month,
-    SUM(db.daily_budget) AS total_monthly_budget,
+    SUM(db.daily_budget) overAS total_monthly_budget,
 FROM daily_budget db
 
     GROUP BY db.year_month
