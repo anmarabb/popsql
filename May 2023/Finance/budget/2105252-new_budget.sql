@@ -18,7 +18,7 @@ SELECT
     d AS date,  
     db.daily_budget,
     db.budget,
-    
+    max
     db.financial_administration,
     db.account_manager,
     db.city,
