@@ -39,4 +39,4 @@ JOIN UNNEST(db.date_range) AS d
 LEFT JOIN monthly_budget mb
 ON db.year_month = mb.year_month
 
-where financial_administration = 'UAE' and year_month = '2023-05-01'
+where financial_administration = 'UAE' and db.year_month = '2023-05-01'
