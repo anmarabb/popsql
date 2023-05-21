@@ -19,7 +19,7 @@ WITH daily_budget AS (
 SELECT 
     db.year_month,
     d AS date,  
-    db., --budget
+    db., --budget 
     db.financial_administration,
     db.account_manager,
     db.city,
