@@ -1,4 +1,4 @@
---create or replace table `floranow.Floranow_ERP.invoices_items` as
+create or replace table `floranow.Floranow_ERP.invoices_items` as
 
 with 
 prep_product_incidents as (select distinct line_item_id, count(*) as incidents_count from `floranow.erp_prod.product_incidents` group by 1  ),
