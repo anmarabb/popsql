@@ -9,7 +9,12 @@ bud.city,
 bud.date,
 bud.client_category,
 bud.budget,
-
+CASE
+        WHEN ROW_NUMBER() OVER (PARTITION BY DATE_TRUNC(date, MONTH)) = 1 THEN 
+            SUM(budget) OVER (PARTITION BY DATE_TRUNC(date, MONTH),financial_administration)
+        ELSE 
+            NULL 
+    END AS monthly_budget,
 
 
 DATETIME_DIFF(date(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(CURRENT_DATE(),MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC( current_date(),month),DAY)+1 as days_total_current_month,
