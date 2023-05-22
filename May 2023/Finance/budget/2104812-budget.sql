@@ -9,6 +9,7 @@ bud.city,
 bud.date,
 bud.client_category,
 bud.budget,
+
 CASE
         WHEN ROW_NUMBER() OVER (PARTITION BY DATE_TRUNC(date, MONTH)) = 1 THEN 
             SUM(budget) OVER (PARTITION BY DATE_TRUNC(date, MONTH),financial_administration)
