@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.budget` as
+create or replace view `floranow.Floranow_ERP.nbudget` as
 
 WITH daily_budget AS (
     SELECT 
