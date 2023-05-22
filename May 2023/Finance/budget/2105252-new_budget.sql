@@ -46,4 +46,3 @@ SELECT
     
 FROM daily_budget db
 JOIN UNNEST(db.date_range) AS d
-where financial_administration = 'UAE' and year_month = '2023-05-01'
