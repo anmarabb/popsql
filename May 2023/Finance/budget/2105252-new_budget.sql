@@ -48,7 +48,7 @@ CASE
             THEN DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY) 
             ELSE 0 
         END
-    ELSE NULL 
+    ELSE 0 
 END AS days_remaining,
 
     DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY)+1 as days_passed,
