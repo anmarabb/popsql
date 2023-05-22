@@ -30,9 +30,20 @@ SELECT
             NULL 
     END AS monthly_budget,
 
-    DATETIME_DIFF(DATE(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC(d,MONTH),DAY)+1 as days_total,
-    DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY) as days_remaining,
-    DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY) as days_passed,
+
+    CASE
+        WHEN ROW_NUMBER() OVER (PARTITION BY DATE_TRUNC(date, MONTH),financial_administration) = 1 THEN 
+            max(DATETIME_DIFF(date(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(date,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY)),DATE_TRUNC( date,month),DAY)+1) OVER (PARTITION BY DATE_TRUNC(date, MONTH),financial_administration)
+        ELSE 
+            NULL 
+    END AS days_total,
+
+
+
+    case when DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY)-1 >=0 then DATETIME_DIFF(DATETIME_SUB(DATETIME_ADD(DATETIME_TRUNC(d,MONTH), INTERVAL 1 MONTH), INTERVAL 1 DAY),d,DAY)-1 else null end as days_remaining,
+
+    DATETIME_DIFF(d,DATE_TRUNC(d,MONTH),DAY)+1 as days_passed,
     
 FROM daily_budget db
 JOIN UNNEST(db.date_range) AS d
+where financial_administration = 'UAE' and year_month = '2023-05-01'
