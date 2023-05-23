@@ -6,12 +6,12 @@ select
 
 ---Holland
 
-    sum (case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as MTD_holland,
-    sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 and extract(day FROM i.printed_at) <= extract(day FROM current_date()) and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as LMTD_holland,
-    sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_1_holland,
-    sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_2_holland,
-    sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_3_holland,
-    sum (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as ytd_holland,
+        sum (case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as MTD_holland,
+        sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 and extract(day FROM i.printed_at) <= extract(day FROM current_date()) and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as LMTD_holland,
+        sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_1_holland,
+        sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_2_holland,
+        sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as m_3_holland,
+        sum (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as ytd_holland,
 
 --ii.order_date,
 --ii.printed_at,
