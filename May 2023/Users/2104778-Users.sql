@@ -204,7 +204,8 @@ stg_paymnets_customer_id.m_3_paymnets,
 
 stg_paymnets_customer_id.m_3_paymnets,
 stg_paymnets_customer_id.m_3_paymnets,
-
+stg_paymnets_customer_id.m_3_paymnets,
+stg_paymnets_customer_id.m_3_paymnets,
 
 
 case 
