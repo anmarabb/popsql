@@ -8,7 +8,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
            customer.debtor_number                                          debtor_number,
            category.name as category_name,
            pt.payment_method,
-           amu.name account_manger,
+           amu.name account_manager,
            customer.city,
            case when inv.id is null and dmi.source_system = 'ODOO'   then 'ODOO' else inv.number end as invoice_number,
            inv.id                                                       as invoice_id,
