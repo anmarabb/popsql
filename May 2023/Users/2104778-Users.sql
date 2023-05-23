@@ -208,7 +208,7 @@ stg_paymnets_customer_id.m_1_holland,
 stg_paymnets_customer_id.m_2_holland,
 stg_paymnets_customer_id.m_3_holland,
 stg_paymnets_customer_id.ytd_holland,
-MTD_holland
+MTD_holland,
 
 case 
 when stg_invoices.days_since_last_drop <= 7 then 'active'
