@@ -202,6 +202,9 @@ stg_paymnets_customer_id.m_2_paymnets,
 stg_paymnets_customer_id.m_3_paymnets,
 
 
+
+
+
 case 
 when stg_invoices.days_since_last_drop <= 7 then 'active'
 when stg_invoices.days_since_last_drop > 7 and stg_invoices.days_since_last_drop  <= 30 then 'inactive'
