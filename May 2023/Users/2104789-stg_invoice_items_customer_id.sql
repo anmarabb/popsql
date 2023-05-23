@@ -2,6 +2,9 @@ create or replace view `floranow.Floranow_ERP.stg_invoice_items_customer_id` as
 
 
 select
+
+
+
 --ii.order_date,
 --ii.printed_at,
 
