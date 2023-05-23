@@ -110,7 +110,7 @@ from `floranow.erp_prod.invoice_items`  as ii
 left join `floranow.erp_prod.invoices` as i on ii.invoice_id = i.id
 left join `floranow.erp_prod.line_items` as li on ii.line_item_id = li.id
 
-where ii.status = 'APPROVED' and ii.deleted_at is null 
+where ii.status = 'APPROVED' and ii.deleted_at is null and ii.customer_id = 1573
 
 
 group by ii.customer_id
