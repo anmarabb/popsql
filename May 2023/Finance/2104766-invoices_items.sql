@@ -295,7 +295,7 @@ end as delivery_type,
 
 
 case when ii.meta_data.invoice_date is not null and ii.source_type is null then ii.price_without_tax else 0 end as meta_invoice_date_HORDER_FCTDAT_jibu_sales,
-case when ii.meta_data.delivery_date is not null and ii.source_type is null then ii.price_without_tax else 0 end as meta_delivery_date_and_ed_aprintt_vertrekdag_abi_sales,
+case when ii.meta_data.delivery_date is not null and ii.source_type is null then ii.price_without_tax else 0 end as meta_delivery_date_and_printed_at_vertrekdag_abi_sales,
 
 date(ii.meta_data.invoice_date) as meta_invoice_date,
 date(ii.meta_data.order_date) as meta_order_date,
