@@ -108,7 +108,7 @@ reseller.name as reseller,
 concat(stock.id, " - ", reseller.name , " - ", stock.name ) as full_stock_name, --stock_id
 
 case 
-when st.id in (12,13) then 'Internal - Jumeriah'
+when stock.id in (12,13) then 'Internal - Jumeriah'
 when st.id in (10,11) then 'Internal - Spinnyes'
 when st.id in (16,17) then 'Internal - TBF'
 when st.id in (15) then 'Commission Based - Wish Flowers'
