@@ -108,14 +108,15 @@ reseller.name as reseller,
 concat(stock.id, " - ", reseller.name , " - ", stock.name ) as full_stock_name, --stock_id
 
 case 
-when stock.id in (12,13) then 'Internal - Jumeriah'
-when stock.id in (10,11) then 'Internal - Spinnyes'
-when stock.id in (16,17) then 'Internal - TBF'
-when stock.id in (18,19,22,23,90,91,128,129) then 'Marketplace - Astra Express'
-when stock.id in (304,305) then 'Marketplace - Ward'
-when stock.id in (14,15) then 'Marketplace - Wish Flowers'
-when stock.id in (1,2,6,7,20,21,56,57,92,93,126,127,130,131,164,165,198,199,232,233,266,267,300,301,302,303,338,339,372,373) then 'Reselling'
-else 'not_set'
+when st.id in (12,13) then 'Internal - Jumeriah'
+when st.id in (10,11) then 'Internal - Spinnyes'
+when st.id in (16,17) then 'Internal - TBF'
+when st.id in (15) then 'Commission Based - Wish Flowers'
+when st.id in (304,305) then 'Commission Based - Ward'
+when st.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
+when st.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
+when st.id in (522,484,567,566,531,530) then 'Reselling'
+else 'Reselling'
 end as stock_model,
 
 
