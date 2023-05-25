@@ -2,7 +2,6 @@ create or replace view `floranow.Floranow_ERP.products` as
 
 with CTE as 
 (
-    
 
 select
 p.id,
