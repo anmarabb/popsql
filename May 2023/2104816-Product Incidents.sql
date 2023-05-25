@@ -107,7 +107,16 @@ stock.name as stock,
 reseller.name as reseller,
 concat(stock.id, " - ", reseller.name , " - ", stock.name ) as full_stock_name, --stock_id
 
-
+case 
+when stock.id in (12,13) then 'Internal - Jumeriah'
+when stock.id in (10,11) then 'Internal - Spinnyes'
+when stock.id in (16,17) then 'Internal - TBF'
+when stock.id in (18,19,22,23,90,91,128,129) then 'Marketplace - Astra Express'
+when stock.id in (304,305) then 'Marketplace - Ward'
+when stock.id in (14,15) then 'Marketplace - Wish Flowers'
+when stock.id in (1,2,6,7,20,21,56,57,92,93,126,127,130,131,164,165,198,199,232,233,266,267,300,301,302,303,338,339,372,373) then 'Reselling'
+else 'not_set'
+end as stock_model,
 
 
 li.category as item_category,
