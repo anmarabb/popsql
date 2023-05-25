@@ -107,17 +107,7 @@ stock.name as stock,
 reseller.name as reseller,
 concat(stock.id, " - ", reseller.name , " - ", stock.name ) as full_stock_name, --stock_id
 
-case 
-when st.id in (12,13) then 'Internal - Jumeriah'
-when st.id in (10,11) then 'Internal - Spinnyes'
-when st.id in (16,17) then 'Internal - TBF'
-when st.id in (15) then 'Commission Based - Wish Flowers'
-when st.id in (304,305) then 'Commission Based - Ward'
-when st.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
-when st.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
-when st.id in (522,484,567,566,531,530) then 'Reselling'
-else 'Reselling'
-end as stock_model,
+
 
 
 li.category as item_category,
