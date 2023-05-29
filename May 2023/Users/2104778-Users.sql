@@ -41,7 +41,7 @@ u.credit_note_balance, --Credit Note Balance
 
 
 
-user_categories.name As client_category,
+ v
 u2.name As account_manager,
 
 case when u.internal is true then 'Internal' else 'External' end as account_type,
