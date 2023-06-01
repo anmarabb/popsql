@@ -35,7 +35,7 @@ p.remaining_quantity,
 p.quantity,
 p.quantity as p_quantity,
 
-
+CAST(p.unit_landed_cost AS FLOAT64) as unit_landed_cost
 
 --p.remaining_quantity * p.unit_price as remaining_value,
 p.remaining_quantity * p.unit_landed_cost as remaining_value,
