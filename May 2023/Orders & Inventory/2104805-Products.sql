@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.products` as 
+create or replace t `floranow.Floranow_ERP.products` as 
 
 with CTE as 
 (
