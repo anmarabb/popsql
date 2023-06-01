@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.vendor_publishing` as 
+=-create or replace view `floranow.Floranow_ERP.vendor_publishing` as 
 
 SELECT
  Offers.name,
