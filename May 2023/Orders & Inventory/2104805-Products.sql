@@ -20,7 +20,7 @@ p.created_at,
 p.departure_date as row_departure_date,
 p.unit_fob_price,
 p.fob_currency,
---p.unit_landed_cost,
+p.unit_landed_cost,
 p.landed_currency,
 p.unit_price,
 p.currency,
@@ -35,10 +35,10 @@ p.remaining_quantity,
 p.quantity,
 p.quantity as p_quantity,
 
-CAST(p.unit_landed_cost AS FLOAT64) as unit_landed_cost,
+CAST(p.unit_landed_cost AS FLOAT64) as unit_landed_cost
 
 --p.remaining_quantity * p.unit_price as remaining_value,
-CAST(p.unit_landed_cost AS FLOAT64) * p.unit_landed_cost as remaining_value,
+CAST(p.unit_landed_cost AS FLOAT64) as unit_landed_cost * p.unit_landed_cost as remaining_value,
 date_diff(cast(p.expired_at as date) , cast(p.updated_at as date), day) - date_diff(cast(current_date() as date), cast (p.updated_at as date) , day) as Remaining_Age,
 
 
