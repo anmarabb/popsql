@@ -1,4 +1,4 @@
-create or replace tabl `floranow.Floranow_ERP.products` as 
+create or replace table `floranow.Floranow_ERP.products` as 
 
 with CTE as 
 (
