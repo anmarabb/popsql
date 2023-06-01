@@ -38,7 +38,7 @@ p.quantity as p_quantity,
 
 
 p.remaining_quantity * p.unit_price as remaining_value,
-p.remaining_quantity * p.unit_landed_cost as remaining_value,
+p.remaining_quantity * p.unit_price as remaining_value,
 date_diff(cast(p.expired_at as date) , cast(p.updated_at as date), day) - date_diff(cast(current_date() as date), cast (p.updated_at as date) , day) as Remaining_Age,
 
 
