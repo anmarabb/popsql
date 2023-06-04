@@ -7,7 +7,6 @@ SELECT
 
 
 case when w.name is not null then w.name  end as warehouse,
-w.name as raw_warehouse,
 
 
 --stg_users
