@@ -479,9 +479,6 @@ li.parent_line_item_id,
 
 
 
-case when w.name is not null then w.name  end as warehouse,
-w.name as raw_warehouse,
-
 
 
 from `floranow.erp_prod.invoice_items`  as ii 
