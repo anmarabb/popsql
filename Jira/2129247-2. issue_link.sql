@@ -21,5 +21,5 @@ LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_ac
 LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_account_id = creator_account.account_id
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue ON issue.parent_issue_id = parent_issue.id
 LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_link.issue_id;
-grou by issue.id
+group by issue.id
 ;
