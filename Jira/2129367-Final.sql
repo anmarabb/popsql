@@ -11,7 +11,7 @@ aggregated_issue_link AS (
     issue_link.issue_id,
     max(issue.key) as parent_issue_key,
     max(issue.summary) as parent_issue,
-    
+      max(issue.summary) as parent_issue,
     --STRING_AGG(linked_issue_id, '\n\n') as linked_issue_ids,
     STRING_AGG(linked_issue.summary, '\n\n') as linked_issues,
     STRING_AGG(linked_issue.key, '\n\n') as linked_issue_keys,
