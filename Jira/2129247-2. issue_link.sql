@@ -66,12 +66,7 @@ where issue.id='18935'
 
 
 SELECT
-project.name as project,
-issue.summary as issue,
-
-
-linked_issue.summary as linked_issue,
-linked_issue_project as linked_issue_project,
+count
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
