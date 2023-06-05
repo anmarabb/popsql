@@ -126,7 +126,7 @@ aggregated_issue_link AS (
 
   SELECT
     issue_id,
-    STRING_AGG(Level 1issue_id) as labels
+    STRING_AGG(Level 1issue_id) as Level 1issue_id
   FROM `floranow.floranow_jira.issue_link`
   GROUP BY issue_id
 
