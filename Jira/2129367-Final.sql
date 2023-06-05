@@ -12,7 +12,7 @@ aggregated_issue_link AS (
     --STRING_AGG(linked_issue_id, '\n\n') as linked_issue_ids,
     STRING_AGG(linked_issue.summary, '\n\n') as linked_issues,
     STRING_AGG(linked_issue.key, '\n\n') as linked_issue_keys,
-    
+    issue_id
 
      
   FROM `floranow.floranow_jira.issue_link` as issue_link
