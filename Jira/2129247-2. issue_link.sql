@@ -122,7 +122,7 @@ WITH aggregated_labels AS (
   FROM `floranow.floranow_jira.issue_label`
   GROUP BY issue_id
 ),
-aggregated_issue_link
+aggregated_issue_link As
 
 SELECT
 issue.id as issue_id,
