@@ -81,5 +81,4 @@ LEFT JOIN `floranow.floranow_jira.issue` AS linked_issue ON linked_issue.id = is
 LEFT JOIN `floranow.floranow_jira.project` AS linked_issue_project ON issue.project_id = linked_issue_project.id
 
 
-where issue.id='18935'
 ;
