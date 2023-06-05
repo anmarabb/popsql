@@ -9,7 +9,7 @@ aggregated_issue_link AS (
 
   SELECT
     issue_link.issue_id,
-    issue.key as issue_key,
+    issue.key as pareissue_key,
     --STRING_AGG(linked_issue_id, '\n\n') as linked_issue_ids,
     STRING_AGG(linked_issue.summary, '\n\n') as linked_issues,
     STRING_AGG(linked_issue.key, '\n\n') as linked_issue_keys,
