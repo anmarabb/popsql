@@ -1,8 +1,3 @@
-create or replace table `floranow.Floranow_ERP.floranow_jira` as
-
-
-
-
 WITH aggregated_labels AS (
   SELECT
     issue_id,
