@@ -162,7 +162,7 @@ concat ('https://floranow.atlassian.net/browse/',issue.key) as issue_link,
 
 aggregated_labels.labels,
 
-aggregated_issue_link
+aggregated_issue_link.
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
