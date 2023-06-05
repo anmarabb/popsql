@@ -41,6 +41,7 @@ having count(issue.id)>3
 
 SELECT
 issue.summary,
+project.name as project,
 issue_link.*,
 issue_link_type.*,
 FROM `floranow.floranow_jira.issue` AS issue 
