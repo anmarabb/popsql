@@ -48,5 +48,5 @@ LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_acco
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_id = parent_issue.id
 LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_link.issue_id
 
-where issue.id=16197
+where issue.id='16197'
 ;
