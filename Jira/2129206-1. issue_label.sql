@@ -55,7 +55,7 @@ where issue.id='15884'
 
 SELECT
 issue.id,
-GROUP_CONCAT(issue_label.label) as labels,
+  STRING_AGG(issue_label.label) as labels
 -- add other fields here
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
