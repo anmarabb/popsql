@@ -1,4 +1,4 @@
-select * FROM `floranow.floranow_jira.issue` AS issue 
+select * FROM `floranow.floranow_jira.issue` AS issue ;
 
 
 
