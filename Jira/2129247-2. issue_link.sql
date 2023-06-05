@@ -124,8 +124,13 @@ WITH aggregated_labels AS (
 ),
 aggregated_issue_link AS (
 
+  SELECT
+    issue_id,
+    STRING_AGG(label) as labels
+  FROM `floranow.floranow_jira.issue_label`
+  GROUP BY issue_id
 
-    
+
 )
 
 SELECT
