@@ -15,7 +15,7 @@ aggregated_issue_link AS (
   SELECT
     issue_link.issue_id,
     max(issue.key) as parent_issue_key,
-    max(issue.summary) as parent_issue,
+    max(issue.summary) as parent_issue_2,
     max(project.name) as parent_project,
     max(parent_issue.summary) as parent_epic,
      
