@@ -70,6 +70,7 @@ aggregated_issue_link.parent_issue_2,
 aggregated_issue_link.parent_issue_key,
 
 
+case when issue.issue_type_name = 'Epic' and project.name ='Product 2.0' then issue.summary else null end as master_epic,
 
 
 FROM `floranow.floranow_jira.issue` AS issue 
