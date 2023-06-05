@@ -43,6 +43,7 @@ SELECT
 project.name as project,
 issue.summary as issue,
 
+
 linked_issue.summary as linked_issue,
 issue_link.*,
 --issue_link_type.*,
