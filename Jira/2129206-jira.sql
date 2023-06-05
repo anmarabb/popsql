@@ -18,6 +18,8 @@ where issue.id='15884'
 
 
 
+
+
 WITH prepared_labels AS (
   SELECT
     issue_id,
