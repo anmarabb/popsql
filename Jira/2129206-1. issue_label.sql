@@ -70,4 +70,4 @@ GROUP BY issue.id
 ;
 
 
---i need to use CTE
+--i need to use CTEs
