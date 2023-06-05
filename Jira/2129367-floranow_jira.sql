@@ -42,7 +42,6 @@ issue.created,
 project.name as project,
 issue.issue_type_name as issue_type,
 
-case when issue.issue_type_name = 'Epic' and project.name ='Product 2.0' then issue.summary else null end as master_epic,
 
 issue.summary as issue,
 issue.description,
