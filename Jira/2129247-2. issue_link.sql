@@ -59,7 +59,7 @@ LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_
 LEFT JOIN `floranow.floranow_jira.issue_link_type` AS issue_link_type ON issue_link.issue_link_type_id = issue_link_type.id
 
 LEFT JOIN `floranow.floranow_jira.issue` AS linked_issue ON linked_issue.id = issue_link.linked_issue_id
-LEFT JOIN `floranow.floranow_jira.project` AS linked_issue_project ON linked_issue.project_id = linked_issue_project.id
+LEFT JOIN `floranow.floranow_jira.project` AS linked_issue_project ON issue.project_id = linked_issue_project.id
 
 
 where issue.id='18935'
