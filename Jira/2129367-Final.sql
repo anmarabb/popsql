@@ -63,7 +63,7 @@ aggregated_issue_link.linked_issue_keys,
 
 
 aggregated_issue_link.master_epic,
-aggregated_issue_link.linked_issue_keys,
+aggregated_issue_link.parent_project,
 aggregated_issue_link.linked_issue_keys,
 
 FROM `floranow.floranow_jira.issue` AS issue 
