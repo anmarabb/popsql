@@ -55,5 +55,6 @@ where issue.id='15884'
 
 SELECT
 
-issue_id
+issue_id,
+
 FROM `floranow.floranow_jira.issue_label` AS issue_label
