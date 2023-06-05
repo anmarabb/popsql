@@ -112,6 +112,6 @@ LEFT JOIN `floranow.floranow_jira.project` AS linked_issue_project ON linked_iss
 
 LEFT JOIN aggregated_labels ON issue.id = aggregated_labels.issue_id
 
-where 
+where linked_issue 
 
 ;
