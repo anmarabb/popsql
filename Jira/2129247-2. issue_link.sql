@@ -35,3 +35,6 @@ LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_
 group by issue.id
 having count(issue.id)>1
 ;
+
+
+--we
