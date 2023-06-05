@@ -68,3 +68,6 @@ where issue.id='15884'
 GROUP BY issue.id
 
 ;
+
+
+--i need to use Ct
