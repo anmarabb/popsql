@@ -14,6 +14,8 @@ LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_
 
 
 
+
+
 SELECT
 issue.id,
     count(issue.id)
