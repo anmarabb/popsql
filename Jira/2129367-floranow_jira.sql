@@ -42,7 +42,7 @@ issue.created,
 project.name as project,
 issue.issue_type_name as issue_type,
 
-case when issue.issue_type_name = 'E'
+case when issue.issue_type_name = 'EPI'
 
 issue.summary as issue,
 issue.description,
