@@ -121,7 +121,9 @@ WITH aggregated_labels AS (
     STRING_AGG(label) as labels
   FROM `floranow.floranow_jira.issue_label`
   GROUP BY issue_id
-)
+),
+
+
 SELECT
 issue.id as issue_id,
 issue.created,
