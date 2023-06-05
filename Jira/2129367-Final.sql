@@ -25,6 +25,8 @@ aggregated_issue_link AS (
   LEFT JOIN `floranow.floranow_jira.issue` AS issue ON issue.id = issue_link.issue_id
   LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
 
+  
+
 where issue_link.issue_id ='18935'
   GROUP BY 1
 
