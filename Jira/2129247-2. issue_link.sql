@@ -65,6 +65,15 @@ where issue.id='18935'
 
 
 
+
+
+WITH aggregated_labels AS (
+  SELECT
+    issue_id,
+    STRING_AGG(label) as labels
+  FROM `floranow.floranow_jira.issue_label`
+  GROUP BY issue_id
+)
 SELECT
 count(*)
 
