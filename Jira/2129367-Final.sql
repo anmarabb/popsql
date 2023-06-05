@@ -1,8 +1,3 @@
-select count(*) FROM `floranow.floranow_jira.issue` AS issue ;
-
-
-
-
 WITH aggregated_labels AS (
   SELECT
     issue_id,
