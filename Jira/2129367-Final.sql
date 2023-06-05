@@ -1,3 +1,8 @@
+create or replace view `floranow.Floranow_ERP.budget` as
+
+
+
+
 WITH aggregated_labels AS (
   SELECT
     issue_id,
