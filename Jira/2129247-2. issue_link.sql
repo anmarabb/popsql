@@ -21,7 +21,7 @@ LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_
 LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_link.issue_id
 ;
 --the output is 6766, there is duplcate 
---let us discover some cases
+--let us discover some cases for duplcates
 
 SELECT
 issue.id,
