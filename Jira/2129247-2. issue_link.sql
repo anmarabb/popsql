@@ -127,7 +127,7 @@ aggregated_issue_link AS (
   SELECT
     issue_id,
     STRING_AGG(issue_id) as issue_id
-  FROM `floranow.floranow_jira.issue_link`
+  FROM `floranow.floranow_jira.issue_link` as 
   GROUP BY issue_id
 
 
