@@ -171,7 +171,6 @@ LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_ac
 LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_account_id = creator_account.account_id
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_id = parent_issue.id
 
-
 LEFT JOIN aggregated_labels ON issue.id = aggregated_labels.issue_id
 
 ;
