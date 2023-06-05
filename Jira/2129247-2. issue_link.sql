@@ -40,6 +40,8 @@ having count(issue.id)>3
 --we will take this example issue.id=16197
 
 SELECT
+project.name as project,
+
 issue.summary,
 issue_link.*,
 issue_link_type.*,
