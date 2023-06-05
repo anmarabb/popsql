@@ -45,7 +45,7 @@ issue.summary as issue,
 
 
 linked_issue.summary as linked_issue,
-linked_issue_project as linked_issue_project,
+--linked_issue_project as linked_issue_project,
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
