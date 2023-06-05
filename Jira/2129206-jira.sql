@@ -40,4 +40,4 @@ LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_
 
 LEFT JOIN `floranow.floranow_jira.issue_label` AS issue_label ON issue.id = issue_label.issue_id
 
-where issue.id='15884'
+where issue.id='15884';
