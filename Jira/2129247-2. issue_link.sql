@@ -41,7 +41,7 @@ having count(issue.id)>3
 
 SELECT
 project.name as project,
-issue.summary,
+issue.summary as issue,
 
 linked_issue.summary as linked_issue,
 issue_link.*,
