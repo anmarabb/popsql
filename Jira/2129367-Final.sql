@@ -12,7 +12,7 @@ aggregated_issue_link AS (
     max(issue.key) as parent_issue_key,
     max(issue.summary) as parent_issue,
     max(project.name) as parent_project,
-    max(parent_issue.summary) as master_epic,
+    max(parent_issue.summary) as parent_epic,
      
     --STRING_AGG(linked_issue_id, '\n\n') as linked_issue_ids,
     STRING_AGG(linked_issue.summary, '\n\n') as linked_issues,
