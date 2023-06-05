@@ -65,10 +65,3 @@ LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue ON issue.parent_issue_i
 LEFT JOIN `floranow.floranow_jira.issue_label` AS issue_label ON issue.id = issue_label.issue_id
 GROUP BY issue.id
 ;
-
-
-SELECT
-
-issue_id,
-label,
-FROM `floranow.floranow_jira.issue_label` AS issue_label
