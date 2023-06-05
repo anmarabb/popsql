@@ -40,7 +40,7 @@ having count(issue.id)>1
 --we will take this example issue.id=16197
 
 SELECT
-count(*)
+issue_link
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
 LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_account_id = assignee_account.account_id
