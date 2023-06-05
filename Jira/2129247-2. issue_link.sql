@@ -75,7 +75,26 @@ WITH aggregated_labels AS (
   GROUP BY issue_id
 )
 SELECT
-count(*)
+issue.id as issue_id,
+issue.created,
+project.name as project,
+issue.issue_type_name as issue_type,
+issue.summary as issue,
+issue.description,
+
+parent_issue.summary as parent_issue,
+parent_issue.description as parent_description,
+
+
+issue.status_name,
+issue.custom_epic_name,
+issue.key as issue_key,
+assignee_account.display_name as  assignee_to,
+creator_account.display_name as created_by,
+concat ('https://floranow.atlassian.net/browse/',issue.key) as issue_link,
+
+aggregated_labels.labels,
+
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
