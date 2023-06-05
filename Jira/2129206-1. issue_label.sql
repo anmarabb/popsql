@@ -64,7 +64,7 @@ LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_acco
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue ON issue.parent_issue_id = parent_issue.id
 LEFT JOIN `floranow.floranow_jira.issue_label` AS issue_label ON issue.id = issue_label.issue_id
 GROUP BY issue.id
-
+;
 
 
 SELECT
