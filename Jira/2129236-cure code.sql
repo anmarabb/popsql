@@ -1,6 +1,6 @@
 SELECT
 
-count
+count(*)
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
