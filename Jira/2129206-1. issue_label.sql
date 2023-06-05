@@ -70,4 +70,24 @@ GROUP BY issue.id
 ;
 
 
---i need to use CTEs not group by
+--i need to use CTEs not group by 
+
+WITH aggregated_labels AS (
+  SELECT
+    issue_id,
+    STRING_AGG(label) as labels
+  FROM `floranow.floranow_jira.issue_label`
+  GROUP BY issue_id
+)
+
+SELECT
+  issue.id,
+  aggregated_labels.labels
+  -- add other fields here
+FROM `floranow.floranow_jira.issue` AS issue 
+LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
+LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_account_id = assignee_account.account_id
+LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_account_id = creator_account.account_id
+LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue ON issue.parent_issue_id = parent_issue.id
+LEFT JOIN aggregated_labels ON issue.id = aggregated_labels.issue_id
+WHERE issue.id='15884';
