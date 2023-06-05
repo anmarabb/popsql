@@ -45,7 +45,7 @@ issue.summary as issue,
 
 
 linked_issue.summary as linked_issue,
-linked_issue_project as linked_issue_
+linked_issue_project as linked_issue_project,
 issue_link.*,
 --issue_link_type.*,
 FROM `floranow.floranow_jira.issue` AS issue 
