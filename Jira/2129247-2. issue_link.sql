@@ -126,7 +126,7 @@ aggregated_issue_link AS (
 
   SELECT
     issue_link.issue_id,
-    STRING_AGG(linked_issue_id) as linked_issue_id,
+    STRING_AGG(linked_issue_id) as linked_issue_ids,
     STRING_AGG(linked_issue.summary) as linked_issues,
     STRING_AGG(linked_issue.key) as linked_issue_keys,
 
