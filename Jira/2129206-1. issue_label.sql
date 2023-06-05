@@ -56,7 +56,7 @@ where issue.id='15884'
 SELECT
 
 issue_label.*,
-FROM `floranow.floranow_jira.issue_label` AS issue 
+FROM `floranow.floranow_jira.issue_label` AS issue_label 
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
