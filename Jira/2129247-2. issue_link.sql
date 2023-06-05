@@ -57,7 +57,7 @@ LEFT JOIN `floranow.floranow_jira.issue_link_type` AS issue_link_type ON issue_l
 LEFT JOIN `floranow.floranow_jira.issue` AS issue_link ON issue_link.id = issue_link_type.id
 
 
-issue_link.linked_issue_id = 
+ = 
 
 where issue.id='18935'
 ;
