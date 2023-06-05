@@ -23,7 +23,7 @@ aggregated_issue_link AS (
 
   LEFT JOIN `floranow.floranow_jira.issue` AS issue ON issue.id = issue_link.issue_id
 
-
+where 
   GROUP BY 1
 
 
