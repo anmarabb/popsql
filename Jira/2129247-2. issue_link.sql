@@ -43,6 +43,7 @@ SELECT
 project.name as project,
 issue.summary,
 
+
 issue_link.*,
 --issue_link_type.*,
 FROM `floranow.floranow_jira.issue` AS issue 
