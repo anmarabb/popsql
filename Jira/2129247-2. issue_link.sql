@@ -20,7 +20,7 @@ LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_acco
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_id = parent_issue.id
 LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_link.issue_id
 ;
---the output is 6766, there is du
+--the output is 6766, there is duplcate
 
 SELECT
 issue.id,
