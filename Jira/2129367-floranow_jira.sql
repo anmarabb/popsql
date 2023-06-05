@@ -1,4 +1,4 @@
-create or replace ta `floranow.Floranow_ERP.floranow_jira` as
+create or replace table `floranow.Floranow_ERP.floranow_jira` as
 
 
 
