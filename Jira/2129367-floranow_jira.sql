@@ -83,4 +83,4 @@ LEFT JOIN aggregated_labels ON issue.id = aggregated_labels.issue_id
 LEFT JOIN aggregated_issue_link ON issue.id = aggregated_issue_link.issue_id
 
 
-where roject.name ='Product 2.0'
+where project.name ='Product 2.0'
