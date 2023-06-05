@@ -19,7 +19,7 @@ aggregated_issue_link AS (
   LEFT JOIN `floranow.floranow_jira.issue` AS linked_issue ON linked_issue.id = issue_link.linked_issue_id
   LEFT JOIN `floranow.floranow_jira.project` AS linked_issue_project ON linked_issue.project_id = linked_issue_project.id
 
-  LEFT JOIN `floranow.floranow_jira.issue` AS issue ON issue.id = issue_link.linked_issue_id
+  LEFT JOIN `floranow.floranow_jira.issue` AS issue ON issue.id = issue_link.issue_id
 
 
   GROUP BY 1
