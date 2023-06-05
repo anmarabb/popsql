@@ -65,6 +65,8 @@ aggregated_issue_link.linked_issue_keys,
 aggregated_issue_link.parent_epic,
 aggregated_issue_link.parent_project,
 aggregated_issue_link.parent_issue,
+aggregated_issue_link.parent_issue,
+
 
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
