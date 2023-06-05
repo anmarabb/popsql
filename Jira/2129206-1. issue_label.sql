@@ -53,6 +53,17 @@ where issue.id='15884'
 
 
 
+SELECT
+issue.id,
+GROUP_CONCAT(issue_label.label) as labels,
+-- add other fields here
+FROM `floranow.floranow_jira.issue` AS issue 
+LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
+LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_account_id = assignee_account.account_id
+LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_account_id = creator_account.account_id
+LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue ON issue.parent_issue_id = parent_issue.id
+LEFT JOIN `floranow.floranow_jira.issue_label` AS issue_label ON issue.id = issue_label.issue_id
+GROUP BY issue.id
 
 
 
