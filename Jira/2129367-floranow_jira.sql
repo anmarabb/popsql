@@ -46,8 +46,6 @@ issue.issue_type_name as issue_type,
 issue.summary as issue,
 issue.description,
 
-parent_issue.summary as parent_issue,
-parent_issue.description as parent_description,
 
 
 issue.status_name,
