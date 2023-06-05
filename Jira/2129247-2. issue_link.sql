@@ -46,6 +46,7 @@ LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = proj
 LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_account_id = assignee_account.account_id
 LEFT JOIN `floranow.floranow_jira.user` AS creator_account ON issue.creator_account_id = creator_account.account_id
 LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_id = parent_issue.id
+
 LEFT JOIN `floranow.floranow_jira.issue_link` AS issue_link ON issue.id = issue_link.issue_id
 LEFT JOIN `floranow.floranow_jira.issue_link_type` AS issue_link_type ON issue_link.issue_link_type_id = issue_link_type.id
 
