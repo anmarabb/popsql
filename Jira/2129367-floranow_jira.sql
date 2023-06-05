@@ -41,6 +41,9 @@ issue.id as issue_id,
 issue.created,
 project.name as project,
 issue.issue_type_name as issue_type,
+
+
+
 issue.summary as issue,
 issue.description,
 
