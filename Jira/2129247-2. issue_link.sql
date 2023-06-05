@@ -1,5 +1,4 @@
 SELECT
-
 count(*)
 
 FROM `floranow.floranow_jira.issue` AS issue 
