@@ -30,7 +30,7 @@ aggregated_issue_link AS (
   LEFT JOIN `floranow.floranow_jira.issue` AS parent_issue on  issue.parent_issue_id = parent_issue.id
 
 
-where issue_link.issue_id ='18935'
+ --where issue_link.issue_id ='18935'
   GROUP BY 1
 
 
