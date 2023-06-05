@@ -42,7 +42,7 @@ issue.created,
 project.name as project,
 issue.issue_type_name as issue_type,
 
-case when issue.issue_type_name = 'Epic' and project.name ='Product 2.0' then 'master_epic'
+case when issue.issue_type_name = 'Epic' and project.name ='Product 2.0' then 'master_epic' e
 
 issue.summary as issue,
 issue.description,
