@@ -44,5 +44,5 @@
   "2114601": "2114601-vendor_publishing.sql",
   "2128316": "2128316-full_product_backlog.sql",
   "2129206": "Jira/2129206-join with issue_label.sql",
-  "2129236": "Jira/2129236-cure code.sql"
+  "2129236": "Jira/2129236-1- Core.sql"
 }
