@@ -128,6 +128,7 @@ aggregated_issue_link AS (
     issue_link.issue_id,
     STRING_AGG(linked_issue_id) as linked_issue_id,
     STRING_AGG(linked_issue.summary) as linked_issues,
+
     
   FROM `floranow.floranow_jira.issue_link` as issue_link
   LEFT JOIN `floranow.floranow_jira.issue_link_type` AS issue_link_type ON issue_link.issue_link_type_id = issue_link_type.id 
