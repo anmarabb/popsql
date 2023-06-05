@@ -41,7 +41,7 @@ having count(issue.id)>3
 
 SELECT
 issue_link.*
-issue_link_type.
+issue_link_type.*
 FROM `floranow.floranow_jira.issue` AS issue 
 LEFT JOIN `floranow.floranow_jira.project` AS project ON issue.project_id = project.id
 LEFT JOIN `floranow.floranow_jira.user` AS assignee_account ON issue.assignee_account_id = assignee_account.account_id
