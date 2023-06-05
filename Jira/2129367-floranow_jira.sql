@@ -67,6 +67,8 @@ aggregated_issue_link.parent_project,
 aggregated_issue_link.parent_issue_2,
 aggregated_issue_link.parent_issue_key,
 
+parent_issue.summary as parent_issue,
+parent_issue.description as parent_description,
 
 case when issue.issue_type_name = 'Epic' and project.name ='Product 2.0' then issue.summary else null end as master_epic,
 
