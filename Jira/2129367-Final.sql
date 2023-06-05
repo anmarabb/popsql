@@ -57,6 +57,7 @@ concat ('https://floranow.atlassian.net/browse/',issue.key) as issue_link,
 
 aggregated_labels.labels,
 
+
 aggregated_issue_link.linked_issues,
 aggregated_issue_link.linked_issue_keys,
 
