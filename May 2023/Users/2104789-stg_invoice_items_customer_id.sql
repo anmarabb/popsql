@@ -13,6 +13,7 @@ select
         sum (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as ytd_holland,
 
 
+
 SUM (
   CASE 
     WHEN 
