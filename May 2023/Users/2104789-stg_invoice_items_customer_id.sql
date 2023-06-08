@@ -63,7 +63,7 @@ SUM (
 SUM (
   CASE 
     WHEN 
-      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(DATE(TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY))), INTERVAL 21 DAY)
+      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(DATE(TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY))), INTERVAL 28 DAY)
       AND li_suppliers.supplier_region = 'Holland' 
     THEN ii.price_without_tax 
     ELSE 0 
