@@ -19,6 +19,15 @@ sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 2 and li_sup
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 3 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_3_holland,
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 4 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_4_holland,
 
+SUM (
+  CASE 
+    WHEN 
+      TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(current_date(), INTERVAL 1 WEEK), WEEK(MONDAY))
+      AND li_suppliers.supplier_region = 'Holland' 
+    THEN ii.price_without_tax 
+    ELSE 0 
+  END
+) AS last_week_holland,
 
 
 
