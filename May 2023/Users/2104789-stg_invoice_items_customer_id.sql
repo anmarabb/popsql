@@ -15,7 +15,7 @@ select
 
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as wtd_holland,
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 1 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_1_holland,
-sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 2 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_1_holland,
+sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 2 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_2_holland,
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 4 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_1_holland,
 sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 5 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as w_1_holland,
 
