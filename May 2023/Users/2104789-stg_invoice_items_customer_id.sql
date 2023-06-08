@@ -36,7 +36,7 @@ SUM (
 SUM (
   CASE 
     WHEN 
-      TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(current_date(), INTERVAL 2 WEEK), WEEK(MONDAY))
+      TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 2 WEEK), WEEK(MONDAY))
       AND li_suppliers.supplier_region = 'Holland' 
     THEN ii.price_without_tax 
     ELSE 0 
