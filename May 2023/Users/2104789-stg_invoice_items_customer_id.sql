@@ -16,12 +16,13 @@ select
 SUM (
   CASE 
     WHEN 
-      current_date(i.printed_at, WEEK(MONDAY)) = current_date(TIMESTAMP_SUB(current_date(), INTERVAL 1 WEEK), WEEK(MONDAY)) 
+      TIMESTAMP_TRUNC(TIMESTAMP(i.printed_at), WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 1 WEEK), WEEK(MONDAY)) 
       AND li_suppliers.supplier_region = 'Holland' 
     THEN ii.price_without_tax 
     ELSE 0 
   END
 ) AS last_week_holland,
+
 
 --w_4_holland
 
