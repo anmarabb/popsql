@@ -54,6 +54,11 @@ SUM (
   END
 ) AS w_2_holland,
 
+SUM (
+  CASE 
+    WHEN 
+      DATE(TIMESTAMP_TRUNC(i.print
+
 
 --w_1_holland
 
