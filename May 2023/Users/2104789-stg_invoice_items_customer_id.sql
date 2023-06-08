@@ -23,7 +23,7 @@ SUM (
   END
 ) AS last_week_holland,
 
-
+w_4_holland
 SUM (
   CASE 
     WHEN 
