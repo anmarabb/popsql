@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.users` as 
+create or replace t `floranow.Floranow_ERP.users` as 
 
 
 
