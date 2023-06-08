@@ -32,7 +32,7 @@ SUM (
     THEN ii.price_without_tax 
     ELSE 0 
   END
-) AS last_week_holland,
+) AS w_4_holland,
 
 SUM (
   CASE 
