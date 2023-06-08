@@ -210,6 +210,9 @@ stg_invoice_items_customer_id.m_3_holland,
 stg_invoice_items_customer_id.ytd_holland,
 
 
+stg_invoice_items_customer_id.ytd_holland,
+
+
 case 
 when stg_invoices.days_since_last_drop <= 7 then 'active'
 when stg_invoices.days_since_last_drop > 7 and stg_invoices.days_since_last_drop  <= 30 then 'inactive'
