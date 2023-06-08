@@ -214,7 +214,7 @@ stg_invoice_items_customer_id.wtd_holland,
 stg_invoice_items_customer_id.w_1_holland,
 stg_invoice_items_customer_id.w_2_holland,
 stg_invoice_items_customer_id.w_3_holland,
-stg_invoice_items_customer_id.w_1_holland,
+stg_invoice_items_customer_id.w_4_holland,
 
 
 case 
