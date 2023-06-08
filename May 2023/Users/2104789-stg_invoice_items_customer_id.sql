@@ -13,51 +13,6 @@ select
         sum (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 and li_suppliers.supplier_region = 'Holland' then ii.price_without_tax else 0 end) as ytd_holland,
 
 
-SUM (
-  CASE 
-    WHEN 
-      TIMESTAMP_TRUNC(TIMESTAMP(i.printed_at), WEEK(MONDAY)) = TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY)) 
-      AND li_suppliers.supplier_region = 'Holland' 
-    THEN ii.price_without_tax 
-    ELSE 0 
-  END
-) AS WTD_holland,
-
-SUM (
-  CASE 
-    WHEN 
-      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(DATE(TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY))), INTERVAL 7 DAY)
-      AND EXTRACT(DAYOFWEEK FROM i.printed_at) <= EXTRACT(DAYOFWEEK FROM CURRENT_TIMESTAMP())
-      AND li_suppliers.supplier_region = 'Holland' 
-    THEN ii.price_without_tax 
-    ELSE 0 
-  END
-) AS LWTD_holland,
-
-SUM (
-  CASE 
-    WHEN 
-      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(DATE(TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY))), INTERVAL 7 DAY)
-      AND li_suppliers.supplier_region = 'Holland' 
-    THEN ii.price_without_tax 
-    ELSE 0 
-  END
-) AS w_1_holland,
-
-SUM (
-  CASE 
-    WHEN 
-      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(DATE(TIMESTAMP_TRUNC(CURRENT_TIMESTAMP(), WEEK(MONDAY))), INTERVAL 14 DAY)
-      AND li_suppliers.supplier_region = 'Holland' 
-    THEN ii.price_without_tax 
-    ELSE 0 
-  END
-) AS w_2_holland,
-
-SUM (
-  CASE 
-    WHEN 
-      DATE(TIMESTAMP_TRUNC(i.print
 
 
 --w_1_holland
