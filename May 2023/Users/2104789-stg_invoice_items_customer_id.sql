@@ -22,7 +22,7 @@ sum (case when date_diff(current_date(),date(i.printed_at), WEEK) = 4 and li_sup
 SUM (
   CASE 
     WHEN 
-      TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(current_date(), INTERVAL 1 WEEK), WEEK(MONDAY))
+      TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY)) = TIMESTAMP_TRUNC(TIMESTAMP_SUB(current_date(), INTERVAL 0 WEEK), WEEK(MONDAY))
       AND li_suppliers.supplier_region = 'Holland' 
     THEN ii.price_without_tax 
     ELSE 0 
