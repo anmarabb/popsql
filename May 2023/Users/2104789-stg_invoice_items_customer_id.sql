@@ -33,6 +33,15 @@ SUM (
     ELSE 0 
   END
 ) AS last_week_holland,
+SUM (
+  CASE 
+    WHEN 
+      DATE(TIMESTAMP_TRUNC(i.printed_at, WEEK(MONDAY))) = DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)
+      AND li_suppliers.supplier_region = 'Holland' 
+    THEN ii.price_without_tax 
+    ELSE 0 
+  END
+) AS last_week_holland,
 
 --w_1_holland
 
