@@ -45,7 +45,7 @@ SUM (
     THEN ii.price_without_tax 
     ELSE 0 
   END
-) AS two_weeks_ago_holland,
+) AS w_1_holland,
 
 
 
