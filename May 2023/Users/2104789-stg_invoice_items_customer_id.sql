@@ -42,6 +42,7 @@ SUM (
     ELSE 0 
   END
 ) AS last_week_holland,
+
 SUM (
   CASE 
     WHEN 
