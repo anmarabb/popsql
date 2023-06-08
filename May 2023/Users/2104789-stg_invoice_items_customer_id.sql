@@ -64,15 +64,7 @@ SUM (
   END
 ) AS w_3_holland,
 
-SUM (
-  CASE 
-    WHEN 
-      EXTRACT(YEAR FROM i.printed_at) = EXTRACT(YEAR FROM CURRENT_DATE())
-      AND li_suppliers.supplier_region = 'Holland' 
-    THEN ii.price_without_tax 
-    ELSE 0 
-  END
-) AS YTD_holland,
+
 
 
 --w_1_holland
