@@ -22,7 +22,7 @@ SUM (
     THEN ii.price_without_tax 
     ELSE 0 
   END
-) AS week_to_date_holland,
+) AS w_1_holland,
 
 
 
