@@ -56,7 +56,7 @@ SUM (
     THEN ii.price_without_tax 
     ELSE 0 
   END
-) AS w_3_holland,
+) AS w_2_holland,
 
 --w_1_holland
 
