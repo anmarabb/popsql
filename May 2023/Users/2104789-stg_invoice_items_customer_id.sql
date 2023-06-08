@@ -41,7 +41,7 @@ SUM (
     THEN ii.price_without_tax 
     ELSE 0 
   END
-) AS wtd_holland,
+) AS w_1_holland,
 
 
 SUM (
