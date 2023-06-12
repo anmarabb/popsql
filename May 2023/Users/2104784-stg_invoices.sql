@@ -2,7 +2,7 @@ create or replace view `floranow.Floranow_ERP.stg_invoices` as
 
 SELECT
 max(i.financial_administration_id) as invoice_financial_administration_id ,
-max(source_system) as 
+max(source_system) as source_system
 
 sum(case when i.printed_at is not null then i.remaining_amount else 0 end) as total_outstanding_balance, --total_remaining_amount
 count(case when i.payment_status != 2  and i.printed_at is not null then 1 else null end) as outstanding_count,
