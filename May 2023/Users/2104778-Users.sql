@@ -269,6 +269,9 @@ when u.company_id = 1 then 'Flora Express Flower Trading LLC'
 else  'cheack'
 end as company_name,
 
+
+
+
 w.name as warehouses,
 
 FROM `floranow.erp_prod.users` As u
