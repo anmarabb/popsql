@@ -269,7 +269,7 @@ when u.company_id = 1 then 'Flora Express Flower Trading LLC'
 else  'cheack'
 end as company_name,
 
-source_system
+stg_invoicessource_system
 
 
 w.name as warehouses,
