@@ -107,7 +107,8 @@ case
 when pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED' and w.name is null then 'dmage from order' 
 when pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED' and w.name is not null then 'dmage from inventory' 
 
-else null 'dmage from inventory' end as damage_type,
+else null 
+end as damage_type,
 
 
 
