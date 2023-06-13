@@ -96,6 +96,7 @@ case when li.order_type = 'OFFLINE' and orr.standing_order_id is not null then '
     sh.name as shipment,
     msh.name as master_shipment_name,
     w.name as warehouse,
+    w.name as warehouse,
     w.country as warehouse_country,
 
 fs.name as feed_source,
