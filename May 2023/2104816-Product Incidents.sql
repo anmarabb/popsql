@@ -105,7 +105,7 @@ fs.name as feed_source,
 
 case 
 when pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED' and w.name is null then 'damage from order' 
-when pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED' and w.name is not null then 'dmage from inventory' 
+when pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED' and w.name is not null then 'damage from inventory' 
 else null 
 end as damage_type,
 
