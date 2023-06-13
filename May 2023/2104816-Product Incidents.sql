@@ -103,6 +103,8 @@ fs.name as feed_source,
 
 case when  w.name is null then 'from order' else 'from inventory' end as damage_type,
 
+
+
 stock_id,
 stock.name as stock,
 reseller.name as reseller,
