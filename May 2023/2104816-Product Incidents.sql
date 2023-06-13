@@ -105,6 +105,7 @@ fs.name as feed_source,
 
 case when  w.name is null then 'from order' else 'from inventory' end as damage_type,
 
+pi.stage = 'INVENTORY' and pi.incident_type = 'DAMAGED'
 
 
 stock_id,
