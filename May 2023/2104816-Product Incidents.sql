@@ -101,7 +101,8 @@ case when li.order_type = 'OFFLINE' and orr.standing_order_id is not null then '
 
 fs.name as feed_source,
 
-case when  w.name is null then
+case when  w.name is null then 
+
 
 stock_id,
 stock.name as stock,
