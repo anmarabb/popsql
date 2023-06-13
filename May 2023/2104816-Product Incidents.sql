@@ -129,7 +129,7 @@ li.category as item_category,
 li.category2 as item_sub_category,
 
 
-pi.stage 
+pi.stage = 
 case 
 when pi.stage != 'INVENTORY' then null
 when pi.incident_type = 'DAMAGED'  then 'inventory_dmaged'
