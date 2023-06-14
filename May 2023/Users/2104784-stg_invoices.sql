@@ -110,7 +110,6 @@ when round(SAFE_DIVIDE(sum(i.total_amount), date_diff(cast(Max(i.printed_at) as 
 when round(SAFE_DIVIDE(sum(i.total_amount), date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH)),0) >=3000 then "5- Clients who pay +3K per month"
 when round(SAFE_DIVIDE(sum(i.total_amount), date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH)),0) >=1000 then "6- Clients who pay +1K per month"
 when round(SAFE_DIVIDE(sum(i.total_amount), date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH)),0) <1000 then "7- Clients who pay less than 999 per month"
-
 when date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH) = 0 then 'One order clinets'
 when date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH) is null then 'Zero order clinets'
 
