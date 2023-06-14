@@ -113,7 +113,6 @@ when round(SAFE_DIVIDE(sum(i.total_amount), date_diff(cast(Max(i.printed_at) as 
 when date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH) = 0 then 'One order clinets'
 when date_diff(cast(Max(i.printed_at) as date), cast(Min(i.printed_at) as date ), MONTH) is null then 'Zero order clinets'
 else 'One order clinets'
-
 end as client_value_segments,
 
 
