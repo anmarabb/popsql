@@ -54,7 +54,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
 pt.transaction_type,
 
     from   `floranow.erp_prod.payments` payments
-    warehouse.name as warehouse,
+    
              join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
              join `floranow.erp_prod.move_items`  dmi on payments.debit_move_item_id = dmi.id
              join `floranow.erp_prod.move_items`  cmi on payments.credit_move_item_id = cmi.id
