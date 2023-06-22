@@ -2,7 +2,7 @@ SELECT
     invoices.number
 FROM
     `floranow.erp_prod.invoices` as invoices -- dmi.residual, dmi.balance 
-    JOIN users AS customers ON customers.id = invoices.customer_id
+    JOIN floranow.erp_prod.users AS customers ON customers.id = invoices.customer_id
     join move_items cmi on cmi.documentable_type = 'Invoice'
     and cmi.documentable_id = invoices.id
     and cmi.entry_type = 'CREDIT'
