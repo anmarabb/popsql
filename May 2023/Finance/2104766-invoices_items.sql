@@ -198,7 +198,7 @@ end as usd_price,
 
 i.generation_type,
 
-concat( "https://erp.floranow.com/invoice_items/", i      f) as invoice_items_link,
+concat( "https://erp.floranow.com/invoice_items/", ii.id) as invoice_items_link,
 concat( "https://erp.floranow.com/line_items/", ii.line_item_id) as line_items_link,
 
 
