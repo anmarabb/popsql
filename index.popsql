@@ -24,7 +24,7 @@
   "2129206": "Private queries/Jira/2129206-1. issue_label.sql",
   "2129236": "Private queries/Jira/2129236-.Core.sql",
   "2156863": "Private queries/Database/BigQuery/2156863-BigQuery - invoices.sql",
-  "2156989": "Database/PostgreSQL/2156989-Postgres - Invoices.sql",
+  "2156989": "Database/Odoo/PostgreSQL/2156989-Postgres - Invoices.sql",
   "1674942": "Drafts/Tables Test/1674942-line_item.sql",
   "1675112": "Drafts/Tables Test/1675112-users.sql",
   "2104786": "Private queries/May 2023/Users/2104786-stg_incidents.sql",
