@@ -1,6 +1,6 @@
 SELECT
 
-count(distinct i.id) as row_coun,
+count(ii.invoice_id) as row_coun,
 max(i.printed_at) as max_date,
 
 from `floranow.erp_prod.invoice_items`  as ii 
