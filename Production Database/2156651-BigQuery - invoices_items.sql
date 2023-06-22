@@ -1,5 +1,3 @@
---create or replace table `floranow.Floranow_ERP.invoices_items` as
-
 with 
 SELECT
 
