@@ -1,5 +1,5 @@
 -- Table: invoices
--- number of
+-- number of credit Note
 
 
 SELECT
