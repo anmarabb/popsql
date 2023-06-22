@@ -49,5 +49,5 @@
   "2129367": "Jira/2129367-floranow_jira.sql",
   "2156633": "Production Database/2156633-Prod - invoice.sql",
   "2156651": "Production Database/2156651-BigQuery - invoices_items.sql",
-  "2156863": "Production Database/2156863-BigQuery - invoice.sql"
+  "2156863": "Production Database/2156863-invoice.sql"
 }
