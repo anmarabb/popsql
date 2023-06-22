@@ -20,12 +20,12 @@
   "2129206": "Drafts/Jira/2129206-1. issue_label.sql",
   "2129236": "Drafts/Jira/2129236-.Core.sql",
   "2156863": "Private queries/Database/BigQuery/2156863-BigQuery - invoices.sql",
-  "2156989": "Database/PostgreSQL/2156989-Postgres - Invoices.sql",
+  "2156989": "Private queries/Database/PostgreSQL/2156989-Postgres - Invoices.sql",
   "1674942": "Drafts/Tables Test/1674942-line_item.sql",
   "1675112": "Drafts/Tables Test/1675112-users.sql",
   "2104786": "Private queries/Dashbaord Project/Users/2104786-stg_incidents.sql",
   "2105252": "Private queries/Dashbaord Project/Finance/budget/2105252-new_budget.sql",
-  "2157070": "Database/Odoo/2157070-Odoo - Invoices.sql",
+  "2157070": "Private queries/Database/Odoo/2157070-Odoo - Invoices.sql",
   "2129367": "Drafts/Jira/2129367-floranow_jira.sql",
   "2129247": "Drafts/Jira/2129247-2. issue_link.sql",
   "2104766": "Private queries/Dashbaord Project/Finance/2104766-invoices_items.sql",
@@ -48,5 +48,6 @@
   "2104783": "Drafts/1. ERP Models/~account_manager/2104783-1730426-stg_budget.sql",
   "1695268": "Drafts/Ad Hock/1695268-Date function.sql",
   "2104768": "Drafts/Ad Hock/2104768-Generate A Date Spine.sql",
-  "2104769": "Drafts/Ad Hock/2104769-1772824-avg monthly.sql"
+  "2104769": "Drafts/Ad Hock/2104769-1772824-avg monthly.sql",
+  "2156651": "Private queries/Database/BigQuery/2156651-BigQuery - invoices_items.sql"
 }
