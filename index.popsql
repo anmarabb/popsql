@@ -26,7 +26,7 @@
   "2157070": "Private queries/Database/Odoo/2157070-Odoo - Invoices.sql",
   "2129367": "Drafts/Jira/2129367-floranow_jira.sql",
   "2129247": "Drafts/Jira/2129247-2. issue_link.sql",
-  "2104766": "Private queries/Dashbaord Project/Finance/2104766-invoices_items.sql",
+  "2104766": "Dashbaord Project/Finance/Invoices/2104766-invoices_items.sql",
   "2104767": "Private queries/Dashbaord Project/Finance/2104767-MOM.sql",
   "2104790": "Dashbaord Project/Finance/Invoices/2104790-stg_paymnets.sql",
   "2104800": "Private queries/Dashbaord Project/Finance/Paymnets/2104800-Payment Transactions.sql",
