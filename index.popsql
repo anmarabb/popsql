@@ -30,7 +30,7 @@
   "2129247": "Drafts/Jira/2129247-2. issue_link.sql",
   "2104766": "Private queries/Dashbaord Project/Finance/2104766-invoices_items.sql",
   "2104767": "Private queries/Dashbaord Project/Finance/2104767-MOM.sql",
-  "2104790": "Private queries/Dashbaord Project/Finance/Invoices/2104790-stg_paymnets.sql",
+  "2104790": "Dashbaord Project/Finance/Invoices/2104790-stg_paymnets.sql",
   "2104800": "Private queries/Dashbaord Project/Finance/Paymnets/2104800-Payment Transactions.sql",
   "2104812": "Private queries/Dashbaord Project/Finance/budget/2104812-budget.sql",
   "2104813": "Private queries/Dashbaord Project/Finance/budget/2104813-collection.sql",
