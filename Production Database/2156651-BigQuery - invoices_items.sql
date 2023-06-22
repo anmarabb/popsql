@@ -2,7 +2,7 @@ SELECT
 
 count(distinct ii.invoice_id) as row_coun,
 
-min(i.printed_at) over as max_date,
+min(i.printed_at) over  as max_date,
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
