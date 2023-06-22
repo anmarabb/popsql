@@ -6,4 +6,4 @@ and customers.odoo_code like 'BQ-%'
 and invoices.status in (1, 3, 6)
 and invoices.invoice_type = 1
 and invoices.printed_at >= '2023-05-01' and invoices.printed_at < '2023-06-01'
-order by invoices.number
+order by invoices.number;
