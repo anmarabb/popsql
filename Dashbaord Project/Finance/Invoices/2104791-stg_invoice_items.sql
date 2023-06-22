@@ -16,7 +16,6 @@ sum(case when li.supplier_id not IN (109,71) and li.supplier_id is not null then
 
 sum(ii.quantity * li.unit_landed_cost)  as total_cost,
 sum(ii.price_without_tax) - sum(ii.quantity * li.unit_landed_cost) as profit,
-
 sum(ii.quantity) as quantity,
 max(ii.delivery_date) as delivery_date,
 
