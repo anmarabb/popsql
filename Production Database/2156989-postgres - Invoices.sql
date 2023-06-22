@@ -1,4 +1,4 @@
--- Tableinvoices
+-- Table: invoices
 SELECT
     count(invoices.number) as row_count
 FROM
