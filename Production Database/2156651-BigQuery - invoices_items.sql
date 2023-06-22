@@ -1,6 +1,6 @@
 SELECT
 
-count(invoice_id) as 
+count(invoice_id) as row_
 
 
 from `floranow.erp_prod.invoice_items`  as ii 
