@@ -1,6 +1,5 @@
 SELECT
 
-count(distinct i.id) as row_coun,
 count(distinct ii.invoice_id) as row_coun,
 
 max(i.printed_at) as max_date,
