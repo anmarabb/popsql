@@ -1,5 +1,5 @@
 SELECT
-    count(invoices.number) as row_coun
+    count(invoices.number) as row_count
 FROM
     `floranow.erp_prod.invoices` as invoices -- dmi.residual, dmi.balance 
     JOIN floranow.erp_prod.users AS customers ON customers.id = invoices.customer_id
