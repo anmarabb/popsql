@@ -13,5 +13,3 @@ WHERE
     and invoices.invoice_type = 1
     and invoices.printed_at >= '2023-05-01'
     and invoices.printed_at < '2023-06-01'
-order by
-    invoices.number;
