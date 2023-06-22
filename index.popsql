@@ -43,5 +43,7 @@
   "2104771": "Private queries/Dashbaord Project/Orders & Inventory/2104771-line_items.sql",
   "2104789": "Private queries/Dashbaord Project/Users/2104789-stg_invoice_items_customer_id.sql",
   "2104778": "Private queries/Dashbaord Project/Users/2104778-Users.sql",
-  "2104785": "Private queries/Dashbaord Project/Users/2104785-stg_orders.sql"
+  "2104785": "Private queries/Dashbaord Project/Users/2104785-stg_orders.sql",
+  "2104782": "Private queries/Dashbaord Project/1. ERP Models/~account_manager/2104782-1730408-stg_invoice_items_uae.sql",
+  "2104783": "Private queries/Dashbaord Project/1. ERP Models/~account_manager/2104783-1730426-stg_budget.sql"
 }
