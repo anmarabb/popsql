@@ -492,7 +492,6 @@ left join `floranow.erp_prod.invoices` as i on ii.invoice_id = i.id
 left join `floranow.Floranow_ERP.suppliers` as li_suppliers on li_suppliers.id = li.supplier_id
 left join `floranow.erp_prod.order_requests` as orr on li.order_request_id = orr.id
 left join prep_registered_clients as prep_registered_clients on prep_registered_clients.financial_administration = stg_users.financial_administration
-left join prep_product_incidents AS product_incidents ON product_incidents.line_item_id = li.id
 left join `floranow.erp_prod.shipments` as sh on li.shipment_id = sh.id
 left join `floranow.erp_prod.proof_of_deliveries` as pod on li.proof_of_delivery_id = pod.id
 left join `floranow.erp_prod.feed_sources` as fs on li.feed_source_id = fs.id
