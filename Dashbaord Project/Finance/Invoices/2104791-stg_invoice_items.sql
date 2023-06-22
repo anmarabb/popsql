@@ -5,8 +5,6 @@ SELECT
 
 
 ii.invoice_id,
-
-
 count(ii.id) as items_count,
 CASE WHEN max(date(i.printed_at)) > max(ii.delivery_date) then 'late_delivery' else 'on_time_delivery' End as otd_check,
 sum(ii.price_without_tax) price_without_tax,
