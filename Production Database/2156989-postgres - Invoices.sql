@@ -1,5 +1,5 @@
 SELECT
-    count(invoices.number) as 
+    count(invoices.number) as row
 FROM
     invoices -- dmi.residual, dmi.balance 
     JOIN users AS customers ON customers.id = invoices.customer_id
