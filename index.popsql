@@ -34,7 +34,6 @@
   "2104863": "Private queries/Ad Hock/2104863-Retention rate.sql",
   "2129206": "Private queries/Jira/2129206-1. issue_label.sql",
   "2129236": "Private queries/Jira/2129236-.Core.sql",
-  "2129247": "Private queries/Jira/2129247-2. issue_link.sql",
   "2129367": "Private queries/Jira/2129367-floranow_jira.sql",
   "2156651": "Database/BigQuery/2156651-BigQuery - invoices_items.sql",
   "2156863": "Private queries/Database/BigQuery/2156863-BigQuery - invoices.sql",
