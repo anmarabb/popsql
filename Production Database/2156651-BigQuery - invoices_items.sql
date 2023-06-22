@@ -1,6 +1,6 @@
 SELECT
 
-count(disii.invoice_id) as row_coun,
+count(distinct ii.invoice_id) as row_coun,
 
 
 from `floranow.erp_prod.invoice_items`  as ii 
