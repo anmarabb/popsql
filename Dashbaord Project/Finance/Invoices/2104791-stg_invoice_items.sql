@@ -29,5 +29,4 @@ left join `floranow.erp_prod.line_items` as li on ii.line_item_id = li.id
 
 
 where ii.status = 'APPROVED' and ii.deleted_at is null
-
 group by ii.invoice_id
