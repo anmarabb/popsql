@@ -34,7 +34,7 @@
   "2104800": "Private queries/Dashbaord Project/Finance/Paymnets/2104800-Payment Transactions.sql",
   "2104812": "Private queries/Dashbaord Project/Finance/budget/2104812-budget.sql",
   "2104813": "Private queries/Dashbaord Project/Finance/budget/2104813-collection.sql",
-  "2104765": "Private queries/Dashbaord Project/Finance/Invoices/2104765-Invoices.sql",
+  "2104765": "Dashbaord Project/Finance/Invoices/2104765-Invoices.sql",
   "2104791": "Private queries/Dashbaord Project/Finance/Invoices/2104791-stg_invoice_items.sql",
   "2104776": "Private queries/Dashbaord Project/Orders & Inventory/2104776-additional_items_reports.sql",
   "2104807": "Private queries/Dashbaord Project/Orders & Inventory/2104807-Master Shipment.sql",
