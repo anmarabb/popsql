@@ -1,7 +1,7 @@
 SELECT
 
 count(distinct i.id) as row_coun,
-max(i.printed_at) 
+max(i.printed_at) as 
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
