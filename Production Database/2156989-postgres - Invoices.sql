@@ -1,5 +1,5 @@
 -- Table: invoices
--- number of Credit Note for May 
+-- number of Credit Note for May 2023
 
 
 SELECT
