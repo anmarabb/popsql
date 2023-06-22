@@ -1,7 +1,7 @@
 {
   "2104779": "Private queries/Dashbaord Project/Finance/2104779-Statement of Account.sql",
-  "2104784": "Private queries/May 2023/Users/2104784-stg_invoices.sql",
-  "2104787": "Private queries/May 2023/Users/2104787-stg_paymnets_customer_id.sql",
+  "2104784": "Private queries/Dashbaord Project/Users/2104784-stg_invoices.sql",
+  "2104787": "Private queries/Dashbaord Project/Users/2104787-stg_paymnets_customer_id.sql",
   "2104792": "Private queries/Ad Hock/2104792-Average Revenue Per Order.sql",
   "2104794": "Private queries/Ad Hock/2104794-Ad Hock Supplier.sql",
   "2104801": "Private queries/Dashbaord Project/Finance/Paymnets/2104801-Payments.sql",
@@ -23,7 +23,7 @@
   "2156989": "Database/PostgreSQL/2156989-Postgres - Invoices.sql",
   "1674942": "Drafts/Tables Test/1674942-line_item.sql",
   "1675112": "Drafts/Tables Test/1675112-users.sql",
-  "2104786": "Private queries/May 2023/Users/2104786-stg_incidents.sql",
+  "2104786": "Private queries/Dashbaord Project/Users/2104786-stg_incidents.sql",
   "2105252": "Private queries/Dashbaord Project/Finance/budget/2105252-new_budget.sql",
   "2157070": "Database/Odoo/2157070-Odoo - Invoices.sql",
   "2129367": "Private queries/Dashbaord Project/Jira/2129367-floranow_jira.sql",
@@ -40,5 +40,8 @@
   "2104807": "Private queries/Dashbaord Project/Orders & Inventory/2104807-Master Shipment.sql",
   "2104808": "Private queries/Dashbaord Project/Orders & Inventory/2104808-Shipments.sql",
   "2104775": "Private queries/Dashbaord Project/Orders & Inventory/2104775-order_requests.sql",
-  "2104771": "Private queries/Dashbaord Project/Orders & Inventory/2104771-line_items.sql"
+  "2104771": "Private queries/Dashbaord Project/Orders & Inventory/2104771-line_items.sql",
+  "2104789": "Private queries/Dashbaord Project/Users/2104789-stg_invoice_items_customer_id.sql",
+  "2104778": "Private queries/Dashbaord Project/Users/2104778-Users.sql",
+  "2104785": "Private queries/Dashbaord Project/Users/2104785-stg_orders.sql"
 }
