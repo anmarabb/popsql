@@ -1,5 +1,5 @@
 -- Table: invoices
--- number of Credit Note
+-- number of Credit Note 
 
 
 SELECT
