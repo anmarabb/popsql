@@ -214,7 +214,7 @@ CASE
 
 
 
-i.invoice_type
+i.source_type
 
 
 
