@@ -214,7 +214,7 @@ CASE
 
 
 
-i.items_source_type,
+i.purchase_order_number,
 
 
 
