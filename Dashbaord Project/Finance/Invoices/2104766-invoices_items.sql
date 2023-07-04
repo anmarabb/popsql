@@ -214,7 +214,7 @@ CASE
 
 
 
-i.items_source_type as source_type2,
+i.items_source_type ,
 
 
 
