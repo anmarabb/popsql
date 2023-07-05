@@ -13,7 +13,7 @@ a.floranow_account_id,
 case 
 when ot.name like '%Event%' THEN 'Event Offer' 
 when ot.name like '%Regular%' THEN 'Regular' 
-
+when ot.name like '%Regular%' THEN 'Regular'
 else 'Regular Offer' end as offer_type,
 
 
