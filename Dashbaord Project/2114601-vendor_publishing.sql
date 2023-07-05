@@ -72,7 +72,6 @@ case when DATE_DIFF(cast (max(date(o.departure_date_time)) over(partition by g.n
 from `floranow.vendor_portal_prod.stocks` as st
 left join `floranow.vendor_portal_prod.offers` as o on st.stockable_id = o.id
 left join `floranow.vendor_portal_prod.products` as p on st.product_id = p.id
-
 left join `floranow.vendor_portal_prod.growers`as g on g.id = p.grower_id
 left join `floranow.vendor_portal_prod.offer_templates` as ot on ot.id = o.offer_template_id
 left join `floranow.vendor_portal_prod.quantity_units` as qu on qu.id = st.quantity_unit_id
