@@ -76,7 +76,6 @@ left join `floranow.vendor_portal_prod.growers`as g on g.id = p.grower_id
 left join `floranow.vendor_portal_prod.offer_templates` as ot on ot.id = o.offer_template_id
 left join `floranow.vendor_portal_prod.quantity_units` as qu on qu.id = st.quantity_unit_id
 left join `floranow.vendor_portal_prod.feeds` as f on f.id = ot.feed_id
-
 left join `floranow.vendor_portal_prod.accounts` as a on g.account_id= a.id
 
 
