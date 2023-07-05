@@ -14,7 +14,7 @@ case
 when ot.name like '%Event%' THEN 'Event Offer' 
 when ot.name like '%Regular%' THEN 'Regular' 
 when ot.name like '%Avails%' THEN 'Avails'
-else 'Regular Offer' end as offer_type,
+else 'others' end as offer_type,
 
 
 count(o.id) over (partition by g.name) as publishing_time_per_supplier,
