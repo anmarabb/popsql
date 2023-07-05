@@ -77,8 +77,6 @@ left join `floranow.vendor_portal_prod.offer_templates` as ot on ot.id = o.offer
 left join `floranow.vendor_portal_prod.quantity_units` as qu on qu.id = st.quantity_unit_id
 left join `floranow.vendor_portal_prod.feeds` as f on f.id = ot.feed_id
 left join `floranow.vendor_portal_prod.accounts` as a on g.account_id= a.id
-
-
 left join `floranow.Floranow_ERP.suppliers` as s on s.floranow_supplier_id = a.floranow_account_id
 
 --where ot.name not like '%Event%'
