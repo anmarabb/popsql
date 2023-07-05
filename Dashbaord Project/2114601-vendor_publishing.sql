@@ -11,7 +11,7 @@ ot.name as offer_template,
 a.floranow_account_id,
 
 case 
-when ot.name like '%Event%' THEN 'Event ' 
+when ot.name like '%Event%' THEN 'Event' 
 when ot.name like '%Regular%' THEN 'Regular' 
 when ot.name like '%Avails%' THEN 'Avails'
 else 'others' end as offer_type,
