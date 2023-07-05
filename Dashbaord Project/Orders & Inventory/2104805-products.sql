@@ -284,6 +284,8 @@ row_number() over (partition by p.id) as row_number,
 
 
 
+
+
 from floranow.erp_prod.products as p
 left join `floranow.erp_prod.stocks` as st on st.id = p.stock_id and  st.reseller_id = p.reseller_id
 left join `floranow.erp_prod.line_items` as li on li.id = p.line_item_id
