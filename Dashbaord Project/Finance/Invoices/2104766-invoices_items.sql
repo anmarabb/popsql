@@ -28,6 +28,7 @@ case when w.name is not null then w.name  end as warehouse,
         else stg_users.customer_type
     end as customer_type,
 
+
     stg_users.debtor_number,
     stg_users.last_drop_date,
     stg_users.days_since_last_drop,
