@@ -123,7 +123,7 @@ left join `floranow.Floranow_ERP.suppliers` as shipments_suppliers on shipments_
 
 
 
-case 
+case
 
  when  then  'Direct Inbound',
  when  then  'Outbound Transfer',
