@@ -125,7 +125,7 @@ left join `floranow.Floranow_ERP.suppliers` as shipments_suppliers on shipments_
 
 case
 
- when w.name in (,,) and reseller = then  'Direct Inbound',
+ when w.name in (,,) and reseller =  then  'Direct Inbound',
  when  then  'Outbound Transfer',
  when  then  'Inbound Transfer',
  
