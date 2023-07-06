@@ -19,6 +19,7 @@ case when w.name is not null then w.name  end as warehouse,
     stg_users.account_manager,
     stg_users.country,
     stg_users.reseller,
+    
     stg_users.debtor_number,
     stg_users.last_drop_date,
     stg_users.days_since_last_drop,
