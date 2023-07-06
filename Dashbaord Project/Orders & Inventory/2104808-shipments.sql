@@ -128,6 +128,6 @@ case
  when  then  'Direct Inbound',
  when  then  'Direct Inbound',
  
- . 'Outbound Transfer', "Inbound Transfer")
+ . '', "Inbound Transfer")
 
 end as ShipmentType
