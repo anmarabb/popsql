@@ -123,6 +123,6 @@ left join `floranow.Floranow_ERP.suppliers` as shipments_suppliers on shipments_
 
 
 
-case weh
+case w
 
 end as ShipmentType
