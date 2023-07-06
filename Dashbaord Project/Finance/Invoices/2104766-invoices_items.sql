@@ -8,7 +8,7 @@ SELECT
 
 case when w.name is not null then w.name  end as warehouse,
 
-case when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in ()
+case when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (1)
 
 
 --stg_users
