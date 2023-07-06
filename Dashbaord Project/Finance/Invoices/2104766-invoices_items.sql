@@ -26,7 +26,6 @@ case when w.name is not null then w.name  end as warehouse,
         when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (10,43,76,79) then 'remote branch reseller'
         when stg_users.customer_type = 'reseller' then 'main branch reseller'
 
-
         else stg_users.customer_type
     end as customer_type,
 
