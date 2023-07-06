@@ -8,7 +8,7 @@ SELECT
 
 case when w.name is not null then w.name  end as warehouse,
 
-case weh
+case we
 
 
 --stg_users
