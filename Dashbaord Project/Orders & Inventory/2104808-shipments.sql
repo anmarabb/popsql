@@ -119,14 +119,3 @@ left join `floranow.Floranow_ERP.suppliers` as shipments_suppliers on shipments_
 
 
 --left join `floranow.erp_prod.line_items` as li on li.shipment_id = sh.id
-
-
-
-
-case
-
- when w.name in (,,) and reseller = '' then  'Direct Inbound',
- when  then  'Outbound Transfer',
- when  then  'Inbound Transfer',
- 
-end as ShipmentType
