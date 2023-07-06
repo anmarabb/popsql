@@ -8,7 +8,7 @@ SELECT
 
 case when w.name is not null then w.name  end as warehouse,
 
-case when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (10,43,76,79) then 'remote branch reseller '
+case when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (10,43,76,79) ten 'remote branch reseller '
 
 
 --stg_users
