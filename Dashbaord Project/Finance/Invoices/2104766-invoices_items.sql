@@ -19,7 +19,8 @@ case when w.name is not null then w.name  end as warehouse,
     stg_users.account_manager,
     stg_users.country,
     stg_users.reseller,
-    case when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (10,43,76,79) then 'remote branch reseller' else 'main branch reseller' end as reseller_type,
+    case 
+    when stg_users.customer_type = 'reseller' and stg_users.warehouse_id in (10,43,76,79) then 'remote branch reseller' else 'main branch reseller' end as reseller_type,
 
     stg_users.debtor_number,
     stg_users.last_drop_date,
