@@ -9,7 +9,7 @@ SELECT
 case when w.name is not null then w.name  end as warehouse,
 
 case
-
+when 
 
 --stg_users
     stg_users.city,
