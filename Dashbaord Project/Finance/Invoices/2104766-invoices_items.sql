@@ -13,7 +13,7 @@ when i.financial_administration_id = 1 then  w.name
 else  stg_users.city end as city,
 
 --stg_users
-    stg_users.city,
+    stg_users.city as,
     stg_users.customer,
     stg_users.client_category,
     stg_users.payment_term,
