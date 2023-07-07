@@ -12,7 +12,6 @@ WITH preb_budget AS (
 raw_data AS (
     SELECT
         stg_users.financial_administration,
-        stg_users.client_category,
         DATE_TRUNC(i.printed_at,month) AS month_of_year,
         EXTRACT(year FROM i.printed_at) AS year,
         EXTRACT(month FROM i.printed_at) AS month,
@@ -35,11 +34,11 @@ raw_data AS (
     LEFT JOIN `floranow.erp_prod.invoices` as i ON ii.invoice_id = i.id
     LEFT JOIN preb_budget as budget ON budget.month = EXTRACT(month FROM i.printed_at) AND budget.year = EXTRACT(year FROM i.printed_at) AND budget.financial_administration = stg_users.financial_administration
     WHERE ii.status = 'APPROVED' AND ii.deleted_at IS NULL
-    GROUP BY 1,2,3,4,5
+    GROUP BY 1,2,3,4
 )
 SELECT 
     raw_data.*,
-    COALESCE(((monthly_revenue - LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month)) / NULLIF(LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month), 0)) * 100, 0) AS mom_growth,
-    COALESCE(((monthly_revenue - LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month)) / NULLIF(LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month), 0)) * 100, 0) AS yoy_growth
+    COALESCE(((monthly_revenue - LAG(monthly_revenue) OVER (PARTITION BY financial_administration ORDER BY year, month)) / NULLIF(LAG(monthly_revenue) OVER (PARTITION BY financial_administration ORDER BY year, month), 0)) * 100, 0) AS mom_growth,
+    COALESCE(((monthly_revenue - LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration ORDER BY year, month)) / NULLIF(LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration ORDER BY year, month), 0)) * 100, 0) AS yoy_growth
 FROM raw_data
-ORDER BY financial_administration DESC, client_category DESC, year DESC, month DESC;
+ORDER BY financial_administration DESC, year DESC, month DESC;
