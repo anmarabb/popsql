@@ -39,7 +39,7 @@ raw_data AS (
 )
 SELECT 
     raw_data.*,
-    COALESCE(((monthly_revenue - LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month)) / NULLIF(LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month), 0)) * 100, 0) AS mom_growth,
-    COALESCE(((monthly_revenue - LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month)) / NULLIF(LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY year, month), 0)) * 100, 0) AS yoy_growth
+    COALESCE(((monthly_revenue - LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY month_of_year)) / NULLIF(LAG(monthly_revenue) OVER (PARTITION BY financial_administration, client_category ORDER BY month_of_year), 0)) * 100, 0) AS mom_growth,
+    COALESCE(((monthly_revenue - LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY month_of_year)) / NULLIF(LAG(monthly_revenue, 12) OVER (PARTITION BY financial_administration, client_category ORDER BY month_of_year), 0)) * 100, 0) AS yoy_growth
 FROM raw_data
 ORDER BY financial_administration DESC, client_category DESC, year DESC, month DESC;
