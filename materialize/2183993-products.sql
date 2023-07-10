@@ -139,7 +139,7 @@ concat( "https://erp.floranow.com/products/", p.id) as product_link,
 
 
 
-%
+%8
 case 
     when p.departure_date > current_date() then "Furue" 
     else "Present" 
