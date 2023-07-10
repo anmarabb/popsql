@@ -1,1 +1,1 @@
-create index product
+create index product_view
