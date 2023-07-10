@@ -1,6 +1,6 @@
 drop source erp_prod cascade;
 
-, , , 
+
 
 CREATE SOURCE erp_prod
   IN CLUSTER ingest_postgres
