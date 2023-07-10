@@ -1,4 +1,4 @@
 create index product_view_idx on products_view (departure_date);
 
 
-select * form products_view
+select * from products_view
