@@ -1,4 +1,4 @@
-drop source mz_source cascade;
+drop source erp_prod cascade;
 
 --sections, suppliers, account_managers, manageable_accounts
 
