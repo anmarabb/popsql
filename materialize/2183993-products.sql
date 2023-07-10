@@ -27,5 +27,4 @@ left join feed_sources as fs4 on fs4.id = st.out_feed_source_id
 left join users as reseller on reseller.id = p.reseller_id
 left join additional_items_reports as ad on ad.line_item_id=li.id
 left join order_requests as orr on li.order_request_id = orr.id
-
 where p.deleted_at is  null;
