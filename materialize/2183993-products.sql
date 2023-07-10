@@ -146,7 +146,7 @@ case
 end as future_departure_date,
 */
 
-concat(st.id, '-' , reseller.name ,  '-' , st.name ) as full_stock_name, --stock_id
+concat(st.id, ' -' , reseller.name ,  '-' , st.name ) as full_stock_name, --stock_id
 
 
 
