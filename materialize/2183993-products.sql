@@ -10,7 +10,7 @@ CREATE SOURCE erp_prod
 
 
 
-create view products
+create view products_
 select 
 
 
