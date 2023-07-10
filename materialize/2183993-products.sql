@@ -70,7 +70,7 @@ st.availability_type,
 reseller.name as reseller,
 
 --stg_suppliers.supplier_name as supplier,
-stg_suppliers.supplier_region,
+--stg_suppliers.supplier_region,
 
 
 case 
