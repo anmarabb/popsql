@@ -1,1 +1,1 @@
-create in
+create index
