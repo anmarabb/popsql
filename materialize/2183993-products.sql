@@ -144,7 +144,7 @@ case
     when p.departure_date > current_date() then "Furue" 
     else "Present" 
 end as future_departure_date,
-*
+*/
 
 concat(st.id, " - ", reseller.name , " - ", st.name ) as full_stock_name, --stock_id
 
