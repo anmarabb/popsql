@@ -16,7 +16,6 @@ left join line_items as li on li.id = p.line_item_id
 left join product_locations as pl on pl.locationable_id = p.id and pl.locationable_type = "Product"
 left join locations as loc on pl.location_id=loc.id
 left join warehouses as w on w.id = st.warehouse_id
-
 left join sections as sec on sec.id =loc.section_id
 
 left join  line_items as parent_li on parent_li.id = li.parent_line_item_id
