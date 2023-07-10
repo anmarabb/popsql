@@ -1,1 +1,1 @@
-create index prod
+create index p
