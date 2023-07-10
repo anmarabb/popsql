@@ -108,7 +108,7 @@ loc.id AS location_id,
 loc.label AS location_name,
 sec.name AS section,
 li.creation_stage,
-li.ordering_stock_type,
+li.ordering_stock_type
 
 
 from products as p
