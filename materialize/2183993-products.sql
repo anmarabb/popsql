@@ -18,7 +18,6 @@ left join locations as loc on pl.location_id=loc.id
 left join warehouses as w on w.id = st.warehouse_id
 left join sections as sec on sec.id =loc.section_id
 left join  line_items as parent_li on parent_li.id = li.parent_line_item_id
-
 left join suppliers as stg_suppliers on stg_suppliers.id = p.supplier_id
 left join suppliers as li_suppliers on li_suppliers.id = li.supplier_id
 
