@@ -50,5 +50,6 @@
   "2156651": "Private queries/Database/BigQuery/2156651-BigQuery - invoices_items.sql",
   "2114601": "Dashbaord Project/2114601-vendor_publishing.sql",
   "2183993": "materialize/2183993-products.sql",
-  "2184074": "materialize/2184074-dev_draft.sql"
+  "2184074": "materialize/2184074-dev_draft.sql",
+  "2184121": "materialize/2184121-index.sql"
 }
