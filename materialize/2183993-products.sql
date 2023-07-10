@@ -131,7 +131,7 @@ case
     else 'Normal'
 end as marketplace_projects,
 
-concat( https://erp.floranow.com/products/", p.id) as product_link,
+concat( https://erp.floranow.com/products/, p.id) as product_link,
 
 
 
