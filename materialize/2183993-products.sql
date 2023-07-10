@@ -9,7 +9,10 @@ CREATE SOURCE erp_prod
 
 
 
-select count (*) as row_count
+select 
+
+
+count (*) as row_count
 
 
 
