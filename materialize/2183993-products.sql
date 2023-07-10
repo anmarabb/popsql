@@ -1,6 +1,6 @@
 drop source mz_source cascade;
 
---sections, suppliers
+--sections, suppliers, account_managers
 
 CREATE SOURCE erp_prod
   IN CLUSTER ingest_postgres
