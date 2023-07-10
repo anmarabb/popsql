@@ -1,1 +1,1 @@
-create index product_view_idx on products_view on departure_date
+create index product_view_idx on products_view on departure_date ()
