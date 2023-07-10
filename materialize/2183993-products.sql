@@ -276,7 +276,7 @@ end as ch_published_sales_unit,
 /*
 case when COUNT(*) over (partition by p.id)>1 then 'multi-location' else null end as multi_location,
 row_number() over (partition by p.id) as row_number,
-*
+*/
 
 
 case 
