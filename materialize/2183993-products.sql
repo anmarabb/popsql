@@ -25,7 +25,7 @@ p.currency,
 p.age,
 p.sales_unit, --monumon order quantity.
 --p.category as item_category,
-p.category2 as item_sub_category,
+--tegory2 as item_sub_category,
 p.stem_length_unit,
 
 p.published_quantity,
