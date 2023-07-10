@@ -268,7 +268,7 @@ end as ch_supplier_product_id,
 case 
     when p.published_sales_unit is not null then 'published_sales_unit'
     when p.published_sales_unit is null then '--'
-end as ch_published_sales_unit,
+end as ch_published_sales_unit
 
 -------- End cheack area ------------
 
