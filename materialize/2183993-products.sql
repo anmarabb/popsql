@@ -346,7 +346,7 @@ case
     when p.product_name like '%Wrapping%' THEN 'Accessories'
     
 else p.category end as new_item_category
-*
+*/
 
 from products as p
 
