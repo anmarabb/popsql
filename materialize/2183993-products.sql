@@ -1,4 +1,4 @@
-create view  products as 
+create view  products_view as 
 select 
 
 
