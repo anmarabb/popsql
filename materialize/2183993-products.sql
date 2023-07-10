@@ -279,6 +279,7 @@ row_number() over (partition by p.id) as row_number,
 */
 
 
+
 case 
     when p.product_name like '%Cutter%' THEN 'Accessories'
     when p.product_name like '%Arrangement%' THEN 'Accessories'
