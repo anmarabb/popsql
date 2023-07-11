@@ -14,4 +14,4 @@ set cluster = mz_introspection;
 
 select count(*) from products_view;
 
-show c
+show cluster
