@@ -12,7 +12,7 @@ CREATE SOURCE erp_prod
 
 
 
-select count(*) from products_view
+select count(*) from products_view;
 
 select count(*) from products;
 
