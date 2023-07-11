@@ -16,6 +16,8 @@ select count(*) from products_view;
 
 select count(*) from products;
 
+
+
 set cluster = mz_introspection;
 CREATE CLUSTER REPLICA default.r2 SIZE = 'small';
 
