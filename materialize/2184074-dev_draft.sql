@@ -19,3 +19,5 @@ set cluster = mz_introspection;
 Show cluster replicas;
 
 CREATE CLUSTER REPLICA default.r2 SIZE = 'small';
+
+drop cluster replica default.r1;
