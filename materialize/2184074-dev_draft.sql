@@ -14,7 +14,6 @@ CREATE SOURCE erp_prod
 
 select count(*) from products_view;
 
-
 set cluster = mz_introspection;
 
 Show cluster replicas;
