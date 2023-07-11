@@ -16,6 +16,7 @@ select count(*) from products_view;
 
 
 set cluster = mz_introspection;
+CREATE CLUSTER REPLICA default.r2 SIZE = 'small';
 
 Show cluster replicas;
 
