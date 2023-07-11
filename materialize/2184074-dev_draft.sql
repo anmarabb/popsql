@@ -12,9 +12,7 @@ CREATE SOURCE erp_prod
 
 
 
-select count(*) from products_view as p
-where p.deleted_at is  null;
-
+select count(*) from products_view
 
 select count(*) from products;
 
