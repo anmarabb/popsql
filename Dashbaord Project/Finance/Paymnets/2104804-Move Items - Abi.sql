@@ -123,7 +123,7 @@ warehouse.name as warehouse,
                 end as company_name,
 
 pt.transaction_type,
-pt.payment_gateway,
+caset.payment_gateway,
     from `floranow.erp_prod.move_items`  cmi
              join `floranow.erp_prod.users`  customer on cmi.user_id = customer.id
              left join `floranow.erp_prod.payment_transactions`  pt
