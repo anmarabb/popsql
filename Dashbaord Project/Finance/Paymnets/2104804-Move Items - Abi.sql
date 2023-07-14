@@ -52,7 +52,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
                 else  'cheack'
                 end as company_name,
 pt.transaction_type,
-pt.payment_gateway,
+case when pt.payment_gateway=0 then 'telr' else null,
     from   `floranow.erp_prod.payments` payments
 
              join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
