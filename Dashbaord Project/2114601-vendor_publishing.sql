@@ -68,7 +68,7 @@ DATE_DIFF(cast (max(date(o.departure_date_time)) over(partition by g.name) as da
 case when DATE_DIFF(cast (max(date(o.departure_date_time)) over(partition by g.name) as date), CAST(CURRENT_DATE() AS date) ,day) in (3,4,5,6,7,8,9)then 'active' else 'inactive' end as supplier_status,
 
 
-f.name as feed_
+f.name as feed_name,
 from `floranow.vendor_portal_prod.stocks` as st
 left join `floranow.vendor_portal_prod.offers` as o on st.stockable_id = o.id
 left join `floranow.vendor_portal_prod.products` as p on st.product_id = p.id
