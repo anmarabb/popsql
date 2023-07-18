@@ -21,7 +21,7 @@ concat( "https://erp.floranow.com/invoices/", i.id) as invoice_link,
 
 case when date(i.printed_at) is not null then 'Printed' when i.deleted_at is not null then 'deleted_invoice' else 'Not-Printed' end as is_printed,
 
-sum(case when date(i.printed_at is not null then i.remaining_amount else 0 end) over() as total_outstanding_balance,
+sum(case when date(i.printed_at) is not null then i.remaining_amount else 0 end) over() as total_outstanding_balance,
 sum(i.remaining_amount) over() as total_outstanding_with_proforma,
 
 
