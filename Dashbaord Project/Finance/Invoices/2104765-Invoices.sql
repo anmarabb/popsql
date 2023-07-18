@@ -69,10 +69,6 @@ i.items_collection_method,
 i.generation_type,
 i.cancellation_reason,
 i.note,
-i.paid_by,
-i.void_by,
-i.deleted_by,
-i.finalized_by,
 
 i.financial_administration_id as financial_administration_2,
 
