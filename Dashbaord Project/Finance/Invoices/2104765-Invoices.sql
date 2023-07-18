@@ -46,7 +46,7 @@ i.updated_at,
 
 
 
-concat(stg_users.debtor_number,date(i.printed_at) as drop_id, 
+concat(stg_users.debtor_number,date(i.printed_at)) as drop_id, 
 
 
 
