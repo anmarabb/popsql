@@ -25,7 +25,7 @@ sum(case when date(i.printed_at) is not null then i.remaining_amount else 0 end)
 sum(i.remaining_amount) over() as total_outstanding_with_proforma,
 
 
-datei.deleted_at,
+date(i.deleted_at,
 
 
 -- date
