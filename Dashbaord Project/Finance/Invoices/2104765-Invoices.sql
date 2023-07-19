@@ -118,7 +118,7 @@ case when i.invoice_type != 1 then (i.total_amount - i.total_tax) else 0 end as 
 
 --stg_users
     stg_users.city,
-    stg_users.email
+    stg_users.email,
     stg_users.customer,
     stg_users.client_category,
     stg_users.customer_type,
