@@ -269,7 +269,7 @@ when w.name = 'Qassim Warehouse' then 'FN-Qassim'
 when w.name = 'Medina Warehouse' then 'FN-Medinah'
 when w.name = 'Jouf WareHouse' then 'FN-Jouf'
 when w.name = 'Hafar WareHouse' then ''
-when w.name = 'Kuwait Warehouse' then ''
+when w.name = 'Kuwait Warehouse' then 'KWT-Design Cell'
 else null end as 
 
 case
