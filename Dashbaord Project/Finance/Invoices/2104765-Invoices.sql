@@ -169,3 +169,7 @@ left join prep_registered_clients as prep_registered_clients on prep_registered_
 
 left join `floranow.Floranow_ERP.stg_paymnets` as stg_paymnets on stg_paymnets.invoice_id = i.id
 left join `floranow.Floranow_ERP.stg_invoice_items` as stg_invoice_items on stg_invoice_items.invoice_id = i.id
+
+
+
+--
