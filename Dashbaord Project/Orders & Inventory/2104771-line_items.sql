@@ -286,6 +286,8 @@ when w.name = 'Hafar WareHouse' then 'Global Arabia Trading'
 when w.name = 'Kuwait Warehouse' then 'Design Cell'
 else null end as Consignee,
 
+
+
 case
     when li.order_type in ('ADDITIONAL') and msh.name is null  then 'ADDITIONAL Not from shipment'
     when li.order_type in ('EXTRA') and msh.name is null  then 'EXTRA Not from shipment'
