@@ -267,7 +267,7 @@ when w.name = '' then ''
 'Dammam Warehouse'
 'Dubai Warehouse'
 'Jeddah Warehouse'
-Riyadh Warehouse
+'Riyadh Warehouse'
 Tabuk Warehouse
 Hail Warehouse
 Qassim Warehouse
