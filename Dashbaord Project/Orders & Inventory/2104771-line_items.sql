@@ -271,7 +271,7 @@ when w.name = '' then ''
 'Tabuk Warehouse'
 'Hail Warehouse'
 'Qassim Warehouse'
-Medina Warehouse
+'Medina Warehouse'
 Jouf WareHouse
 Hafar WareHouse
 Kuwait Warehouse
