@@ -262,7 +262,7 @@ case
 when w.name = 'Dammam Warehouse' then 'FN-Dammam'
 when w.name = 'Dubai Warehouse' then 'DXB'
 when w.name = 'Jeddah Warehouse' then ''
-when w.name = 'Riyadh Warehouse' then ''
+when w.name = 'Riyadh Warehouse' then 'FN-Riyadh'
 when w.name = 'Tabuk Warehouse' then ''
 when w.name = 'Hail Warehouse' then ''
 when w.name = 'Qassim Warehouse' then ''
