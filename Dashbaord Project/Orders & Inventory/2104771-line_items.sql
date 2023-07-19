@@ -284,7 +284,7 @@ when w.name = 'Medina Warehouse' then 'Global Arabia Trading'
 when w.name = 'Jouf WareHouse' then 'Global Arabia Trading'
 when w.name = 'Hafar WareHouse' then 'Global Arabia Trading'
 when w.name = 'Kuwait Warehouse' then 'Design Cell'
-else null end as Consignee,
+else null end as consignee,
 
 
 case
