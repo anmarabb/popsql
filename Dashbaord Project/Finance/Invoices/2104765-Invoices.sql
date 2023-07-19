@@ -160,7 +160,12 @@ case --financial ID
 prep_registered_clients.registered_clients,
 i.total_amount - i.total_tax = stg_invoice_items.price_without_tax as match_check,
 
-
+case 
+when u.company_id = 3 then 'Bloomax Flowers LTD'
+when u.company_id = 2 then 'Global Floral Arabia tr'
+when u.company_id = 1 then 'Flora Express Flower Trading LLC'
+else  'cheack'
+end as company_name,
 
 
 from `floranow.erp_prod.invoices` as i
