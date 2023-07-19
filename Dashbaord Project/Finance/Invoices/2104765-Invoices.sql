@@ -163,7 +163,7 @@ i.total_amount - i.total_tax = stg_invoice_items.price_without_tax as match_chec
 case 
 when stg_users.company_id = 3 then 'Bloomax Flowers LTD'
 when stg_users.company_id = 2 then 'Global Floral Arabia tr'
-when stg_users.company_id = 1 then 'Flora Express Flower Trading LLC'
+when u.company_id = 1 then 'Flora Express Flower Trading LLC'
 else  'cheack'
 end as company_name,
 
