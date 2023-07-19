@@ -47,6 +47,9 @@ customer_id,
     sum(case when date_diff( cast(current_date() as date ),cast(i.printed_at as date), DAY) > 90 and date_diff( cast(current_date() as date ),cast(i.printed_at as date), DAY) <= 120 then i.remaining_amount else 0 end) as between_91_to_120_days,
     sum(case when date_diff( cast(current_date() as date ),cast(i.printed_at as date), DAY) > 120 then i.remaining_amount else 0 end) as more_than_120_days,
 
+
+
+
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then i.remaining_amount else 0 end) as m_1_remaining,
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 then i.remaining_amount else 0 end) as m_2_remaining,
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then i.remaining_amount else 0 end) as m_3_remaining,
