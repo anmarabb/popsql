@@ -276,7 +276,7 @@ case
 when w.name = 'Dammam Warehouse' then 'Global Arabia Trading'
 when w.name = 'Dubai Warehouse' then 'Flora Express Flowers Trading'
 when w.name = 'Jeddah Warehouse' then ''
-when w.name = 'Riyadh Warehouse' then ''
+when w.name = 'Riyadh Warehouse' then 'Global Arabia Trading'
 when w.name = 'Tabuk Warehouse' then ''
 when w.name = 'Hail Warehouse' then ''
 when w.name = 'Qassim Warehouse' then ''
