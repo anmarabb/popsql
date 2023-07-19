@@ -258,7 +258,7 @@ case when w.name is not null then w.name  end as warehouse,
 
 
 case 
-when w.name = '' then 
+when w.name = '' then ''
 
 
 
