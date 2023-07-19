@@ -270,7 +270,7 @@ when w.name = 'Medina Warehouse' then 'FN-Medinah'
 when w.name = 'Jouf WareHouse' then 'FN-Jouf'
 when w.name = 'Hafar WareHouse' then 'FN-Hafar'
 when w.name = 'Kuwait Warehouse' then 'KWT-Design Cell'
-else null end as box_label
+else null end as box_label,
 
 case
 when w.name = 'Dammam Warehouse' then 'Global Arabia Trading'
