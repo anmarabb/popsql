@@ -270,7 +270,7 @@ when w.name = 'Medina Warehouse' then ''
 when w.name = 'Jouf WareHouse' then ''
 when w.name = 'Hafar WareHouse' then ''
 when w.name = 'Kuwait Warehouse' then ''
-else null
+else null end as 
 
 
 
