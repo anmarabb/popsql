@@ -274,7 +274,7 @@ when w.name = 'Qassim Warehouse' then ''
 when w.name = 'Medina Warehouse' then ''
 when w.name = 'Jouf WareHouse' then ''
 when w.name = 'Hafar WareHouse' then ''
-when w.name = 'Kuwait Warehouse'
+when w.name = 'Kuwait Warehouse' then ''
 
 
 
