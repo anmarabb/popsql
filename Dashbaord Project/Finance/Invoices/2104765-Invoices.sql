@@ -163,7 +163,7 @@ i.total_amount - i.total_tax = stg_invoice_items.price_without_tax as match_chec
 
 stg_users.company_name,
 stg_users.warehouses,
-case when stg_users.email not like '%fake.com%' then 'fake.com' e
+case when stg_users.email not like '%fake.com%' then 'fake.com' else
 
 
 from `floranow.erp_prod.invoices` as i
