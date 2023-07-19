@@ -264,7 +264,7 @@ when w.name = '' then ''
 when w.name = '' then ''
 
 
-when w.name = 'Dammam Warehouse'
+when w.name = 'Dammam Warehouse' 
 when w.name = 'Dubai Warehouse'
 when w.name = 'Jeddah Warehouse'
 when w.name = 'Riyadh Warehouse'
