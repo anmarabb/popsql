@@ -3,6 +3,7 @@ create or replace view `floranow.Floranow_ERP.stg_invoices` as
 SELECT
 
 i.printed_at
+
 max(i.financial_administration_id) as invoice_financial_administration_id ,
 max(source_system) as source_system,
 
