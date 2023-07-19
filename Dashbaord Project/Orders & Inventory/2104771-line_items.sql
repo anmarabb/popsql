@@ -260,7 +260,7 @@ case when w.name is not null then w.name  end as warehouse,
 
 case
 when w.name = 'Dammam Warehouse' then ''
-when w.name = 'Dubai Warehouse' then ''
+when w.name = 'Dubai Warehouse' then 'DXB'
 when w.name = 'Jeddah Warehouse' then ''
 when w.name = 'Riyadh Warehouse' then ''
 when w.name = 'Tabuk Warehouse' then ''
