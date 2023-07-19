@@ -162,7 +162,9 @@ prep_registered_clients.registered_clients,
 i.total_amount - i.total_tax = stg_invoice_items.price_without_tax as match_check,
 
 stg_users.company_name,
-stg_userswarehouses
+stg_users.warehouses,
+
+
 
 from `floranow.erp_prod.invoices` as i
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = i.customer_id
