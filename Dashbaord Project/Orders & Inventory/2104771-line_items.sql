@@ -272,7 +272,19 @@ when w.name = 'Hafar WareHouse' then ''
 when w.name = 'Kuwait Warehouse' then ''
 else null end as 
 
-
+case
+when w.name = 'Dammam Warehouse' then ''
+when w.name = 'Dubai Warehouse' then ''
+when w.name = 'Jeddah Warehouse' then ''
+when w.name = 'Riyadh Warehouse' then ''
+when w.name = 'Tabuk Warehouse' then ''
+when w.name = 'Hail Warehouse' then ''
+when w.name = 'Qassim Warehouse' then ''
+when w.name = 'Medina Warehouse' then ''
+when w.name = 'Jouf WareHouse' then ''
+when w.name = 'Hafar WareHouse' then ''
+when w.name = 'Kuwait Warehouse' then ''
+else null end as 
 
 case
     when li.order_type in ('ADDITIONAL') and msh.name is null  then 'ADDITIONAL Not from shipment'
