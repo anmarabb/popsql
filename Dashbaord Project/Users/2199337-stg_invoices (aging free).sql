@@ -124,6 +124,3 @@ DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) AS
 
 FROM
   `floranow.erp_prod.invoices` AS i
-
-GROUP BY
-  customer_id
