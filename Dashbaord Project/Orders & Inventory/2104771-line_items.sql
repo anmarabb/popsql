@@ -286,6 +286,19 @@ when w.name = 'Hafar WareHouse' then 'Global Arabia Trading'
 when w.name = 'Kuwait Warehouse' then 'Design Cell'
 else null end as Consignee,
 
+case
+when w.name = 'Dammam Warehouse' then 'Global Arabia Trading'
+when w.name = 'Dubai Warehouse' then 'Flora Express Flowers Trading'
+when w.name = 'Jeddah Warehouse' then 'Global Arabia Trading'
+when w.name = 'Riyadh Warehouse' then 'Global Arabia Trading'
+when w.name = 'Tabuk Warehouse' then 'Global Arabia Trading'
+when w.name = 'Hail Warehouse' then 'Global Arabia Trading'
+when w.name = 'Qassim Warehouse' then 'Global Arabia Trading'
+when w.name = 'Medina Warehouse' then 'Global Arabia Trading'
+when w.name = 'Jouf WareHouse' then 'Global Arabia Trading'
+when w.name = 'Hafar WareHouse' then 'Global Arabia Trading'
+when w.name = 'Kuwait Warehouse' then 'Design Cell'
+else null end as Consignee,
 
 
 case
