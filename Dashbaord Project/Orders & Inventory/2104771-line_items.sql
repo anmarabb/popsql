@@ -257,7 +257,7 @@ case when w.name is not null then w.name  end as warehouse,
  w.country as warehouse_country,
 
 
-
+case
 
 
 
