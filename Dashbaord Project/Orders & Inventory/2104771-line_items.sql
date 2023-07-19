@@ -264,7 +264,17 @@ when w.name = '' then ''
 when w.name = '' then ''
 
 
-
+Dammam Warehouse
+Dubai Warehouse
+Jeddah Warehouse
+Riyadh Warehouse
+Tabuk Warehouse
+Hail Warehouse
+Qassim Warehouse
+Medina Warehouse
+Jouf WareHouse
+Hafar WareHouse
+Kuwait Warehouse
 
 
 
