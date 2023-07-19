@@ -32,7 +32,7 @@ date(i.deleted_at) as deleted_at,
 
 --date(i.meta_data.printed_at) as meta_printed_at,
 --date(i.meta_data.delivery_date) as meta_delivery_date,
-date(i.meta_data.invoice_date) as meta_invoice_date,
+--date(i.meta_data.invoice_date) as meta_invoice_date,
 date(i.meta_data.created_at) as meta_created_at,
 
 i.due_date,
