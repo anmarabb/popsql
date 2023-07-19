@@ -273,7 +273,7 @@ when w.name = 'Hail Warehouse'
 when w.name = 'Qassim Warehouse'
 when w.name = 'Medina Warehouse'
 when w.name = 'Jouf WareHouse'
-'Hafar WareHouse'
+when w.name = 'Hafar WareHouse'
 'Kuwait Warehouse'
 
 
