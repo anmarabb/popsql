@@ -281,7 +281,7 @@ when w.name = 'Tabuk Warehouse' then 'Global Arabia Trading'
 when w.name = 'Hail Warehouse' then 'Global Arabia Trading'
 when w.name = 'Qassim Warehouse' then 'Global Arabia Trading'
 when w.name = 'Medina Warehouse' then 'Global Arabia Trading'
-when w.name = 'Jouf WareHouse' then ''
+when w.name = 'Jouf WareHouse' then 'Global Arabia Trading'
 when w.name = 'Hafar WareHouse' then ''
 when w.name = 'Kuwait Warehouse' then ''
 else null end as 
