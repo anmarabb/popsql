@@ -48,7 +48,7 @@ left join `erp_prod.payment_transactions` pt on mi.documentable_id = pt.id and m
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
-and customer.financial_administration_id = 1
+--and customer.financial_administration_id = 1
 and mi.balance != 0
 and ((mi.entry_type = 'DEBIT' AND round(residual, 2) >= 0) OR (mi.entry_type = 'CREDIT' AND round(mi.residual, 2) <= 0))
 
