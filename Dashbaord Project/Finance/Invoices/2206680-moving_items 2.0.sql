@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.mo` as
+create or replace view `floranow.Floranow_ERP.mov` as
 
 
 select 
