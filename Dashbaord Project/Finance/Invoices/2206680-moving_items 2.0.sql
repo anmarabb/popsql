@@ -2,7 +2,6 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 
 select 
-customer.id, 
 customer.name as Customer,
 case 
 when customer.company_id = 3 then 'Bloomax Flowers LTD'
