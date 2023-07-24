@@ -30,7 +30,7 @@ mi.reconciled,
 mi.residual,
 mi.documentable_type,
 mi.balance,
-
+]
 mi.currency,
 
 mi.entry_type,
