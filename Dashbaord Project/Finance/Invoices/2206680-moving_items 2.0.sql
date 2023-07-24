@@ -24,6 +24,8 @@ case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 
 
 case when entry_type = 'DEBIT' then balance else 0 end as total_debits,
+
+
 case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then balance else 0 end as paymnets,
 
 
