@@ -29,7 +29,6 @@ mi.source_system,
 mi.reconciled,
 mi.residual,
 mi.documentable_type,
-
 mi.balance,
 
 mi.currency,
