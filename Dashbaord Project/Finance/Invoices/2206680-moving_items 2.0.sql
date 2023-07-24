@@ -5,6 +5,8 @@ select
 customer.id, 
 customer.name,
 
+
+
 case
 when mi.documentable_id is not null and mi.documentable_type is not null then
 
