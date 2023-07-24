@@ -21,7 +21,7 @@ when mi.documentable_id is not null and mi.documentable_type is not null then
  else null end as doc_number,
 
 case when entry_type = 'CREDIT' then balance else 0 end as total_credits_2,
-case when entry_type = 'DEBIT' then balance else 0 end as total_debits
+case when entry_type = 'DEBIT' then balance else 0 end as total_debits,
     CASE
         WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
             CASE 
