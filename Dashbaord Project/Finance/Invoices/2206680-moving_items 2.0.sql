@@ -1,3 +1,6 @@
+create or replace view `floranow.Floranow_ERP.invoices` as
+
+
 select 
 customer.id, 
 customer.name,
