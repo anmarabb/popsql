@@ -27,7 +27,7 @@ case when entry_type = 'DEBIT' then balance else 0 end as total_debits,
 
 
 case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then balance else 0 end as paymnets,
-case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then balance else 0 end as credit,
+case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then balance else 0 end as credit_not,
 
 
 case when entry_type = 'CREDIT' then residual else 0 end as unreconciled_credits,
