@@ -49,6 +49,6 @@ and customer.financial_administration_id = 1
 and mi.balance != 0
 and ((mi.entry_type = 'DEBIT' AND round(residual, 2) >= 0) OR (mi.entry_type = 'CREDIT' AND round(mi.residual, 2) <= 0))
 
-and customer.id=965
+--and customer.id=965
 
 order by mi.date desc
