@@ -1,4 +1,4 @@
-create or replace view `floranow.Floranow_ERP.move_items` as
+create or replace table `floranow.Floranow_ERP.move_items` as
 
 
 select 
