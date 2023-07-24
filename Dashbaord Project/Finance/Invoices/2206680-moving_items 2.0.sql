@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 select 
 customer.id, 
-customer.name as customer,
+customer.name as Customer,
 case 
 when customer.company_id = 3 then 'Bloomax Flowers LTD'
 when customer.company_id = 2 then 'Global Floral Arabia tr'
