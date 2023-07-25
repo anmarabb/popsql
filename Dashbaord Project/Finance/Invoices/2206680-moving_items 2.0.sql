@@ -6,13 +6,13 @@ customer.name as Customer,
 customer.financial_administration_id,
 
                  case --financial ID
-        when fad.id = 1 then 'KSA'
-        when fad.id = 2 then 'UAE'
-        when fad.id = 3 then 'Jordan'
-        when fad.id = 4 then 'kuwait'
-        when fad.id = 5 then 'Qatar'
-        when fad.id = 6 then 'Bulk'
-        when fad.id = 7 then 'Internal'
+        when customer.financial_administration_id = 1 then 'KSA'
+        when customer.financial_administration_id = 2 then 'UAE'
+        when customer.financial_administration_id = 3 then 'Jordan'
+        when customer.financial_administration_id = 4 then 'kuwait'
+        when customer.financial_administration_id = 5 then 'Qatar'
+        when customer.financial_administration_id = 6 then 'Bulk'
+        when customer.financial_administration_id = 7 then 'Internal'
         else 'check_my_logic'
         end as financial_administration,
 
