@@ -496,8 +496,7 @@ li.parent_line_item_id,
 
 
 
-case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop'
-else 'nu'
+case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop' else 'null',
 
 
 from `floranow.erp_prod.invoice_items`  as ii 
