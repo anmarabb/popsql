@@ -500,7 +500,7 @@ case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6'
 
 
 Astra Shop Sales From Astra Products 
-Astra Shop Sales From Non Astra Prudyct = 3913
+Astra Shop Sales From Non Astra Prudyct 
 
 
 
