@@ -505,6 +505,8 @@ when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REM
 then 'Astra Shop' else 'null' end as astra_shop,
 
 
+
+
 'Astra Shop Sales From Astra Products '
 'Astra Shop Sales From Non Astra Prudyct' 
 
