@@ -506,7 +506,7 @@ when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REM
 when li_suppliers.supplier_name = 'ASTRA Farms' then 'Astra'
 when ii.meta_data.supplier_name in ('Astra Farm','Astra farm Barcode') then 'Astra'
 when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') then 'Astra'
-
+)
 then 'Astra Shop' else 'null' end as astra_shop,
 
 
