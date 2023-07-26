@@ -502,6 +502,8 @@ case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6'
 case 
 when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') and 
 
+
+
 then 'Astra Shop' else 'null' end as astra_shop,
 
 
