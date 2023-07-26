@@ -496,7 +496,7 @@ li.parent_line_item_id,
 
 
 
-case when stg_users.customer in
+case when stg_users.customer in 
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
