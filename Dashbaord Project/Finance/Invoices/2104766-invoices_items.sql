@@ -496,7 +496,7 @@ li.parent_line_item_id,
 
 
 
-case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA7')
+case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA78')
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
