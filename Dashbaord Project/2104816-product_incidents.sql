@@ -104,7 +104,7 @@ case when li.order_type = 'OFFLINE' and orr.standing_order_id is not null then '
 fs.name as feed_source,
 
 case
-when w.name = 'Dammam Warehouse' then 'FN-Dammam'
+when w2.name = 'Dammam Warehouse' then 'FN-Dammam'
 when w.name = 'Dubai Warehouse' then 'DXB'
 when w.name = 'Jeddah Warehouse' then 'FN-Jeddah'
 when w.name = 'Riyadh Warehouse' then 'FN-Riyadh'
