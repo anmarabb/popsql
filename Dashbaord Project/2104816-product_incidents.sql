@@ -153,7 +153,6 @@ when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model_details,
 
-
 case 
 when stock.id in (12,13) then 'Internal'
 when stock.id in (10,11,618,619) then 'Internal'
@@ -164,7 +163,7 @@ when stock.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commi
 when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling'
 when stock.id in (613,614,615) then 'Internal'
 when stock.id in (616,617) then 'Internal'
-when stock.id in (621) then 'Internal - BX DMM'
+when stock.id in (621) then 'Internal'
 when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model_details,
