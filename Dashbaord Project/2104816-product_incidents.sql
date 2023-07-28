@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.product_incidents` as
 select 
 
 
-concat ('NCR-',li.departure_date,msh.id) as n
+concat ('NCR-',li.departure_date,msh.id) as N
 
 
 pi.incident_type, --MISSING, DAMAGED, EXTRA, RETURNED, QUALITY_ISSUES, TRANSACTIONAL_ISSUES, INCORRECT_ITEM
