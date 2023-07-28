@@ -139,17 +139,17 @@ reseller.name as reseller,
 concat(stock.id, " - ", reseller.name , " - ", stock.name ) as full_stock_name, --stock_id
 
 case 
-when stock in (12,13) then 'Internal - Jumeriah'
-when stock in (10,11,618,619) then 'Internal - Spinnyes'
-when stock in (16,17) then 'Internal - TBF'
-when stock in (15) then 'Commission Based - Wish Flowers'
-when stock in (304,305) then 'Commission Based - Ward'
-when stock in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
-when stock in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
-when stock in (613,614,615) then 'Internal - BX Shop'
-when stock in (616,617) then 'Internal - Wedding & Events'
-when stock in (621) then 'Internal - BX DMM'
-when stock in (522,484,567,566,531,530) then 'Reselling'
+when stock.id in (12,13) then 'Internal - Jumeriah'
+when stock.id in (10,11,618,619) then 'Internal - Spinnyes'
+when stock.id in (16,17) then 'Internal - TBF'
+when stock.id in (15) then 'Commission Based - Wish Flowers'
+when stock.id in (304,305) then 'Commission Based - Ward'
+when stock.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
+when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
+when stock.id in (613,614,615) then 'Internal - BX Shop'
+when stock.id in (616,617) then 'Internal - Wedding & Events'
+when stock.id in (621) then 'Internal - BX DMM'
+when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model,
 
