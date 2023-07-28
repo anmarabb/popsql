@@ -151,7 +151,7 @@ when stock.id in (616,617) then 'Internal - Wedding & Events'
 when stock.id in (621) then 'Internal - BX DMM'
 when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
-end as stock_model_det,
+end as stock_model_details,
 
 
 
