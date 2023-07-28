@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.product_incidents` as
 select 
 
 
-concat ('NCR-',li.departure_date,'-', sh.id) as NCR,
+--concat ('NCR-',li.departure_date,'-', sh.id) as NCR,
 concat ('NCR-', DATE_FORMAT(li.departure_date, '%y%m%d'), '-', sh.id) as NCR
 
 
