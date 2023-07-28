@@ -163,7 +163,7 @@ when st.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,41
 when st.id in (614,615) then 'Internal - BX Shop'
 when st.id in (616,617) then 'Internal - Wedding & Events'
 
-when st.id in (616,617) then 'Internal - Wedding & Events'
+when st.id in (616,617) then 'Internal - BX DMM'
 
 
 when st.id in (522,484,567,566,531,530) then 'Reselling'
