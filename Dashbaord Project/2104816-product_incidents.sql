@@ -76,6 +76,9 @@ li.currency,
 li.fob_currency,
 li.departure_date,
 
+
+
+
 --LEAD(pi.created_at) OVER(PARTITION BY pi.line_item_id ORDER BY  pi.line_item_id,pi.created_at) as lead_created_at,
 --TIMESTAMP_DIFF(LEAD(pi.created_at) OVER(PARTITION BY pi.line_item_id ORDER BY  pi.line_item_id,pi.created_at), pi.created_at,MILLISECOND) AS millisecond_difference,
 
