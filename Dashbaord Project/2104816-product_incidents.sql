@@ -76,7 +76,7 @@ li.currency,
 li.fob_currency,
 li.departure_date,
 
-
+co
 
 
 --LEAD(pi.created_at) OVER(PARTITION BY pi.line_item_id ORDER BY  pi.line_item_id,pi.created_at) as lead_created_at,
