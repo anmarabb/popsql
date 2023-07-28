@@ -156,7 +156,7 @@ end as stock_model_details,
 
 case 
 when stock.id in (12,13) then 'Internal'
-when stock.id in (10,11,618,619) then 'Internal - Spinnyes'
+when stock.id in (10,11,618,619) then 'Internal'
 when stock.id in (16,17) then 'Internal'
 when stock.id in (15) then 'Commission Based'
 when stock.id in (304,305) then 'Commission Based'
