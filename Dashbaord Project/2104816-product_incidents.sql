@@ -166,7 +166,7 @@ when stock.id in (616,617) then 'Internal'
 when stock.id in (621) then 'Internal'
 when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
-end as stock_model_details,
+end as stock_model_,
 
 
 li.category as item_category,
