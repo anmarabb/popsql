@@ -156,6 +156,7 @@ end as stock_model_details,
 
 
 
+
 li.category as item_category,
 li.category2 as item_sub_category,
 
