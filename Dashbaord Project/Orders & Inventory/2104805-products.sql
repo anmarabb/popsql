@@ -153,19 +153,35 @@ concat(st.id, " - ", reseller.name , " - ", st.name ) as full_stock_name, --stoc
 
 
 case 
-when st.id in (12,13) then 'Internal - Jumeriah'
-when st.id in (10,11,618,619) then 'Internal - Spinnyes'
-when st.id in (16,17) then 'Internal - TBF'
-when st.id in (15) then 'Commission Based - Wish Flowers'
-when st.id in (304,305) then 'Commission Based - Ward'
-when st.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
-when st.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
-when st.id in (613,614,615) then 'Internal - BX Shop'
-when st.id in (616,617) then 'Internal - Wedding & Events'
-when st.id in (621) then 'Internal - BX DMM'
-when st.id in (522,484,567,566,531,530) then 'Reselling'
+when stock.id in (12,13) then 'Internal - Jumeriah'
+when stock.id in (10,11,618,619) then 'Internal - Spinnyes'
+when stock.id in (16,17) then 'Internal - TBF'
+when stock.id in (15) then 'Commission Based - Wish Flowers'
+when stock.id in (304,305) then 'Commission Based - Ward'
+when stock.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based - Astra Express'
+when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling Event'
+when stock.id in (613,614,615) then 'Internal - BX Shop'
+when stock.id in (616,617) then 'Internal - Wedding & Events'
+when stock.id in (621) then 'Internal - BX DMM'
+when stock.id in (522,484,567,566,531,530) then 'Reselling'
+else 'Reselling'
+end as stock_model_details,
+
+case 
+when stock.id in (12,13) then 'Internal'
+when stock.id in (10,11,618,619) then 'Internal'
+when stock.id in (16,17) then 'Internal'
+when stock.id in (15) then 'Commission Based'
+when stock.id in (304,305) then 'Commission Based'
+when stock.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commission Based'
+when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412) then 'Reselling'
+when stock.id in (613,614,615) then 'Internal'
+when stock.id in (616,617) then 'Internal'
+when stock.id in (621) then 'Internal'
+when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model,
+
 
 --sometimes departure_date is null when the product source is imported from exel.
 --
