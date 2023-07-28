@@ -5,7 +5,7 @@ select
 
 --concat ('NCR-',li.departure_date,'-', sh.id) as NCR,
 
-concat('NCR-', FORMAT_TIMESTAMP('%y%m%d', li.departure_date), '-', sh.id) as NCR
+concat('NCR-', FORMAT_TIMESTAMP('%y%m%d', li.departure_date), '-', sh.id) as NCR,
 
 
 
