@@ -4,6 +4,7 @@ select
 
 
 concat ('NCR-',li.departure_date,'-', sh.id) as NCR,
+concat ('NCR-', DATE_FORMAT(li.departure_date, '%y%m%d'), '-', sh.id) as NCR
 
 
 pi.incident_type, --MISSING, DAMAGED, EXTRA, RETURNED, QUALITY_ISSUES, TRANSACTIONAL_ISSUES, INCORRECT_ITEM
