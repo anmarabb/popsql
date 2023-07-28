@@ -153,6 +153,9 @@ when stock.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model,
 
+
+
+
 li.category as item_category,
 li.category2 as item_sub_category,
 
