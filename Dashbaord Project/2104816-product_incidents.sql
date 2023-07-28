@@ -111,10 +111,10 @@ when w2.name = 'Riyadh Warehouse' then 'FN-Riyadh'
 when w2.name = 'Tabuk Warehouse' then 'FN-Tabuk'
 when w2.name = 'Hail Warehouse' then 'FN-Hail'
 when w2.name = 'Qassim Warehouse' then 'FN-Qassim'
-when w.name = 'Medina Warehouse' then 'FN-Medinah'
-when w.name = 'Jouf WareHouse' then 'FN-Jouf'
-when w.name = 'Hafar WareHouse' then 'FN-Hafar'
-when w.name = 'Kuwait Warehouse' then 'KWT-Design Cell'
+when w2.name = 'Medina Warehouse' then 'FN-Medinah'
+when w2.name = 'Jouf WareHouse' then 'FN-Jouf'
+when w2.name = 'Hafar WareHouse' then 'FN-Hafar'
+when w2.name = 'Kuwait Warehouse' then 'KWT-Design Cell'
 else null end as box_label,
 
 
