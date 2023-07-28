@@ -101,7 +101,19 @@ case when li.order_type = 'OFFLINE' and orr.standing_order_id is not null then '
 
 fs.name as feed_source,
 
-
+case
+when w.name = 'Dammam Warehouse' then 'FN-Dammam'
+when w.name = 'Dubai Warehouse' then 'DXB'
+when w.name = 'Jeddah Warehouse' then 'FN-Jeddah'
+when w.name = 'Riyadh Warehouse' then 'FN-Riyadh'
+when w.name = 'Tabuk Warehouse' then 'FN-Tabuk'
+when w.name = 'Hail Warehouse' then 'FN-Hail'
+when w.name = 'Qassim Warehouse' then 'FN-Qassim'
+when w.name = 'Medina Warehouse' then 'FN-Medinah'
+when w.name = 'Jouf WareHouse' then 'FN-Jouf'
+when w.name = 'Hafar WareHouse' then 'FN-Hafar'
+when w.name = 'Kuwait Warehouse' then 'KWT-Design Cell'
+else null end as box_label,
 
 
 
