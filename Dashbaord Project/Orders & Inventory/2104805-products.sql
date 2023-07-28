@@ -164,7 +164,6 @@ when st.id in (613,614,615) then 'Internal - BX Shop'
 when st.id in (616,617) then 'Internal - Wedding & Events'
 when st.id in (621) then 'Internal - BX DMM'
 
-
 when st.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model,
