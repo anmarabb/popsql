@@ -166,7 +166,12 @@ stg_users.warehouses,
 case when stg_users.email  like '%fake.com%' then 'fake.com' else 'normal' end as fake_email,
 
 
-pri;
+from `floranow.erp_prod.invoices` as i
+left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = i.customer_id
+left join prep_registered_clients as prep_registered_clients on prep_registered_clients.financial_administration = stg_users.financial_administration
+
+left join `floranow.Floranow_ERP.stg_paymnets` as stg_paymnets on stg_paymnets.invoice_id = i.id
+left join `floranow.Floranow_ERP.stg_invoice_items` as stg_invoice_items on stg_invoice_items.invoice_id = i.id;
 
 
 
