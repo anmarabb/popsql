@@ -166,7 +166,7 @@ stg_users.warehouses,
 case when stg_users.email  like '%fake.com%' then 'fake.com' else 'normal' end as fake_email,
 
 
-printe;
+pri;
 
 
 
