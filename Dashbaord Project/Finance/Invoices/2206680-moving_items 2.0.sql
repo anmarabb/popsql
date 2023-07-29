@@ -74,7 +74,7 @@ join `erp_prod.users` customer on mi.user_id = customer.id
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
 left join `erp_prod.invoices` as cn on mi.documentable_id = cn.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'CREDIT'
 left join `erp_prod.payment_transactions` pt on mi.documentable_id = pt.id and mi.documentable_type = 'PaymentTransaction' and  mi.entry_type = 'CREDIT'
-left join `floranow.erp_prod.warehouses`  w on u.warehouse_id = w.id
+left join `floranow.erp_prod.warehouses`  w on customer.warehouse_id = w.id
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
