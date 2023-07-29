@@ -5,6 +5,7 @@ select
 customer.name as Customer,
 customer.debtor_number,
 customer.financial_administration_id,
+w.name as warehouses,
 
                  case --financial ID
         when customer.financial_administration_id = 1 then 'KSA'
