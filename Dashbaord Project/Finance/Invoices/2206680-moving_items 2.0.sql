@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 select 
 customer.name as Customer,
-customer
+customer.debtor_number
 customer.financial_administration_id,
 
                  case --financial ID
