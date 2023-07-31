@@ -91,7 +91,7 @@ CASE
 		WHEN mi.source_system = 'ODOO' THEN 3
 		WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN customer.company_id 
 	END
-END AS reporting_company_id
+END AS reporting_company_id,
 
 
 
