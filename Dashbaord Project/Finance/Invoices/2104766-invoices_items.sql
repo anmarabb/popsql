@@ -244,7 +244,7 @@ when ii.meta_data.supplier_name in ('Astra Farm','Astra farm Barcode') then 'Ast
 
 when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') then 'Astra'
 
-when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh') and  parent_li_suppliers.supplier_name in ('Holex','Floradelight', 'Waridi', 'Sierra') then 'Astra'
+when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh') and  parent_li_suppliers.supplier_name in ('Holex','Floradelight', 'Waridi', 'Sierra','Sierra') then 'Astra'
 
 
 
