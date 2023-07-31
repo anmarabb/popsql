@@ -89,7 +89,7 @@ case
 end as reporting_company_id,
 
 CASE
-	WHEN u.warehouse_id IN (10, 79, 76, 43) THEN
+	WHEN customer.warehouse_id IN (10, 79, 76, 43) THEN
 	CASE
 		WHEN mi.date > '2023-07-09' THEN u.company_id 
 		WHEN mi.date <= '2023-07-09' THEN 
