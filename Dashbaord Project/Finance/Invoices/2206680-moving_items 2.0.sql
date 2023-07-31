@@ -71,7 +71,7 @@ mi.entry_type,
 
 
 case
-	when u.warehouse_id in(10, 79, 76, 43) then
+	when customer.warehouse_id in(10, 79, 76, 43) then
 	case
 		when mi.date > '2023-07-09' then u.company_id 
 		when mi.date <= '2023-07-09' then 
