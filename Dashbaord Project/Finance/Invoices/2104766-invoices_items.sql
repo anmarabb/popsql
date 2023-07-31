@@ -58,6 +58,7 @@ else  stg_users.city end as city,
 
 
 
+
 sh.name as shipment,
 
 
