@@ -88,6 +88,26 @@ case
 	end
 end as reporting_company_id,
 
+CASE
+	WHEN u.warehouse_id IN (10, 79, 76, 43) THEN
+	CASE
+		WHEN mi.date > '2023-07-09' THEN u.company_id 
+		WHEN mi.date <= '2023-07-09' THEN 
+		CASE 
+			WHEN REGEXP_CONTAINS(u.debtor_number, r'^b') THEN 3
+			WHEN NOT REGEXP_CONTAINS(u.debtor_number, r'^b') THEN 
+			CASE 
+				WHEN mi.source_system = 'ODOO' THEN 3
+				WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN u.company_id 
+		    END
+		END
+	END
+	WHEN u.warehouse_id NOT IN (10, 79, 76, 43) OR u.warehouse_id IS NULL THEN
+	CASE
+		WHEN mi.source_system = 'ODOO' THEN 3
+		WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN u.company_id 
+	END
+END AS reporting_company_id_2
 
 
 
