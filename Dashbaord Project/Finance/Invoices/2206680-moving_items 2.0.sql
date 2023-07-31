@@ -98,7 +98,7 @@ CASE
 			WHEN NOT REGEXP_CONTAINS(customer.debtor_number, r'^b') THEN 
 			CASE 
 				WHEN mi.source_system = 'ODOO' THEN 3
-				WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN u.company_id 
+				WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN customer.company_id 
 		    END
 		END
 	END
