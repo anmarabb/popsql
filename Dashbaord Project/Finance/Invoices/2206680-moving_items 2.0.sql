@@ -85,7 +85,7 @@ case
 		when mi.source_system = 'ODOO' then 3
 		when mi.source_system in('FLORANOW_ERP', 'FLORISOFT') then u.company_id 
 	end
-end as reporting_company_id
+end as reporting_company_id,
 
 from `erp_prod.move_items` mi
 join `erp_prod.users` customer on mi.user_id = customer.id
