@@ -87,6 +87,8 @@ case
 	end
 end as reporting_company_id,
 
+
+
 from `erp_prod.move_items` mi
 join `erp_prod.users` customer on mi.user_id = customer.id
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
