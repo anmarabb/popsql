@@ -94,7 +94,7 @@ CASE
 		WHEN mi.date > '2023-07-09' THEN customer.company_id 
 		WHEN mi.date <= '2023-07-09' THEN 
 		CASE 
-			WHEN REGEXP_CONTAINS(u.debtor_number, r'^b') THEN 3
+			WHEN REGEXP_CONTAINS(customer.debtor_number, r'^b') THEN 3
 			WHEN NOT REGEXP_CONTAINS(u.debtor_number, r'^b') THEN 
 			CASE 
 				WHEN mi.source_system = 'ODOO' THEN 3
