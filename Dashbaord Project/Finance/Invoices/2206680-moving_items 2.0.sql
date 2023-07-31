@@ -102,7 +102,7 @@ CASE
 		    END
 		END
 	END
-	WHEN u.warehouse_id NOT IN (10, 79, 76, 43) OR u.warehouse_id IS NULL THEN
+	WHEN u.warehouse_id NOT IN (10, 79, 76, 43) OR customer.warehouse_id IS NULL THEN
 	CASE
 		WHEN mi.source_system = 'ODOO' THEN 3
 		WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN u.company_id 
