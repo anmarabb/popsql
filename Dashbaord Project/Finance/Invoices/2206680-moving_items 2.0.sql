@@ -80,13 +80,15 @@ case
 			when mi.source_system in('FLORANOW_ERP', 'FLORISOFT') then customer.company_id 
 		end
 	end
-    
+
 	when customer.warehouse_id not in(10, 79, 76, 43) or customer.warehouse_id is null then
 	case
 		when mi.source_system = 'ODOO' then 3
 		when mi.source_system in('FLORANOW_ERP', 'FLORISOFT') then customer.company_id 
 	end
 end as reporting_company_id,
+
+
 
 
 
