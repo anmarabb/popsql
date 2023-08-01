@@ -79,7 +79,7 @@ CASE
 		WHEN mi.date < '2023-07-10' THEN 
 		CASE 
 			WHEN REGEXP_CONTAINS(customer.debtor_number, '^B') THEN 3
-			WHEN NOT REGEXP_CONTAINS(customer.debtor_number, '^B') THEN 
+			WHEN NOT REGEXP_CONTAINS(customer.debtor_number, r'^B') THEN 
 			CASE 
 				WHEN mi.source_system = 'ODOO' THEN 3
 				WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN customer.company_id 
