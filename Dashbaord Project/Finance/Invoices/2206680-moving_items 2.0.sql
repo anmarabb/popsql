@@ -100,7 +100,7 @@ CASE
 END AS reporting_company_id,
 
 
-case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' eles, 
+case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' e, 
 
 
 from `erp_prod.move_items` mi
