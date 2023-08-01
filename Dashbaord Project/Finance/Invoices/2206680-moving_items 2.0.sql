@@ -94,7 +94,6 @@ CASE
 END AS reporting_company_id,
 
 
-WHEN customer.debtor_number IN ( 'shopqassim', 'shopcustomer', 'cashqassim', 'cashhail', 'SCJOUF', 'SCHAFAR', 'LNDQAS', 'LNDJOU', 'LNDHAI', 'LNDHAF', 'FNQSIM', 'CCJOUF', 'CCHAFAR', 'ASTJOU' ) THEN 3
 
 
 from `erp_prod.move_items` mi
