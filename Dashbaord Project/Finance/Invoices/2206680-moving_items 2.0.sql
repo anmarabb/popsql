@@ -74,7 +74,7 @@ mi.entry_type,
 
 CASE
 	WHEN customer.warehouse_id IN (10, 79, 76, 43) THEN
-	--CASE
+	CASE
 	--	WHEN mi.date >= '2023-07-10' THEN customer.company_id
 
 
