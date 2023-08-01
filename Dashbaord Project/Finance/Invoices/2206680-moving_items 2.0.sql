@@ -82,7 +82,6 @@ CASE
 		WHEN mi.date < '2023-07-10' THEN 
 		CASE 
 			WHEN REGEXP_CONTAINS(customer.debtor_number, '(?i)^B') THEN 3
-
             WHEN customer.debtor_number IN ( 'shopqassim', 'shopcustomer', 'cashqassim', 'cashhail', 'SCJOUF', 'SCHAFAR', 'CCJOUF', 'CCHAFAR' ) THEN 3
             --WHEN customer.debtor_number IN ('LNDQAS', 'LNDJOU', 'LNDHAI', 'LNDHAF', 'FNQSIM', 'ASTJOU' ) THEN 3
 
