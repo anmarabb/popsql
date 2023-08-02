@@ -149,7 +149,7 @@ case
     when li.order_type = 'IMPORT_INVENTORY' and p.departure_date is null  and  date(p.created_at) > current_date() then "Furue"
     when p.departure_date < current_date() then "Past"
     else "Ask Anmar"
-end as future_departure_date, 
+end as future_departure_date_2, 
 
 case 
     when p.departure_date > current_date() then "Furue"
