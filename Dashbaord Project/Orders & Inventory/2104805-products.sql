@@ -93,10 +93,7 @@ case
 end as order_type,
 
 
-case 
-    when li.order_type = 'IMPORT_INVENTORY' and p.departure_date is null  then date(p.created_at) 
-    else p.departure_date 
-end as departure_date, 
+
 
 case  
     when li.delivery_date is null and li.order_type in ('IMPORT_INVENTORY', 'EXTRA','MOVEMENT') then date(li.created_at)
