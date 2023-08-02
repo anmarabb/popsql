@@ -146,7 +146,7 @@ case
     when p.departure_date > current_date() then "Furue"
     when p.departure_date < current_date() then "Past"
 
-    else "As" 
+    else "Ask Anmar" 
 end as future_departure_date,
 
 
