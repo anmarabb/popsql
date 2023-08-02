@@ -145,6 +145,7 @@ end as departure_date,
 
 
 case 
+    when p.departure_date > current_date() then "Furue"
     when li.order_type = 'IMPORT_INVENTORY' and p.departure_date is null  and  date(p.created_at) > current_date() then "Furue"
     
     else p.departure_date 
