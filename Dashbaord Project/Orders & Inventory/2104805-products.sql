@@ -144,7 +144,10 @@ end as departure_date,
 
 
 
-
+case 
+    when li.order_type = 'IMPORT_INVENTORY' and p.departure_date is null  then date(p.created_at) 
+    else p.departure_date 
+end as departure_date, 
 
 case 
     when p.departure_date > current_date() then "Furue"
