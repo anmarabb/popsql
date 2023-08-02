@@ -142,6 +142,7 @@ case
     else p.departure_date 
 end as departure_date, 
 
+
 case 
     when p.departure_date > current_date() then "Furue"
     when p.departure_date < current_date() then "Past"
