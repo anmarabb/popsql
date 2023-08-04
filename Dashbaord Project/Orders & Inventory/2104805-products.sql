@@ -186,7 +186,7 @@ when st.id in (522,484,567,566,531,530)
 
 
     CASE
-            WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
+        WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
 
         WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
             CASE 
