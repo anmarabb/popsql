@@ -14,7 +14,7 @@ when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name
 --when ii.meta_data.supplier_name is null then li_suppliers.supplier_name else ii.meta_data.supplier_name
 else li_suppliers.supplier_name 
 end as supplier_name,
-*
+*/
 
 
 
