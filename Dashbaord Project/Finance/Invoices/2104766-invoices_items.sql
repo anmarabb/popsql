@@ -105,12 +105,7 @@ li_suppliers.supplier_name as li_erp_supplier_name,
 parent_li_suppliers.supplier_name as parent_li_supplier, --to discover orginal supplier
 
 --refactor
-case 
-when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name 
-when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
---when ii.meta_data.supplier_name is null then li_suppliers.supplier_name else ii.meta_data.supplier_name
-else li_suppliers.supplier_name 
-end as supplier_name,
+
 
 stg_users.company_name,
 
