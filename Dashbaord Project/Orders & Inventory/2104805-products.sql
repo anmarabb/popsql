@@ -186,6 +186,7 @@ when st.id in (522,484,567,566,531,530) then
 
     
      then 'Reselling'
+     
 
 
     CASE
