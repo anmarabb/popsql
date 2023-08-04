@@ -183,7 +183,7 @@ when st.id in (522,484,567,566,531,530) then
         when stg_suppliers.supplier_name = 'ASTRA' then 'Commission Based - Astra Express'
         else 'Reselling'
         end 
-     end
+     
 
 
 else null
