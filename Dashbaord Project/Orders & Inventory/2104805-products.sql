@@ -4,6 +4,9 @@ with CTE as
 (
 
 select
+
+
+
 p.id,
 p.feed_source_id,
 p.supplier_id,
