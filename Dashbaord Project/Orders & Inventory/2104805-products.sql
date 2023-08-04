@@ -179,7 +179,7 @@ when st.id in (621,620) then 'Internal - BX DMM'
 
 
 when st.id in (522,484,567,566,531,530) 
-(case when stg_suppliers.supplier_name = 'ASTRA' then 'Commission Based - Astra Express' else 'Reselling') then 'Reselling'
+    (case when stg_suppliers.supplier_name = 'ASTRA' then 'Commission Based - Astra Express' else 'Reselling') then 'Reselling'
 
 
 
