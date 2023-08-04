@@ -35,7 +35,6 @@ when mi.documentable_id is not null and mi.documentable_type is not null then
  end )
  else null end as doc_number,
 
-case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 
 
 
