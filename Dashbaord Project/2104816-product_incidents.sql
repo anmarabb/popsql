@@ -145,7 +145,7 @@ when stock.id in (16,17) then 'Internal - TBF'
 when stock.id in (15) then 'Commission Based - Wish Flowers'
 when stock.id in (304,305) then 'Commission Based - Ward'
 when stock.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91,527,564) then 'Commission Based - Astra Express'
-when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412,416,417,164,165,568,573) then 'Reselling Event'
+when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412,416,417,164,165,568,573) then  case  when stg_suppliers.supplier_name = 'ASTRA Farms' then 'Commission Based - Astra Express' else 'Reselling Event' end 
 when stock.id in (613,614,615,606,607,608) then 'Internal - BX Shop'
 when stock.id in (616,617) then 'Internal - Wedding & Events'
 when stock.id in (621,620) then 'Internal - BX DMM'
