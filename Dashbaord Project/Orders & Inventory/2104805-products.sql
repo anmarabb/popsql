@@ -175,7 +175,7 @@ when st.id in (128,129,18,19,22,23,266,267,486,526,529,565,90,91) then 'Commissi
 when st.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413,412,416,417,164,165,568,573) then 'Reselling Event'
 when st.id in (613,614,615,606,607,608) then 'Internal - BX Shop'
 when st.id in (616,617) then 'Internal - Wedding & Events'
-when st.id in (621,) then 'Internal - BX DMM'
+when st.id in (621,620) then 'Internal - BX DMM'
 when st.id in (522,484,567,566,531,530) then 'Reselling'
 else 'Reselling'
 end as stock_model_details,
