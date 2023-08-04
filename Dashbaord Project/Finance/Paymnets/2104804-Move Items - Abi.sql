@@ -148,4 +148,4 @@ where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT'
       ---- more filters----
 
 
-order by reconciled_anount, payment_transaction_number
+order by reconciled_anount, payment_transaction_numbe
