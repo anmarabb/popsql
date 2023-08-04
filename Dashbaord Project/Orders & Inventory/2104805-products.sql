@@ -7,7 +7,7 @@ select
 
 stg_suppliers.supplier_name as supplier,
 
-
+/
 case 
 when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name 
 --when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
