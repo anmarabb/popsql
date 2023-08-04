@@ -398,7 +398,7 @@ left join `floranow.erp_prod.sections` as sec on sec.id =loc.section_id
 
 left join  `floranow.erp_prod.line_items` as parent_li on parent_li.id = li.parent_line_item_id
 --left join `floranow.Floranow_ERP.suppliers` as stg_suppliers on stg_suppliers.id = p.supplier_id
-left join `floranow.Floranow_ERP.suppliers` as li_suppliers on li_suppliers.id = li.supplier_id
+left join `floranow.Floranow_ERP.suppliers` as stg_suppliers on li_suppliers.id = li.supplier_id
 
 
 left join floranow.erp_prod.feed_sources as fs on fs.id = p.origin_feed_source_id
