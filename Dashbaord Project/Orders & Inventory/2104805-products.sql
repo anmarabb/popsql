@@ -192,7 +192,7 @@ when st.id in (613,614,615,606,607,608) then 'Internal'
 when st.id in (616,617) then 'Internal'
 when st.id in (621,620) then 'Internal'
 when st.id in (522,484,567,566,531,530) then 'Reselling'
-else 'Reselling'
+else null
 end as stock_model,
 
 
