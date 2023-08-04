@@ -187,7 +187,6 @@ when st.id in (522,484,567,566,531,530) then
      end
 
 
-
 else null
 end as stock_model_details,
 
