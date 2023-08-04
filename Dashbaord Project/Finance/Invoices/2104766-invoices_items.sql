@@ -4,7 +4,12 @@ with
 prep_product_incidents as (select distinct line_item_id, count(*) as incidents_count from `floranow.erp_prod.product_incidents` group by 1  ),
 prep_registered_clients as (select financial_administration,count(*) as registered_clients from `floranow.Floranow_ERP.users` where account_type in ('External') and deleted_accounts != 'Deleted' group by financial_administration)   
 SELECT
-
+case 
+when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name 
+when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
+--when ii.meta_data.supplier_name is null then li_suppliers.supplier_name else ii.meta_data.supplier_name
+else li_suppliers.supplier_name 
+end as supplier_name,
 
 case when w.name is not null then w.name  end as warehouse,
 
