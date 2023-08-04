@@ -186,8 +186,7 @@ when st.id in (522,484,567,566,531,530)
 
 
     CASE
-        WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
-            CASE 
+c            CASE 
                 WHEN mi.documentable_type = 'PaymentTransaction' THEN 'PT' 
                 WHEN mi.entry_type = 'DEBIT' THEN 'INV' 
                 ELSE 'CN' 
