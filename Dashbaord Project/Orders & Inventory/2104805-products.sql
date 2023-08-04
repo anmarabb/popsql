@@ -87,7 +87,7 @@ case
     else 'Total Stock' 
 end as Stock_type,
 
-case 
+case  
     when li.order_type = 'OFFLINE' and orr.standing_order_id is not null then 'STANDING' 
     else li.order_type 
 end as order_type,
