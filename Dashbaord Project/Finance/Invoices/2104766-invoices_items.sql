@@ -11,6 +11,8 @@ when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
 else li_suppliers.supplier_name 
 end as supplier_name,
 
+
+
 case when w.name is not null then w.name  end as warehouse,
 
 case
