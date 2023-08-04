@@ -5,6 +5,7 @@ with CTE as
 
 select
 
+stg_suppliers.supplier_name as supplier,
 
 
 p.id,
