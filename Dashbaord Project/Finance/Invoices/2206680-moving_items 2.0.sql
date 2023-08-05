@@ -71,6 +71,7 @@ mi.residual,
 case when mi.entry_type = 'DEBIT' then () else end as residual,
 
 
+
 mi.documentable_type,
 mi.balance,
 mi.currency,
