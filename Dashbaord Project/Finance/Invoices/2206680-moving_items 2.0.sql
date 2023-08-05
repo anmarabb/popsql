@@ -12,8 +12,6 @@ case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.
 mi.balance, 
 
 
-
-
 mi.residual as raw_residual, --dont use
 
 
