@@ -49,7 +49,7 @@ case when entry_type = 'DEBIT' then balance else 0 end as total_debits,
 case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 
 --total_credits = 
-    case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then mibalance else 0 end as payments,
+    case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then mi.balance else 0 end as payments,
     case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then balance else 0 end as credit_nots,
      case when entry_type = 'CREDIT' and (mi.documentable_id is null or mi.documentable_type is null) then balance  as other_credit,
 
