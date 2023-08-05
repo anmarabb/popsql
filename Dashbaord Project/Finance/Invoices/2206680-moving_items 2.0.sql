@@ -108,6 +108,8 @@ case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' 
 
 case when i.id is not null then i.due_date else mi.date end as aging_date,
 
+
+
 from `erp_prod.move_items` mi
 join `erp_prod.users` customer on mi.user_id = customer.id
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
