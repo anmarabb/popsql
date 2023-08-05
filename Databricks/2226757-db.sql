@@ -1,4 +1,4 @@
---grower_portal_db
+-------------grower_portal_db
 
 # Database configuration
 driver = "org.postgresql.Driver"
