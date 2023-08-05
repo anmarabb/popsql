@@ -119,7 +119,6 @@ left join `floranow.erp_prod.warehouses`  w on customer.warehouse_id = w.id
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
---and customer.financial_administration_id = 1
 and mi.balance != 0
 --and ((mi.entry_type = 'DEBIT' AND round(residual, 2) >= 0) OR (mi.entry_type = 'CREDIT' AND round(mi.residual, 2) <= 0))
 
