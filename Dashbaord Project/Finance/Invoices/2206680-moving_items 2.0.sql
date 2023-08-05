@@ -8,6 +8,7 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 select 
 
 
+mi.balance,
 
 case when i.id is not null then date(i.due_date) else date(mi.date) end as aging_date,
 
