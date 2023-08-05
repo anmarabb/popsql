@@ -1,7 +1,7 @@
 create or replace table `floranow.Floranow_ERP.move_items` as
 
 
- case when date_diff( cast(current_date() as date ),cast(mi.aging_date as date), DAY) <= 30 then mi.balance else 0 end as up_to_30_days,
+ --case when date_diff( cast(current_date() as date ),cast(mi.aging_date as date), DAY) <= 30 then mi.balance else 0 end as up_to_30_days,
 
 
 
