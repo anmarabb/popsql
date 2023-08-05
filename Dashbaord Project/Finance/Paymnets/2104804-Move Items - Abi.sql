@@ -55,7 +55,6 @@ pt.transaction_type,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
 
-
     ---- filters----
 UNION ALL ------------------------------------query for unreconciled payment transactions amount------------------------------------------------------------
 
