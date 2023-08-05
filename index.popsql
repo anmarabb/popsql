@@ -56,5 +56,6 @@
   "2215626": "2215626-weekly user-level metrics.sql",
   "2226743": "Databricks/2226743-VP - (JDBC) - Full Refresh.sql",
   "2226748": "Databricks/2226748-MKP - (JDBC) - Full Refresh.sql",
-  "2226750": "Databricks/2226750-ERP - (JDBC) - Full Refresh.sql"
+  "2226750": "Databricks/2226750-ERP - (JDBC) - Full Refresh.sql",
+  "2226752": "Databricks/2226752-db.sql"
 }
