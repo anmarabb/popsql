@@ -1,4 +1,5 @@
 --grower_portal_db
+
 # Database configuration
 driver = "org.postgresql.Driver"
 #database_host = "prod-floranow.cluster-c47qrxmyb1ht.eu-central-1.rds.amazonaws.com"  #prduction don't use.
