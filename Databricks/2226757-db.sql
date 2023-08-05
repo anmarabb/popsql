@@ -2,7 +2,7 @@
 
 
 
-------------- grower_pomarketplace_prodrtal_db -------------
+------------- grower_portal_db -------------
 
 
 
