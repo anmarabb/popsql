@@ -1,5 +1,32 @@
 ------------- floranow_erp_db -------------
+from pyspark.sql import SparkSession #$500 per month
 
+# Database configuration
+driver = "org.postgresql.Driver"
+database_host = "erp-to-hevo.c47qrxmyb1ht.eu-central-1.rds.amazonaws.com" 
+database_port = "5432"
+database_name = "floranow_erp_db"
+user = "read_only"
+password = "dENW5_J9DXcS@7"
+url = f"jdbc:postgresql://{database_host}:{database_port}/{database_name}"
+
+# Create Spark session
+spark = SparkSession.builder.getOrCreate()
+
+# Test database connection
+try:
+    df = spark.read \
+        .format("jdbc") \
+        .option("driver", driver) \
+        .option("url", url) \
+        .option("user", user) \
+        .option("password", password) \
+        .option("dbtable", "(SELECT 1) as test") \
+        .load()
+
+    print("Database connection successful!")
+except Exception as e:
+    print("Database connection failed: ", str(e))
 
 
 
