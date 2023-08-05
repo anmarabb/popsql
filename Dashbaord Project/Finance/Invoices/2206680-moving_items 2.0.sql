@@ -12,6 +12,8 @@ case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.
 mi.balance, 
 
 
+total_debits - total_credits
+
 
 mi.residual as raw_residual, --dont use
 
@@ -57,7 +59,6 @@ when mi.documentable_id is not null and mi.documentable_type is not null then
 
 
 
-total_debits - total_credits
 
 
 case when entry_type = 'DEBIT' then mi.balance else 0 end as total_debits,
