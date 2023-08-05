@@ -65,7 +65,9 @@ case when entry_type = 'DEBIT' then residual else 0 end as unreconciled_debits,
 mi.date,
 mi.source_system,
 mi.reconciled,
+
 mi.residual,
+
 mi.documentable_type,
 mi.balance,
 mi.currency,
