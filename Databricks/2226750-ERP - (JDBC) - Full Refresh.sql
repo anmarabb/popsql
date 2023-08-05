@@ -119,5 +119,5 @@ with ThreadPoolExecutor(max_workers=num_threads) as pool:
 
 
 /*
-
+calculates and compares the row counts for the source (PostgreSQL) and destination (Databricks Delta Lake) tables. The output should help you verify that the ETL process was successful.
 */
