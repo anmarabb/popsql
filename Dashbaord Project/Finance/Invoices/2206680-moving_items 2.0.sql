@@ -14,7 +14,7 @@ mi.balance,
 mi.residual as raw_residual, --dont use
 
 
-case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
+case when entry_type = 'CREDIT' then (case when  mi.residual<0 then 0 else mi.residual end) else (case when mi.residual >0 then 0 else mi.residual  end) end else 0 end as unreconciled_credits,
 case when entry_type = 'DEBIT' then mi.residual else 0 end as unreconciled_debits,
 
 
