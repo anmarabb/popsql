@@ -1,6 +1,7 @@
 create or replace table `floranow.Floranow_ERP.move_items` as
 
-   -- sum(case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 30 then i.remaining_amount else 0 end) as up_to_30_days,
+   -- sum(case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 30 then mi.balance,
+ else 0 end) as up_to_30_days,
 
 
 select 
