@@ -7,7 +7,6 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 select 
 
-case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.residual end) else (case when mi.residual >0 then 0 else mi.residual  end) end as residual,
 mi.balance,
 
 mi.residual as raw_residual,
