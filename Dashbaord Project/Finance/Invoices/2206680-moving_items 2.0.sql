@@ -7,7 +7,7 @@
 
 select 
 
-case when i.id is not null then date(i.due_date) else dmi.date end as aging_date,
+case when i.id is not null then date(i.due_date) else date(mi.date end as aging_date,
 
 customer.name as Customer,
 customer.debtor_number,
