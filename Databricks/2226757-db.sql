@@ -32,6 +32,37 @@ except Exception as e:
 
 ----- db2
 
+# Database configuration
+driver = "org.postgresql.Driver"
+#database_host = "production-floranow-erp.cluster-c47qrxmyb1ht.eu-central-1.rds.amazonaws.com"    #prduction don't use.
+database_host = "production-floranow-erp.cluster-ro-c47qrxmyb1ht.eu-central-1.rds.amazonaws.com" #readonly use this.
+database_port = "5432"
+database_name = "floranow_erp_db"
+user = "read_only"
+password = "dENW5_J9DXcS@7"
+url = f"jdbc:postgresql://{database_host}:{database_port}/{database_name}"
+
+# Create Spark session
+spark = SparkSession.builder.getOrCreate()
+
+# Test database connection
+try:
+    df = spark.read \
+        .format("jdbc") \
+        .option("driver", driver) \
+        .option("url", url) \
+        .option("user", user) \
+        .option("password", password) \
+        .option("dbtable", "(SELECT 1) as test") \
+        .load()
+
+    print("Database connection successful!")
+except Exception as e:
+    print("Database connection failed: ", str(e))
+
+    #SSH Host: 3.126.18.195
+    #SSH user: tunnel
+
 
 
 
