@@ -80,7 +80,7 @@ mi.currency,
 mi.entry_type,
 
 
-mi.company_id as reporting_company_id,
+--mi.company_id as reporting_company_id,
 
 /**
 CASE
