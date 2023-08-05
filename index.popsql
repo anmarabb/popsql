@@ -53,5 +53,6 @@
   "2184074": "materialize/2184074-dev_draft.sql",
   "2184121": "materialize/2184121-index.sql",
   "2206680": "Dashbaord Project/Finance/Invoices/2206680-moving_items 2.0.sql",
-  "2215626": "2215626-weekly user-level metrics.sql"
+  "2215626": "2215626-weekly user-level metrics.sql",
+  "2226743": "Databricks/2226743-VP - (JDBC) - Full Refresh.sql"
 }
