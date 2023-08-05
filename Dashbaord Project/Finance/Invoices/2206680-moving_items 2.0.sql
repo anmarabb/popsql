@@ -75,7 +75,7 @@ mi.currency,
 mi.entry_type,
 
 
-mi
+mi.
 /**
 CASE
 	WHEN customer.warehouse_id IN (10, 79, 76, 43) THEN
