@@ -68,7 +68,7 @@ mi.reconciled,
 
 mi.residual,
 
-case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 el ) else () end as residual,
+case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else  ) else () end as residual,
 
 
 
