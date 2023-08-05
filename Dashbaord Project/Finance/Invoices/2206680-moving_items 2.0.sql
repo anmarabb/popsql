@@ -57,7 +57,7 @@ when mi.documentable_id is not null and mi.documentable_type is not null then
 
 
 
-total_debits - 
+total_debits - total_credits
 
 
 case when entry_type = 'DEBIT' then mi.balance else 0 end as total_debits,
