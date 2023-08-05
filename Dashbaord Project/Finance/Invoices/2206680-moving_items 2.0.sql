@@ -6,6 +6,9 @@
 
 
 select 
+
+case when i.id is not null then i.due_date else mi.date end as aging_date,
+
 customer.name as Customer,
 customer.debtor_number,
 customer.financial_administration_id,
