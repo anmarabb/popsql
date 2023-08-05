@@ -50,7 +50,7 @@ case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 
     case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then balance else 0 end as payments,
     case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then balance else 0 end as credit_nots,
-    as
+    as other
 
 
 case when entry_type = 'CREDIT' then residual else 0 end as unreconciled_credits,
