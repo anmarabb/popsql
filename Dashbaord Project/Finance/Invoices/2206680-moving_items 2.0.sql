@@ -68,7 +68,7 @@ mi.reconciled,
 
 mi.residual,
 
-case when mi.
+case when mi.documentable_type
 mi.documentable_type,
 mi.balance,
 mi.currency,
