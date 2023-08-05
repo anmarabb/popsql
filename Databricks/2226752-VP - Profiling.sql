@@ -76,3 +76,6 @@ for table_name, size, rows, cols in all_tables:
 # Print total size of all tables
 total_size_pretty = convert_bytes(total_size)
 print(f"Total size of all tables: {total_size_pretty}")
+
+
+=
