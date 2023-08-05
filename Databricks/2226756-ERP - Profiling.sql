@@ -78,3 +78,35 @@ total_size_pretty = convert_bytes(total_size)
 print(f"Total size of all tables: {total_size_pretty}")
 
 ----------
+
+
+from pyspark.sql import SparkSession
+
+# Create Spark Session
+spark = SparkSession.builder.getOrCreate()
+
+# Database configuration
+driver = "org.postgresql.Driver"
+database_host = "production-floranow-erp.cluster-ro-c47qrxmyb1ht.eu-central-1.rds.amazonaws.com"
+database_port = "5432"
+database_name = "floranow_erp_db"
+user = "read_only"
+password = "dENW5_J9DXcS@7"
+
+url = f"jdbc:postgresql://{database_host}:{database_port}/{database_name}"
+
+# Table name
+table_name = "public.line_items"
+
+# Read the table to get the schema
+df = (spark.read
+      .format("jdbc")
+      .option("driver", driver)
+      .option("url", url)
+      .option("dbtable", table_name)
+      .option("user", user)
+      .option("password", password)
+      .load())
+
+# Print the schema
+df.printSchema()
