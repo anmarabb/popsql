@@ -66,7 +66,7 @@ mi.date,
 mi.source_system,
 mi.reconciled,
 
-mi.residual as raw,
+mi.residual as raw_,
 
 case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.residual end) else () end as residual,
 
