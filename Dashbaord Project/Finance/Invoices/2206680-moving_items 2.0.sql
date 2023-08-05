@@ -45,7 +45,7 @@ when mi.documentable_id is not null and mi.documentable_type is not null then
 
 
 
-case when entry_type = 'DEBIT' then balance else 0 end as total_debits,
+case when entry_type = 'DEBIT' then mi.balance else 0 end as total_debits,
 case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 
 --total_credits = 
