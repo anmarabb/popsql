@@ -50,9 +50,6 @@ case when entry_type = 'CREDIT' then balance else 0 end as total_credits,
 case when entry_type = 'CREDIT' then residual else 0 end as unreconciled_credits,
 case when entry_type = 'DEBIT' then residual else 0 end as unreconciled_debits,
 
-
-
-
     CASE
         WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
             CASE 
