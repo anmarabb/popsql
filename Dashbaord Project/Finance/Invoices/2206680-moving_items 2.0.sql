@@ -77,8 +77,6 @@ CASE
 	CASE
 		WHEN mi.date >= '2023-07-10' THEN customer.company_id
 
-
-
 		WHEN mi.date < '2023-07-10' THEN 
 		CASE 
 			WHEN REGEXP_CONTAINS(customer.debtor_number, '(?i)^B') THEN 3
