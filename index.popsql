@@ -57,5 +57,6 @@
   "2226743": "Databricks/2226743-VP - (JDBC) - Full Refresh.sql",
   "2226748": "Databricks/2226748-MKP - (JDBC) - Full Refresh.sql",
   "2226750": "Databricks/2226750-ERP - (JDBC) - Full Refresh.sql",
-  "2226752": "Databricks/2226752-VP - Profiling.sql"
+  "2226752": "Databricks/2226752-VP - Profiling.sql",
+  "2226755": "Databricks/2226755-MKP - Profiling.sql"
 }
