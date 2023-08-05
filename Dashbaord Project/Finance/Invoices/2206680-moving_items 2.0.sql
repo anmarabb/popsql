@@ -69,6 +69,8 @@ mi.reconciled,
 mi.residual,
 
 case when mi.entry_type = 'DEBIT' then 
+
+
 mi.documentable_type,
 mi.balance,
 mi.currency,
