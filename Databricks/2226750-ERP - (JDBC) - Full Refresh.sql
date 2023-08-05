@@ -1,3 +1,3 @@
 /*
-
+Here is a Python script that uses PySpark to load data from a PostgreSQL database into Delta Lake on Databricks.
 */
