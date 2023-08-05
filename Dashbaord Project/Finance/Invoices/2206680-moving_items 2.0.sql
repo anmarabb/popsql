@@ -76,7 +76,7 @@ mi.entry_type,
 
 
 
-/
+/**
 
 CASE
 	WHEN customer.warehouse_id IN (10, 79, 76, 43) THEN
