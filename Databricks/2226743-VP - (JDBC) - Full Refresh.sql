@@ -1,5 +1,5 @@
 /*
-
+Here is a Python script that uses PySpark to load data from a PostgreSQL database into Delta Lake on Databricks.
 */
 from pyspark.sql import SparkSession
 import re
