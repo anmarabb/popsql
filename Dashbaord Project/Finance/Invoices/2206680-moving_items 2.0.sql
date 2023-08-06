@@ -3,7 +3,7 @@
 with stg_move_items as (
 
 select 
-mi.id as move_items
+mi.id as move_item
 case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.residual end) else (case when mi.residual >0 then 0 else mi.residual  end) end as residual,
 case when i.id is not null then date(i.due_date) else date(mi.date) end as aging_date,
 from `erp_prod.move_items` mi
