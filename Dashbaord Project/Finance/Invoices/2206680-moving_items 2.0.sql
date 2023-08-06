@@ -15,7 +15,6 @@ left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documenta
 select
 mi.balance, 
 mi.residual as raw_residual, --dont use
-
 stg_move_items/
 
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
