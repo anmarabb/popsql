@@ -10,7 +10,7 @@ from `erp_prod.move_items` mi
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
 
 where 
-  mi.deleted_at is null
+mi.deleted_at is null
 and mi.balance != 0
 
 
