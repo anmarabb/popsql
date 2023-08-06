@@ -66,7 +66,7 @@ left join `floranow.erp_prod.manageable_accounts` manageable_accounts on custome
 left join `floranow.erp_prod.account_managers`  am on manageable_accounts.account_manager_id = am.id
 left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
     left join `floranow.erp_prod.financial_administrations`  fad on customer.financial_administration_id = fad.id
-    left join `floranow.erp_prod.warehouses`  warehouse  on customer.warehouse_id = warehouse.id
+left join `floranow.erp_prod.warehouses`  warehouse  on customer.warehouse_id = warehouse.id
 
 
 
