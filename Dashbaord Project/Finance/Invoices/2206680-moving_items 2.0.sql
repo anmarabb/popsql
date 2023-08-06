@@ -131,7 +131,7 @@ left join `erp_prod.invoices` as cn on mi.documentable_id = cn.id and mi.documen
 left join `erp_prod.payment_transactions` pt on mi.documentable_id = pt.id and mi.documentable_type = 'PaymentTransaction' and  mi.entry_type = 'CREDIT'
 left join `floranow.erp_prod.warehouses`  w on customer.warehouse_id = w.id
 
-left join stg_move_items as stg_move_items on stg_move_items.move_item_id = m
+left join stg_move_items as stg_move_items on stg_move_items.move_item_id = mi.id
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
