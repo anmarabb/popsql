@@ -21,7 +21,7 @@ mi.residual as raw_residual, --dont use.
 stg_move_items.residual,
 stg_move_items.aging_date,
 
-case when date_diff( cast(current_date() as date ),cast(case when i.id is not null then date(i.due_date) else date(mi.date) end as date), DAY) <= 30 then stg_move_items.residual else 0 end as up_to_30_days,
+case when date_diff( cast(current_date() as date ),cast(case when i.id is not null then date(i.due_date) else date(mi.date) end as date), DAY) <= 30 then case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.residual end) else (case when mi.residual >0 then 0 else mi.residual  end) end else 0 end as up_to_30_days,
 
 
 case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 30 then stg_move_items.residual else 0 end as up_to_30_days,
