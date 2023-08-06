@@ -1,6 +1,6 @@
 create or replace table `floranow.Floranow_ERP.move_items` as
 
-with s
+with stg_
 
 
 
