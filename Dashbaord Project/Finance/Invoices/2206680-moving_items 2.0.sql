@@ -38,7 +38,7 @@ stg_move_items.aging_date,
 
 customer.name as Customer,
 customer.debtor_number,
-customer.id as c,
+customer.id as customer_id,
 customer.financial_administration_id,
 w.name as warehouses,
 
