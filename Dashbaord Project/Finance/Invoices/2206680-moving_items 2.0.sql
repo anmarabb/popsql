@@ -30,7 +30,6 @@ stg_move_items.aging_date,
     case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 120 then stg_move_items.residual else 0 end) as more_than_120_days,
 
 
-
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
 --case when entry_type = 'DEBIT' then mi.residual else 0 end as unreconciled_debits,
 
