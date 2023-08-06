@@ -133,4 +133,4 @@ and mi.balance != 0
 
 )
 
-select *
+select * from
