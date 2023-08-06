@@ -15,7 +15,6 @@ mi.residual as raw_residual, --dont use
 --case when entry_type = 'DEBIT' then mi.residual else 0 end as unreconciled_debits,
 
 
-case when i.id is not null then date(i.due_date) else date(mi.date) end as aging_date,
 
 customer.name as Customer,
 customer.debtor_number,
