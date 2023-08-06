@@ -53,6 +53,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
                 end as company_name,
 pt.transaction_type,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
+
 from   `floranow.erp_prod.payments` payments
 join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
 join `floranow.erp_prod.move_items`  dmi on payments.debit_move_item_id = dmi.id
