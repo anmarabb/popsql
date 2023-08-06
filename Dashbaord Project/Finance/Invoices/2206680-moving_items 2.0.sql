@@ -12,7 +12,7 @@ left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documenta
 
 )
 
-
+select
 mi.balance, 
 mi.residual as raw_residual, --dont use
 
