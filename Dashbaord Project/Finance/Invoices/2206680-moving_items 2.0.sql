@@ -18,7 +18,7 @@ mi.residual as raw_residual, --dont use.
 stg_move_items.residual,
 stg_move_items.aging_date,
 
-case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 30 then stg_move_items.residual else 0 end) as up_to_30_days,
+case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 30 then stg_move_items.residual else 0 end as up_to_30_days,
 
 
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
