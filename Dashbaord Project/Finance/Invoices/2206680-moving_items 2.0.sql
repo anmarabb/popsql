@@ -18,6 +18,8 @@ mi.residual as raw_residual, --dont use.
 stg_move_items.residual,
 stg_move_items.aging_date,
 
+    sum(case when date_diff( cast(current_date() as date ),cast(i.printed_at as date), DAY) <= 30 then i.remaining_amount else 0 end) as up_to_30_days,
+
 
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
 --case when entry_type = 'DEBIT' then mi.residual else 0 end as unreconciled_debits,
