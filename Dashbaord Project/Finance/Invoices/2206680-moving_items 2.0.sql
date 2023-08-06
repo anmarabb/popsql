@@ -1,4 +1,4 @@
---create or replace table `floranow.Floranow_ERP.move_items` as
+create or replace table `floranow.Floranow_ERP.move_items` as
 
 with stg_move_items as (
 
