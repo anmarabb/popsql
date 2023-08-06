@@ -27,7 +27,7 @@ stg_move_items.aging_date,
     case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 30 and date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 60 then stg_move_items.residual else 0 end as between_31_to_60_days,
     case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 60 and date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 90 then stg_move_items.residual else 0 end as between_61_to_90_days,
     case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 90 and date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) <= 120 then stg_move_items.residual else 0 end as between_91_to_120_days,
-    case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 120 then stg_move_items.residual else 0 end) as more_than_120_days,
+    case when date_diff( cast(current_date() as date ),cast(stg_move_items.aging_date as date), DAY) > 120 then stg_move_items.residual else 0 end as more_than_120_days,
 
 
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
