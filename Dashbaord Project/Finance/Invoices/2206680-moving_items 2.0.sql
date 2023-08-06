@@ -1,7 +1,7 @@
 create or replace table `floranow.Floranow_ERP.move_items` as
 
 
-
+wit
 
 
 select 
