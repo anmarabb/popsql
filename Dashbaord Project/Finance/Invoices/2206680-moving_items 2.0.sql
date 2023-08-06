@@ -13,7 +13,6 @@ where
 mi.deleted_at is null
 and mi.balance != 0
 
-
 )
 
 select
