@@ -79,7 +79,11 @@ mi.date,
 mi.source_system,
 mi.reconciled,
 
-
+SELECT 
+company_id, 
+count(*)
+FROM move_items
+group by 1
 
 
 mi.documentable_type,
