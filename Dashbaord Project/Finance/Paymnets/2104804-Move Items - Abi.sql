@@ -55,7 +55,7 @@ pt.transaction_type,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
     from   `floranow.erp_prod.payments` payments
 
-             join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
+join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
              join `floranow.erp_prod.move_items`  dmi on payments.debit_move_item_id = dmi.id
              join `floranow.erp_prod.move_items`  cmi on payments.credit_move_item_id = cmi.id
              left join  `floranow.erp_prod.invoices`  inv on dmi.documentable_id = inv.id and dmi.documentable_type = 'Invoice' and dmi.entry_type = 'DEBIT'
