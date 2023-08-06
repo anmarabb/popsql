@@ -16,7 +16,7 @@ select
 mi.balance, 
 mi.residual as raw_residual, --dont use.
 stg_move_items.residual,
-stg_move_items.aging_date
+stg_move_items.aging_date,
 
 
 --case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
