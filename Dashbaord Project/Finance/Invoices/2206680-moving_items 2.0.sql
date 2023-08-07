@@ -9,7 +9,7 @@ case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.
 case when i.id is not null then date(i.due_date) else date(mi.date) end as aging_date,
 from `erp_prod.move_items` mi
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
- join `erp_prod.users` customer on mi.user_id = customer.id
+left join `erp_prod.users` customer on mi.user_id = customer.id
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
