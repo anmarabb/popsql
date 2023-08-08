@@ -142,7 +142,7 @@ END AS reporting_company_id,
 
 case 
     when round(sum(case when mi.entry_type = 'DEBIT' then (case when  mi.residual<0 then 0 else mi.residual end) else (case when mi.residual >0 then 0 else mi.residual  end) end), 2) != round(sum(mi.balance), 2) then 'cheak'
-    else null end as Ledger_SOA_cheack
+    else null end as Ledger_SOA_cheack,
 
 
 
