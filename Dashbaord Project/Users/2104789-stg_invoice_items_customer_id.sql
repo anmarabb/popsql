@@ -99,7 +99,7 @@ SAFE_DIVIDE(abs(sum(case when i.invoice_type = 1 then ii.price_without_tax else 
 
 ii.customer_id as customer_id ,
 
-sum (case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 then ii.invoice_id else 0 end) as MTD_,
+sum (case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 then ii.invoice_id else 0 end) as MTD_orders,
 
 
 
