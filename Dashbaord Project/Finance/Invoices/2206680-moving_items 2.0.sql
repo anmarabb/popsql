@@ -140,7 +140,9 @@ END AS reporting_company_id,
 --case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' else null end as Y_to_9_Jul, 
 
 
-
+case 
+    when  != round(sum(mi.balance), 2) then 'cheak'
+    else null end as Ledger_SOA_cheack,
 
 
 
