@@ -196,7 +196,7 @@ stg_invoice_items_customer_id.MTD_auto_margin_perc,
 stg_invoice_items_customer_id.CN_perc,
 
 stg_invoice_items_customer_id.MTD_orders,
-count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.invoice_id else null end) as m_1_orders,
+stg_invoice_items_customer_id.m_1_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 then ii.invoice_id else null end) as m_2_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then ii.invoice_id else null end) as m_3_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else null end) as ytd_orders,
