@@ -103,7 +103,7 @@ count (distinct case when date_diff(date(i.printed_at) , current_date() , MONTH)
 count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.invoice_id else null end) as m_1_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 then ii.invoice_id else null end) as m_2_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then ii.invoice_id else null end) as m_3_orders,
-count (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else null end) as ytd_orders,
+count (distinct case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else null end) as ytd_orders,
 
 
 
