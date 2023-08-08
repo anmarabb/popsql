@@ -141,7 +141,7 @@ END AS reporting_company_id,
 
 
 case 
-    when sum(stg_move_items.residual) != round(sum(mi.balance), 2) then 'cheak'
+    when round(sum(stg_move_items.residual) != round(sum(mi.balance), 2) then 'cheak'
     else null end as Ledger_SOA_cheack,
 
 
