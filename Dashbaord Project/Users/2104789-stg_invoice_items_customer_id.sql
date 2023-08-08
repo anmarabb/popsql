@@ -102,7 +102,7 @@ ii.customer_id as customer_id ,
 count (distinct case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 then ii.invoice_id else null end) as MTD_orders,
 count (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.invoice_id else null end) as m_1_orders,
 count (case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 then ii.invoice_id else null end) as m_2_orders,
-count (case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then ii.invoice_id else null end) as m_3_orders,
+count (case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then ii.invoice_id else c end) as m_3_orders,
 count (case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else 0 end) as ytd_invoice,
 
 
