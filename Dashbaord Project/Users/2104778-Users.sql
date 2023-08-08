@@ -199,7 +199,7 @@ stg_invoice_items_customer_id.MTD_orders,
 stg_invoice_items_customer_id.m_1_orders,
 stg_invoice_items_customer_id.m_2_orders,
 stg_invoice_items_customer_id.m_3_orders,
-count (distinct case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else null end) as ytd_orders,
+stg_invoice_items_customer_id.ytd_orders,
 
 
 
