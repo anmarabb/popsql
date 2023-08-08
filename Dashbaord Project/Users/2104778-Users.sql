@@ -241,7 +241,7 @@ case
 
 case 
     when date_diff(cast(current_date() as date ),cast(max(u.created_at) as date), MONTH) <7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) <= 7 then 'new_active'  
-    when date_diff(cast(current_date() as date ),cast(max(u.created_at) as date), MONTH) <3 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) is not null then 'new_inactive'  
+    when date_diff(cast(current_date() as date ),cast(max(u.created_at) as date), MONTH) <7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) is not null then 'new_inactive'  
 
     when date_diff(cast(current_date() as date ),cast(max(u.created_at) as date), MONTH) <3 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) is null then'new_not_activated_yet'   
     else 'old_client'
