@@ -198,7 +198,7 @@ stg_invoice_items_customer_id.CN_perc,
 stg_invoice_items_customer_id.MTD_orders,
 stg_invoice_items_customer_id.m_1_orders,
 stg_invoice_items_customer_id.m_2_orders,
-count (distinct case when date_diff(current_date(),date(i.printed_at), MONTH) = 3 then ii.invoice_id else null end) as m_3_orders,
+stg_invoice_items_customer_id.m_3_orders,
 count (distinct case when date_diff(current_date(),date(i.printed_at), YEAR) = 0 then ii.invoice_id else null end) as ytd_orders,
 
 
