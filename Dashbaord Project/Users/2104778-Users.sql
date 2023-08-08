@@ -195,6 +195,11 @@ stg_invoice_items_customer_id.auto_margin_perc,
 stg_invoice_items_customer_id.MTD_auto_margin_perc,
 stg_invoice_items_customer_id.CN_perc,
 
+
+
+
+
+
 stg_paymnets_customer_id.MTD_paymnets,
 stg_paymnets_customer_id.LMTD_paymnets,
 stg_paymnets_customer_id.m_1_paymnets,
