@@ -100,7 +100,7 @@ SAFE_DIVIDE(abs(sum(case when i.invoice_type = 1 then ii.price_without_tax else 
 ii.customer_id as customer_id ,
 
 count (distinct case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 then ii.invoice_id else null end) as MTD_orders,
-sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.price_without_tax else 0 end) as m_1_invoice,
+count (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.price_without_tax else 0 end) as m_1_invoice,
 
 
 
