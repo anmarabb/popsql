@@ -103,7 +103,6 @@ ii.customer_id as customer_id ,
 sum (case when date_diff(date(i.printed_at) , current_date() , MONTH) = 0 then ii.price_without_tax else 0 end) as MTD_invoice_value,
 
 
-
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 and extract(day FROM i.printed_at) <= extract(day FROM current_date()) then ii.price_without_tax else 0 end) as LMTD_invoice_value,
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 1 then ii.price_without_tax else 0 end) as m_1_invoice,
 sum (case when date_diff(current_date(),date(i.printed_at), MONTH) = 2 then ii.price_without_tax else 0 end) as m_2_invoice,
