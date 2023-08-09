@@ -172,7 +172,7 @@ end  else 0 end) as m_2_invoice_usd,
 case 
     when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and abs (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
     when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) <= 30 then 'inactive'
-    when max(i.generation_type) = 'MANUAL' and i.invoice_type = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 30 then 'churned'
+    when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 30 then 'churned'
     else 'churned'  
     end as manual_account_status,
 
