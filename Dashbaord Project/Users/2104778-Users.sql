@@ -38,7 +38,7 @@ abs(u.credit_balance) as credit_balance, --Credit Balance
 
 (u.credit_limit - abs(u.credit_balance) + u.credit_note_balance) as available_credit_limit,  --Available Credit Limit
 
-(u.credit_limit - abs(u.credit_balance) + u.credit_note_balance) as available_credit_limit,  --Available Credit Limit
+--(u.credit_limit - abs(u.credit_balance) + u.credit_note_balance) as available_credit_limit,  --Available Credit Limit
 
 u.credit_note_balance, --Credit Note Balance
 
