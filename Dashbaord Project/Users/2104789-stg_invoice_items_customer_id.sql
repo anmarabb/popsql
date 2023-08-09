@@ -187,7 +187,7 @@ left join `floranow.erp_prod.invoices` as i on ii.invoice_id = i.id
 left join `floranow.erp_prod.line_items` as li on ii.line_item_id = li.id
 left join `floranow.Floranow_ERP.suppliers` as li_suppliers on li_suppliers.id = li.supplier_id
 
-where ii.status = 'APPROVED' and ii.deleted_at is null  and  ii.customer_id=6018
+where ii.status = 'APPROVED' and ii.deleted_at is null
 
 
 group by ii.customer_id
