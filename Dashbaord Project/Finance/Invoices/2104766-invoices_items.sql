@@ -149,7 +149,7 @@ case when li.parent_line_item_id is not null then parent_li.fob_currency else li
 
 ii.price, 
 ii.price_without_tax,
-
+ii.discount_amount,
 
 i.number as invoice_number,
 ii.status, --APPROVED, DRAFT, REJECTED, CANCELED
