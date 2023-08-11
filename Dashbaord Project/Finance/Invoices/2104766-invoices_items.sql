@@ -12,7 +12,6 @@ when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
 else li_suppliers.supplier_name 
 end as supplier,
 
-ii.Reason,
 
 
 case 
