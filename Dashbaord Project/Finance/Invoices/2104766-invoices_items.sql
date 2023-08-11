@@ -252,9 +252,6 @@ when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh') and  paren
 
 when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') then 'Astra'
 
-
-
-
 else 'Non Astra'
 end as sales_source,
 
