@@ -16,6 +16,8 @@ end as supplier,
 ii.Reason,
 
 
+
+
 case when w.name is not null then w.name  end as warehouse,
 
 case
