@@ -15,6 +15,7 @@ end as supplier_name,
 
 
 
+
 case when w.name is not null then w.name  end as warehouse,
 
 case
