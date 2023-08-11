@@ -153,6 +153,7 @@ left join `erp_prod.payment_transactions` pt on mi.documentable_id = pt.id and m
 left join `floranow.erp_prod.warehouses`  w on customer.warehouse_id = w.id
 
 left join stg_move_items as stg_move_items on stg_move_items.move_item_id = mi.id
+left join `floranow.erp_prod.payment_terms` as pt on pt.id = u.payment_term_id
 
 where customer.deleted_at is null
 and  mi.deleted_at is null
