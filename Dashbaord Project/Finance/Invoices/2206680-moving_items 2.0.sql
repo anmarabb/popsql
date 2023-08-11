@@ -144,7 +144,7 @@ END AS reporting_company_id,
 
 
 payment_terms.name as payment_term,
-u.credit_limit,
+customer.credit_limit,
 
 
 from `erp_prod.move_items` mi
