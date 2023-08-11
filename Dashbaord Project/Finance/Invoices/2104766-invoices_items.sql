@@ -13,7 +13,6 @@ else li_suppliers.supplier_name
 end as supplier,
 
 
-
 case 
 when parent_li_suppliers.supplier_name  = 'ASTRA Farms' then 'Astra'
 when li_suppliers.supplier_name = 'ASTRA Farms' then 'Astra'
