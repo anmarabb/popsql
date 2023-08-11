@@ -143,7 +143,7 @@ END AS reporting_company_id,
 --case  when round(sum(stg_move_items.residual) over ()) != round(sum(mi.balance) over (), 2) then 'cheak' else null end as Ledger_SOA_cheack,
 
 
-pt.name as payment_term,
+payment_terms.name as payment_term,
 
 
 from `erp_prod.move_items` mi
