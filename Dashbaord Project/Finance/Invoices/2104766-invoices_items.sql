@@ -16,6 +16,15 @@ end as supplier,
 ii.Reason,
 
 
+case 
+when parent_li_suppliers.supplier_name  = 'ASTRA Farms' then 'Astra'
+when li_suppliers.supplier_name = 'ASTRA Farms' then 'Astra'
+when ii.meta_data.supplier_name in ('Astra Farm','Astra farm Barcode') then 'Astra'
+when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh') and  parent_li_suppliers.supplier_name in ('Holex','Floradelight', 'Waridi', 'Sierra','Vianen','PJ Dave Roses','Heritage Flowers','Décor Foliage','Sian Flowers', 'Flora Ola') then 'Non Astra'
+when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') then 'Astra'
+else 'Non Astra'
+end as sales_source,
+
 
 
 case when w.name is not null then w.name  end as warehouse,
