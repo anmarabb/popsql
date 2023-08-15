@@ -158,6 +158,9 @@ left join stg_move_items as stg_move_items on stg_move_items.move_item_id = mi.i
 left join `floranow.erp_prod.payment_terms` as payment_terms on payment_terms.id = customer.payment_term_id
 
 
+    left join `floranow.erp_prod.manageable_accounts`  manageable_accounts on customer.id = manageable_accounts.manageable_id and manageable_accounts.manageable_type = 'User'
+    left join `floranow.erp_prod.account_managers`  am on manageable_accounts.account_manager_id = am.id
+    left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 
 
 
