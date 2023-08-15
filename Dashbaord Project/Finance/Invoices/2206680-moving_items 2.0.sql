@@ -147,6 +147,8 @@ payment_terms.name as payment_term,
 customer.credit_limit,
 
 
+amu.name account_manager,
+
 from `erp_prod.move_items` mi
 left join `erp_prod.users` customer on mi.user_id = customer.id
 left join `erp_prod.invoices` as i on mi.documentable_id = i.id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
