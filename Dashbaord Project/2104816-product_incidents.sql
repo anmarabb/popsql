@@ -17,7 +17,7 @@ pi.incidentable_type, --PackageLineItem, InvoiceItem, LineItem, ProductLocation
 pi.credited, --false, true
 pi.reason,
 
-concat
+concat ()
 
 
 pi.id,
