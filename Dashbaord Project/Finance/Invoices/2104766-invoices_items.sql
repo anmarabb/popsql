@@ -513,8 +513,7 @@ li.parent_line_item_id,
 case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop' else 'null' end as astra_shop,
 
 
-case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.properties, 'minimal'),9)
-else 'Null'end as S2,
+case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.properties, 'minimal'),9) else 'Null'end as S2,
 
 
 
