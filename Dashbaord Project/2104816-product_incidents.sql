@@ -17,7 +17,7 @@ pi.incidentable_type, --PackageLineItem, InvoiceItem, LineItem, ProductLocation
 pi.credited, --false, true
 pi.reason,
 
-CONCAT(COALESCE(pi.incident_type, ''), '-', COALESCE(pi.reason, '')) as reason_2
+CONCAT(COALESCE(pi.incident_type, ''), '-', COALESCE(pi.reason, '')) as reason_2,
 
 
 pi.id,
