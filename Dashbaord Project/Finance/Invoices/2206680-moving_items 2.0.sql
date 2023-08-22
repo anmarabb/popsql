@@ -49,7 +49,7 @@ case --financial ID
 when customer.financial_administration_id = 1 then 'KSA'
 when customer.financial_administration_id = 2 then 'UAE'
 when customer.financial_administration_id = 3 then 'Jordan'
-        when customer.financial_administration_id = 4 then 'kuwait'
+when customer.financial_administration_id = 4 then 'kuwait'
         when customer.financial_administration_id = 5 then 'Qatar'
         when customer.financial_administration_id = 6 then 'Bulk'
         when customer.financial_administration_id = 7 then 'Internal'
