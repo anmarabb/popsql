@@ -54,7 +54,7 @@ when customer.financial_administration_id = 5 then 'Qatar'
 when customer.financial_administration_id = 6 then 'Bulk'
 when customer.financial_administration_id = 7 then 'Internal'
 else 'check_my_logic'
-        end as financial_administration,
+end as financial_administration,
 
 
 case 
