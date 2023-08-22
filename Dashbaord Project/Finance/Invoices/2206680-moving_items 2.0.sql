@@ -110,33 +110,6 @@ mi.entry_type,
 
 mi.company_id as reporting_company_id,
 
-/**
-CASE
-	WHEN customer.warehouse_id IN (10, 79, 76, 43) THEN
-	CASE
-		WHEN mi.date >= '2023-07-10' THEN customer.company_id
-
-		WHEN mi.date < '2023-07-10' THEN 
-		CASE 
-			WHEN REGEXP_CONTAINS(customer.debtor_number, '(?i)^B') THEN 3
-            WHEN customer.debtor_number IN ( 'shopqassim', 'shopcustomer', 'cashqassim', 'cashhail', 'SCJOUF', 'SCHAFAR', 'CCJOUF', 'CCHAFAR' ) THEN 3
-            --WHEN customer.debtor_number IN ('LNDQAS', 'LNDJOU', 'LNDHAI', 'LNDHAF', 'FNQSIM', 'ASTJOU' ) THEN 3
-			WHEN NOT REGEXP_CONTAINS(customer.debtor_number, '(?i)^B') THEN 
-			CASE 
-				WHEN mi.source_system = 'ODOO' THEN 3
-				WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN customer.company_id 
-		    END
-		END
-	END
-
-	WHEN customer.warehouse_id NOT IN (10, 79, 76, 43) OR customer.warehouse_id IS NULL THEN
-	CASE
-		WHEN mi.source_system = 'ODOO' THEN 3
-		WHEN mi.source_system IN ('FLORANOW_ERP', 'FLORISOFT') THEN customer.company_id 
-	END
-END AS reporting_company_id,
-**/
-
 --case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' else null end as Y_to_9_Jul, 
 
 
