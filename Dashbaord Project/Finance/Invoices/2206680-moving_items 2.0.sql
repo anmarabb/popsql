@@ -13,9 +13,6 @@ case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) >
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 120 then mi.residual else 0 end as more_than_120_days,
 
 
---case when entry_type = 'CREDIT' then mi.residual else 0 end as unreconciled_credits,
---case when entry_type = 'DEBIT' then mi.residual else 0 end as unreconciled_debits,
-
 
 
 customer.name as Customer,
