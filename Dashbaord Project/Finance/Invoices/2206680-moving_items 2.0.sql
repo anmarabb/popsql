@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 select
 mi.balance, 
-mi.residual
+mi.residual,
 mi.date,
 
 
