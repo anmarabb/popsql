@@ -110,10 +110,6 @@ mi.entry_type,
 
 mi.company_id as reporting_company_id,
 
---case when mi.date >= '2023-01-01' AND mi.date <= '2023-07-09' then 'Y_to_9_Jul' else null end as Y_to_9_Jul, 
-
-
---case  when round(sum(stg_move_items.residual) over ()) != round(sum(mi.balance) over (), 2) then 'cheak' else null end as Ledger_SOA_cheack,
 
 
 payment_terms.name as payment_term,
