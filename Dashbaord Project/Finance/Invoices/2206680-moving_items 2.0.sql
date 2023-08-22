@@ -14,7 +14,6 @@ case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) >
 
 
 
-
 customer.name as Customer,
 customer.debtor_number,
 customer.id as customer_id,
