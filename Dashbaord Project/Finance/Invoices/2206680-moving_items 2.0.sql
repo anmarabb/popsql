@@ -137,4 +137,3 @@ left join `floranow.erp_prod.payment_terms` as payment_terms on payment_terms.id
 where customer.deleted_at is null
 and  mi.deleted_at is null
 and mi.balance != 0
---and ((mi.entry_type = 'DEBIT' AND round(residual, 2) >= 0) OR (mi.entry_type = 'CREDIT' AND round(mi.residual, 2) <= 0))
