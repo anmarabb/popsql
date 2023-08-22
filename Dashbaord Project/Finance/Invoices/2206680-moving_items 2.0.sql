@@ -111,7 +111,6 @@ mi.entry_type,
 mi.company_id as reporting_company_id,
 
 
-
 payment_terms.name as payment_term,
 customer.credit_limit,
 
