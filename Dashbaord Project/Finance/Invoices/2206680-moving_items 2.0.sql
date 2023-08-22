@@ -42,7 +42,6 @@ end as company_name,
 
 case
 when mi.documentable_id is not null and mi.documentable_type is not null then
-
 (case when mi.documentable_type = 'PaymentTransaction' then pt.number else
 (case when mi.entry_type = 'DEBIT' then i.number else cn.number end) 
  end )
