@@ -6,7 +6,7 @@ prep_registered_clients as (select financial_administration,count(*) as register
 SELECT
 case 
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
-    when w.name in ('Dammam Warehouse','Hafar WareHouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
+    when w.name in ('Dammam Warehouse','Hafar WareHouse') then 'Al Amir'
 
 
 
