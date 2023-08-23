@@ -8,7 +8,8 @@ case
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
     when w.name in ('Dammam Warehouse','Hafar WareHouse') then 'Hani'
     when w.name in ('Jeddah Warehouse') then 'Mahmoud'
-    
+    when w.name in ('Jeddah Warehouse') then 'Mahmoud'
+
 
 
 
