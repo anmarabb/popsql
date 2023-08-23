@@ -185,7 +185,7 @@ case
     else 'churned'  
     end as standing_order_account_status,
 
-li.order_type = 'OFFLINE' and orr.standing_order_id is not null
+ = 'OFFLINE' and orr.standing_order_id is not null
     
 
 
