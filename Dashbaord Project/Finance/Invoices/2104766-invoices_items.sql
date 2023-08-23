@@ -6,6 +6,7 @@ prep_registered_clients as (select financial_administration,count(*) as register
 SELECT
 
 
+
         case 
             when li.parent_line_item_id is not null then parent_li_suppliers.supplier_name 
             when stg_users.financial_administration = 'Bulk' then  ii.meta_data.supplier
