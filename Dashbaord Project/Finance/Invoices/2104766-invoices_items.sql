@@ -24,7 +24,7 @@ SELECT
 
 
 
-cas
+case wehn 
 
 
 
