@@ -3,7 +3,7 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 select
 mi.balance, 
-mi.residual, 
+mi.residual, --
 
 
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 30 then mi.residual else 0 end as up_to_30_days,
