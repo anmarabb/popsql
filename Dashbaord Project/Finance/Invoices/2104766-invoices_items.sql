@@ -10,7 +10,7 @@ case
     when w.name in ('Jeddah Warehouse') then 'Mahmoud'
     when w.name in ('Tabuk Warehouse') then 'Majed'
     when w.name in ('Medina Warehouse') then 'Abd Alaziz'
-    el
+    else null
 
 
 
