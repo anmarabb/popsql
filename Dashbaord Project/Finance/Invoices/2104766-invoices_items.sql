@@ -24,7 +24,7 @@ SELECT
 
 
 
-case w
+case when 
 
 
 
