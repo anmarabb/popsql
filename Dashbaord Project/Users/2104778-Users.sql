@@ -244,7 +244,7 @@ end as account_status_invoice,
 case when DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) <= 7 or stg_invoice_items_customer_id.manual_account_status = 'active' then 1 else 0 end as active_clients,
 
 
-case stg_invoice_items_customer_id.standing_order_account_status 
+case stg_invoice_items_customer_id.standing_order_account_status in ('active')
     --when stg_invoice_items_customer_id.manual_account_status = 'active' then 'active'
     when DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) < 8 or stg_invoice_items_customer_id.manual_account_status in ('active')  then 'active'
     
