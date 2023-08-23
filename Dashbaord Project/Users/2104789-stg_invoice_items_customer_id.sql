@@ -179,7 +179,7 @@ case
 
 
 case 
-    when max(li.order_type) = 'OFFLINE' and  max(orr.standing_order_id) is not null)  and abs (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
+    when (max(li.order_type) = 'OFFLINE' and  max(orr.standing_order_id) is not null)  and abs (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
     when max(li.order_type) = 'OFFLINE' and  max(orr.standing_order_id) is not null  and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) <= 30 then 'inactive'
     when max(li.order_type) = 'OFFLINE' and  max(orr.standing_order_id) is not null  and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 30 then 'churned'
     else 'churned'  
