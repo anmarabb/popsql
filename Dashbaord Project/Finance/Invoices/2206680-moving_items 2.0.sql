@@ -26,7 +26,7 @@ when mi.financial_administration_id = 2 then 'UAE'
 when mi.financial_administration_id = 3 then 'Jordan'
 when mi.financial_administration_id = 4 then 'kuwait'
 when mi.financial_administration_id = 5 then 'Qatar'
-when customer.financial_administration_id = 6 then 'Bulk'
+when mi.financial_administration_id = 6 then 'Bulk'
 when customer.financial_administration_id = 7 then 'Internal'
 else 'check_my_logic'
 end as financial_administration,
