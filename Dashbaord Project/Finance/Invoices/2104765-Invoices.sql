@@ -6,7 +6,7 @@ prep_registered_clients as (select financial_administration,count(*) as register
 
 SELECT
 
-case pr
+case 
     when i.currency in ('SAR') then (i.total_amount - i.total_tax) * 0.26666667
     when i.currency in ('AED') then (i.total_amount - i.total_tax) * 0.27229408
     when i.currency in ('KWD') then (i.total_amount - i.total_tax) * 3.256648 
