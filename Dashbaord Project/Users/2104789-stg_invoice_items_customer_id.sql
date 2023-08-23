@@ -185,7 +185,6 @@ case
     else 'churned'  
     end as standing_order_account_status,
 
- = '' 
     
 
 
