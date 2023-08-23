@@ -196,7 +196,7 @@ left join `floranow.Floranow_ERP.suppliers` as li_suppliers on li_suppliers.id =
 
 left join `floranow.erp_prod.order_requests` as orr on li.order_request_id = orr.id
 
-where ii.status = 'APPROVED' and ii.deleted_at is null
+where ii.status = 'APPROVED' and ii.deleted_at is null. and 
 
 
 group by ii.customer_id
