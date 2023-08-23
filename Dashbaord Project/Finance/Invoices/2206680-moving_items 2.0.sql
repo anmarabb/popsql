@@ -108,6 +108,6 @@ left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 
 
 where 
-  mi.deleted_at is null
+ mi.deleted_at is null
 and mi.balance != 0
 and mi.__hevo__marked_deleted is not true
