@@ -10,7 +10,7 @@ when stg_users.customer like '%Tamimi%' THEN 'Tamimi'
 when stg_users.customer like '%TAMIMI%' THEN 'Tamimi'
 when stg_users.customer like '%tamimi%' THEN 'Tamimi'
 
-case when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop' else 'null' end as astra_shop,
+cwhen stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop' else 'null' end as astra_shop,
 
 
 case 
