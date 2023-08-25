@@ -5,13 +5,6 @@ prep_product_incidents as (select distinct line_item_id, count(*) as incidents_c
 prep_registered_clients as (select financial_administration,count(*) as registered_clients from `floranow.Floranow_ERP.users` where account_type in ('External') and deleted_accounts != 'Deleted' group by financial_administration)   
 SELECT
 
-case 
-when stg_users.customer like '%Tamimi%' THEN 'Tamimi Sales'
-when stg_users.customer like '%TAMIMI%' THEN 'Tamimi Sales'
-when stg_users.customer like '%tamimi%' THEN 'Tamimi Sales'
-when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'REMA Sales'
-else 'Astra Sales' end as astra_sales_segments,
-
 CASE
     WHEN LOWER(stg_users.customer) LIKE '%tamimi%' THEN 'Tamimi Sales'
     WHEN stg_users.customer IN ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') THEN 'REMA Sales'
