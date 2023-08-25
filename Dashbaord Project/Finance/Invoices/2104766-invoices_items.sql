@@ -7,7 +7,7 @@ SELECT
 
 case when stg_users.customer like 
 
-
+when ii.product_name like '%Lily Ot%' THEN 'Lily Or'
 
 
 case 
