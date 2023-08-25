@@ -8,7 +8,7 @@ SELECT
 case 
 when stg_users.customer like '%Tamimi%' THEN 'Tamimi Sales'
 when stg_users.customer like '%TAMIMI%' THEN 'Tamimi Sales'
-when stg_users.customer like '%tamimi%' THEN 'Tamimi'
+when stg_users.customer like '%tamimi%' THEN 'Tamimi Sales'
 when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop REMA'
 else 'Astra Sales' end as astra_shop,
 
