@@ -7,7 +7,7 @@ SELECT
 
 case 
 when stg_users.customer like '%Tamimi%' THEN 'Tamimi'
-when stg_users.customer like '%Tamimi%' THEN 'Tamimi'
+when stg_users.customer like '%TAMIMI%' THEN 'Tamimi'
 when stg_users.customer like '%tamimi%' THEN 'Tamimi'
 
 
