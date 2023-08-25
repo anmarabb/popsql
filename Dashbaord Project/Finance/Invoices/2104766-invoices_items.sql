@@ -12,6 +12,11 @@ when stg_users.customer like '%tamimi%' THEN 'Tamimi Sales'
 when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'REMA Sales'
 else 'Astra Sales' end as astra_sales_segments,
 
+CASE
+    WHEN LOWER(stg_users.customer) LIKE '%tamimi%' THEN 'Tamimi Sales'
+    WHEN stg_users.customer IN ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') THEN 'REMA Sales'
+    ELSE 'Astra Sales'
+END as astra_sales_segments,
 
 
 /*
