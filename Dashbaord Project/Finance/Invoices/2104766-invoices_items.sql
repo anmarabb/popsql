@@ -12,7 +12,7 @@ when stg_users.customer like '%tamimi%' THEN 'Tamimi'
 when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') then 'Astra Shop'
 else 'null' end as astra_shop,
 
-/
+/*
 case 
 when astra_shop = 'Astra Shop' and sales_source = 'Astra' then 'Astra Shop Sales From Astra Products' 
 when astra_shop = 'Astra Shop' and sales_source = 'Non Astra' then 'Astra Shop Sales From Non Astra Prudyct' 
