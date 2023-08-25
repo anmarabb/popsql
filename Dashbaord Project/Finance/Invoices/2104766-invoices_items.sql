@@ -13,6 +13,9 @@ when stg_users.customer in ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REM
 else 'null' end as astra_shop,
 
 
+
+
+
 case 
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
     when w.name in ('Dammam Warehouse','Hafar WareHouse') then 'Hani'
