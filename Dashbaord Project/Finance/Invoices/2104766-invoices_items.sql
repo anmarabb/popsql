@@ -17,7 +17,7 @@ case
 when astra_shop = 'Astra Shop' and sales_source = 'Astra' then 'Astra Shop Sales From Astra Products' 
 when astra_shop = 'Astra Shop' and sales_source = 'Non Astra' then 'Astra Shop Sales From Non Astra Prudyct' 
 
-else null end as Astra Shop Sales Type
+else null end as astra Shop Sales Type
 
 
 case 
