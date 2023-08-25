@@ -18,7 +18,7 @@ when astra_shop = 'Astra Shop' and sales_source = 'Astra' then 'Astra Shop Sales
 when astra_shop = 'Astra Shop' and sales_source = 'Non Astra' then 'Astra Shop Sales From Non Astra Prudyct' 
 
 else null end as astra_shop_sales_type,
-
+*
 
 case 
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
