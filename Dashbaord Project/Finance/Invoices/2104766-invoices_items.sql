@@ -7,7 +7,6 @@ SELECT
 
 case when stg_users.customer like '%Lily Ot%' THEN 'Lily Or'
 
-when ii.product_name like 
 
 
 case 
