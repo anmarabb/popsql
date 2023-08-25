@@ -7,6 +7,9 @@ SELECT
 
 case when stg_users.customer like 
 
+
+
+
 case 
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
     when w.name in ('Dammam Warehouse','Hafar WareHouse') then 'Hani'
