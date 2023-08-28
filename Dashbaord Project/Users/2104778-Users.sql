@@ -249,7 +249,6 @@ case
     when DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) < 8  then 'active'
     when stg_invoice_items_customer_id.manual_account_status in ('active') then 'active'
     when  max(stg_invoice_items_customer_id.standing_order_account_status) in ('active') then 'active'
-
     when DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) >= 8 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) <= 30 then 'inactive'
     when DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(li.created_at) AS date),day ) > 30 then 'churned'
     else 'churned'
