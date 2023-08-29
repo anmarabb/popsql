@@ -44,7 +44,7 @@ case
     when mi.currency in ('QAR', 'QR') then ii.price_without_tax * 0.27472527
     when mi.currency is null then ii.price_without_tax * 0.27229408
 end as usd_price_without_tax,
-*
+*/
 
 
 case 
