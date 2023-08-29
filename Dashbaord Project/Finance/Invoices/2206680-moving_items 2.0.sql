@@ -78,7 +78,7 @@ mi.reconciled,
 
 
 mi.documentable_type,
-mi.currency,
+
 mi.entry_type,
 
 
