@@ -34,7 +34,7 @@ end as financial_administration,
 
 mi.currency,
 
-
+/
 case 
     when mi.currency in ('SAR') then ii.price_without_tax * 0.26666667
     when mi.currency in ('AED') then ii.price_without_tax * 0.27229408
