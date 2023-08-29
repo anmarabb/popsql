@@ -39,7 +39,7 @@ case
     when mi.currency in ('AED') then ii.price_without_tax * 0.27229408
     when mi.currency in ('KWD') then ii.price_without_tax * 3.256648 
     when mi.currency in ('USD') then ii.price_without_tax
-    when mi.currency in ('EUR') then ii.price_without_tax * 1.0500713
+    when ii.currency in ('EUR') then ii.price_without_tax * 1.0500713
     when ii.currency in ('QAR', 'QR') then ii.price_without_tax * 0.27472527
     when ii.currency is null then ii.price_without_tax * 0.27229408
 end as usd_price_without_tax,
