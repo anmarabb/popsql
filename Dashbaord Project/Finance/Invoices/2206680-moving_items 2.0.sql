@@ -34,7 +34,15 @@ end as financial_administration,
 
 mi.currency,
 
-
+case 
+    when ii.currency in ('SAR') then ii.price_without_tax * 0.26666667
+    when ii.currency in ('AED') then ii.price_without_tax * 0.27229408
+    when ii.currency in ('KWD') then ii.price_without_tax * 3.256648 
+    when ii.currency in ('USD') then ii.price_without_tax
+    when ii.currency in ('EUR') then ii.price_without_tax * 1.0500713
+    when ii.currency in ('QAR', 'QR') then ii.price_without_tax * 0.27472527
+    when ii.currency is null then ii.price_without_tax * 0.27229408
+end as usd_price_without_tax,
 
 
 
