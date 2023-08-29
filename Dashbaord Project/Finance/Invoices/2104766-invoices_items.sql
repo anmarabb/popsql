@@ -39,7 +39,7 @@ case
         end as supplier,
 
 
-       case 
+case 
 when parent_li_suppliers.supplier_name  = 'ASTRA Farms' then 'Astra'
 when li_suppliers.supplier_name = 'ASTRA Farms' then 'Astra'
 when ii.meta_data.supplier_name in ('Astra Farm','Astra farm Barcode','Astra Farm - Event','Astra Flash Sale - R','Astra Flash sale - W') then 'Astra'
