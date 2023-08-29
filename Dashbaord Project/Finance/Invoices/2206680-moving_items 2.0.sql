@@ -32,6 +32,9 @@ else 'check_my_logic'
 end as financial_administration,
 
 
+
+
+
 case 
 when customer.company_id = 3 then 'Bloomax Flowers LTD'
 when customer.company_id = 2 then 'Global Floral Arabia tr'
