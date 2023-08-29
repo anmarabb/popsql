@@ -45,7 +45,7 @@ case
     when mi.currency is null then ii.price_without_tax * 0.27229408
 end as usd_price_without_tax,
 
-*/
+
 
 case 
 when customer.company_id = 3 then 'Bloomax Flowers LTD'
