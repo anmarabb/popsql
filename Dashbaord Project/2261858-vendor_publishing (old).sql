@@ -1,4 +1,4 @@
-create or replace table `floranow.Floranow_ERP.vendor_publishing` as 
+--create or replace table `floranow.Floranow_ERP.vendor_publishing` as 
 
 
 
