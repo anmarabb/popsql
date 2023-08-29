@@ -35,6 +35,9 @@ end as financial_administration,
 mi.currency,
 
 
+
+
+
 case 
 when customer.company_id = 3 then 'Bloomax Flowers LTD'
 when customer.company_id = 2 then 'Global Floral Arabia tr'
