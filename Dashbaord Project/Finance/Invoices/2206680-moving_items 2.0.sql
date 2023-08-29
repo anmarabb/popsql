@@ -32,7 +32,7 @@ else 'check_my_logic'
 end as financial_administration,
 
 
-
+mi.currency,
 
 
 case 
