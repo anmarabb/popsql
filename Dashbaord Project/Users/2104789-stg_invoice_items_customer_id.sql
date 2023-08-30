@@ -170,13 +170,13 @@ then case
 end  else 0 end) as m_2_invoice_usd,
 
 case 
-    when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and abs (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
-    when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) <= 30 then 'inactive'
-    when max(i.generation_type) = 'MANUAL' and max(i.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 30 then 'churned'
-    else 'churned'  
+
+    when max(ii.generation_type) = 'MANUAL' and max(ii.invoice_type) in (0,1) and (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
+    when max(ii.generation_type) = 'MANUAL' and max(ii.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 7 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) <= 30 then 'inactive'
+    when max(ii.generation_type) = 'MANUAL' and max(ii.invoice_type) = 0 and DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day ) > 30 then 'churned'
+
+    else 'other'  
     end as manual_account_status,
-
-
 
 case 
     when max(orr.standing_order_id) is not null  and abs (DATE_DIFF(CAST(CURRENT_DATE() AS date), CAST(MAX(i.printed_at) AS date),day )) <= 7 then 'active'
@@ -198,5 +198,6 @@ left join `floranow.erp_prod.order_requests` as orr on li.order_request_id = orr
 
 where ii.status = 'APPROVED' and ii.deleted_at is null 
 
+--and ii.customer_id = 1369
 
 group by ii.customer_id
