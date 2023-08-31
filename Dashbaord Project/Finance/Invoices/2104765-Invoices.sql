@@ -175,5 +175,4 @@ left join `floranow.Floranow_ERP.stg_invoice_items` as stg_invoice_items on stg_
 
 
 
-
 select count(*) from `floranow.erp_prod.invoices` as i;
