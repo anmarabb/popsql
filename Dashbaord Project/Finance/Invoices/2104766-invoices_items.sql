@@ -130,7 +130,7 @@ concat(stg_users.debtor_number,ii.delivery_date) as drop_id,
 case when i.invoice_type != 1 then ii.price_without_tax else 0 end as invoice_revenue,
 case 
     when ii.creditable_id is not null or  then ii.price_without_tax else 0
-     ii.price_without_tax < 0 then ii.price_without_tax 
+      then ii.price_without_tax 
     
      end as credit_note_total,
 
