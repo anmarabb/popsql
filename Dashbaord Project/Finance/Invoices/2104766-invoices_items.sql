@@ -198,7 +198,6 @@ ii.status, --APPROVED, DRAFT, REJECTED, CANCELED
 li.order_number,
 
 
-case when ii.creditable_id is not null then ii.price_without_tax else 0 end as credit_note_total,
 
 --
 
