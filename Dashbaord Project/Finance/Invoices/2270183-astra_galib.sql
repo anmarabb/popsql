@@ -1,1 +1,3 @@
-SELECT * FROM `floranow.Floranow_ERP.astra_galib`
+SELECT * 
+
+FROM `floranow.Floranow_ERP.astra_galib`
