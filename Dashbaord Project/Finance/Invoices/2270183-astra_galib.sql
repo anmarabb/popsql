@@ -2,4 +2,4 @@ SELECT
 
 * 
 
-FROM `floranow.Floranow_ERP.astra_galib`
+FROM `floranow.Floranow_ERP.astra_galib
