@@ -134,6 +134,9 @@ case
     when ii.creditable_id is not null or ii.price_without_tax < 0  then ii.price_without_tax else 0    
      end as credit_note_total,
 
+
+
+
 case when i.invoice_type = 1 then (ii.price_without_tax + ii.total_tax) else 0 end as credit_note_total_vat,
 
 
