@@ -549,7 +549,7 @@ case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.prope
 --'Astra Shop Sales From Astra Products '
 --'Astra Shop Sales From Non Astra Prudyct' 
 
-i
+i.source_system
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
