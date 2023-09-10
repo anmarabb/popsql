@@ -132,6 +132,8 @@ case when i.invoice_type != 1 then ii.price_without_tax else 0 end as invoice_re
 
 case when i.invoice_type = 1  then ii.price_without_tax else 0  end as credit_note_total,
 
+
+
 case when i.invoice_type = 1 then 'credit note' else 'invoice' end as invoice_type,
 
 
