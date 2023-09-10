@@ -453,7 +453,6 @@ end as order_method,
 
 
 
-case when i.invoice_type = 1 then 'credit note' else 'invoice' end as invoice_type,
 
 
 case when i.printed_at is not null then 'Printed' else 'Not-Printed' end as is_printed,
