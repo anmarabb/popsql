@@ -26,8 +26,7 @@ u.order_block as row_order_block,
 case when u.order_block is true then 'Blocked' else 'Unblocked' end as order_block,
 case when  u.order_block is true then '1' end as total_blocked,
 
-case when  user_categories.name = 'Closed' then 'Deleted' else 'in business' end as deleted_accounts,
-
+account_type
 --case when u.allow_due_invoices is true then 'Unblocked' else 'Blocked' end as order_block,
 --case when  u.allow_due_invoices is not true then '1' end as total_blocked,
 
