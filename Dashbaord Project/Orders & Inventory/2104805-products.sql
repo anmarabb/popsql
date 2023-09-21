@@ -344,7 +344,7 @@ case
     when p.product_name like '%Foam%' THEN 'Accessories'
     when p.product_name like '%Follie%' THEN 'Accessories'
     when p.product_name like '%Glue%' THEN 'Accessories'
-    when p.product_name like '%Golden%' THEN 'Accessories'
+    --when p.product_name like '%Golden%' THEN 'Accessories'
     --when p.product_name like '%Green%' THEN 'Accessories'
     when p.product_name like '%Ideal%' THEN 'Accessories'
     when p.product_name like '%Kash%' THEN 'Accessories'
