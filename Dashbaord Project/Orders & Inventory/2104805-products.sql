@@ -340,7 +340,7 @@ case
     when p.product_name like '%Faza%' THEN 'Accessories'
     when p.product_name like '%Film%' THEN 'Accessories'
     when p.product_name like '%Floral%' THEN 'Accessories'
-    when p.product_name like '%Flower%' THEN 'Accessories'
+    --when p.product_name like '%Flower%' THEN 'Accessories'
     when p.product_name like '%Foam%' THEN 'Accessories'
     when p.product_name like '%Follie%' THEN 'Accessories'
     when p.product_name like '%Glue%' THEN 'Accessories'
