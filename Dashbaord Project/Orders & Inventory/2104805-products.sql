@@ -333,7 +333,7 @@ case
     when p.product_name like '%Color%' THEN 'Accessories'
     when p.product_name like '%Conical%' THEN 'Accessories'
     when p.product_name like '%Cortaderia%' THEN 'Accessories'
-    when p.product_name like '%Crystal%' THEN 'Accessories'
+   -- when p.product_name like '%Crystal%' THEN 'Accessories'
     when p.product_name like '%Cutflower%' THEN 'Accessories'
     when p.product_name like '%Duct%' THEN 'Accessories'
     when p.product_name like '%Easter%' THEN 'Accessories'
