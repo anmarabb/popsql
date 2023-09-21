@@ -526,7 +526,7 @@ stg_users.first_order_date,
 
 case 
 when pod.source_type = 'INVENTORY' then 'Shipment'
-    when pod.source_type = 'EXTERNAL' then 'Express'
+when pod.source_type = 'EXTERNAL' then 'Express'
     when pod.source_type is null then 'Manual'
 end as pod_source_type,
 
