@@ -373,7 +373,7 @@ case
     when p.product_name like '%Sulfan%' THEN 'Accessories'
     when p.product_name like '%Tape%' THEN 'Accessories'
     when p.product_name like '%Vase%' THEN 'Accessories'
-    when p.product_name like '%White%' THEN 'Accessories'
+   -- when p.product_name like '%White%' THEN 'Accessories'
     when p.product_name like '%Wire%' THEN 'Accessories'
     when p.product_name like '%Wood%' THEN 'Accessories'
     when p.product_name like '%Wooden%' THEN 'Accessories'
