@@ -501,6 +501,7 @@ case when EXTRACT(MONTH FROM ii.delivery_date) = EXTRACT(MONTH FROM i.printed_at
 li.stem_length,
 
 ii.product_name as product,
+
 case 
 when li.category is null then INITCAP(ii.category) 
 else INITCAP(li.category) 
