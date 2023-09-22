@@ -503,8 +503,8 @@ li.stem_length,
 ii.product_name as product,
 case 
 when li.category is null then INITCAP(ii.category) 
-
-else INITCAP(li.category) end as item_category,
+else INITCAP(li.category) 
+end as item_category,
 
 
 li.category2 as row_item_sub_category,
