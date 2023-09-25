@@ -572,7 +572,7 @@ left join  `floranow.erp_prod.line_items` as parent_li on parent_li.id = li.pare
 left join `floranow.Floranow_ERP.suppliers` as parent_li_suppliers on parent_li_suppliers.id = parent_li.supplier_id
 left join `floranow.erp_prod.warehouses` as w on w.id = stg_users.warehouse_id
 
-left join `floranow.erp_prod.routes` as routes  pod.route_id = 
+left join `floranow.erp_prod.routes` as routes on  pod.route_id = 
 
 
 where ii.deleted_at is null and  ii.__hevo__marked_deleted is not true
