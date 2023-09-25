@@ -574,6 +574,7 @@ left join `floranow.erp_prod.warehouses` as w on w.id = stg_users.warehouse_id
 
 
 
+
 where ii.deleted_at is null and  ii.__hevo__marked_deleted is not true
 
 
