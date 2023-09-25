@@ -574,7 +574,7 @@ left join `floranow.erp_prod.warehouses` as w on w.id = stg_users.warehouse_id
 
 left join `floranow.erp_prod.routes` as routes on routes.id = pod.route_id 
 
-routes.name
+routes.name as 
 where ii.deleted_at is null and  ii.__hevo__marked_deleted is not true
 
 
