@@ -558,7 +558,7 @@ case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.prope
 i.source_system,
 routes.name as routes,
 
-MAX(i.delivery_charge_amount) OVER (PARTITION BY invoice_number) as delivery_charge_amount, 
+MAX(i.delivery_charge_amount) OVER (PARTITION BY i.number) as delivery_charge_amount, 
 
 i.delivery_charge_amount_2,
 
