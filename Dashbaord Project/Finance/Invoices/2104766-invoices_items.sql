@@ -559,7 +559,7 @@ i.source_system,
 routes.name as routes,
 
 
-
+max 
 i.delivery_charge_amount,
 
 case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_charge_applied,
