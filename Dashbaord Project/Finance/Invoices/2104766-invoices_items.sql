@@ -559,7 +559,6 @@ i.source_system,
 routes.name as routes,
 
 
-i.delivery_charge_amount as delivery_charge_amount_2,
 
 CASE 
     WHEN ROW_NUMBER() OVER (PARTITION BY ii.invoice_id ORDER BY ii.id) = 1 THEN i.delivery_charge_amount 
