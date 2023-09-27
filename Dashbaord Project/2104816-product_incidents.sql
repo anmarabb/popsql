@@ -34,7 +34,7 @@ when stg_suppliers.supplier_name in ('Fulfilled by Floranow','Fulfilled by Flora
 when stg_suppliers.supplier_name in ('wish flower','ASTRA Farms') then 'Marketplace'
 else 'Pre-Selling'
 end as trading_model,
-
+/
 pi.after_sold,
 case 
 when 
