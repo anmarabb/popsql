@@ -386,6 +386,8 @@ else p.category end as new_item_category,
 
 from floranow.erp_prod.products as p
 left join `floranow.erp_prod.stocks` as st on st.id = p.stock_id and  st.reseller_id = p.reseller_id
+
+
 left join `floranow.erp_prod.line_items` as li on li.id = p.line_item_id
 left join `floranow.erp_prod.product_locations` as pl on pl.locationable_id = p.id and pl.locationable_type = "Product"
 left join `floranow.erp_prod.locations` as loc on pl.location_id=loc.id
