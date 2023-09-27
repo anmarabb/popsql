@@ -557,7 +557,7 @@ case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.prope
 
 i.source_system,
 routes.name as routes,
-
+i
 --li.delivery_charge.amount as delivery_charge_amount,
 
 
