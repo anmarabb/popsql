@@ -569,7 +569,7 @@ CASE
     WHEN SUM(ii.price_without_tax) OVER (PARTITION BY ii.invoice_id) < 200 THEN 'Valid Delivery Charge' 
     ELSE 'chack' 
   END as delivery_charge_check,
-
+check
 
 
 case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_charge_applied,
