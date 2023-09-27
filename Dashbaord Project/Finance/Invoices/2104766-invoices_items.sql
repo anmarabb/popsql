@@ -565,6 +565,9 @@ CASE
     ELSE 0 
   END as delivery_charge_amount,
 
+
+
+
 case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_charge_applied,
 --li.delivery_charge.amount as delivery_charge_amount,
 
