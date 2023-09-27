@@ -559,7 +559,7 @@ i.source_system,
 routes.name as routes,
 
 
-max (i.delivery_charge_amount,
+max (i.delivery_charge_amount 
 
 i.delivery_charge_amount,
 
