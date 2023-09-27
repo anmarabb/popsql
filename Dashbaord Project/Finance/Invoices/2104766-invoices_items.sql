@@ -559,7 +559,7 @@ i.source_system,
 routes.name as routes,
 
 
-max (i.delivery_charge_amount partition by (invoice_number) end as delivery_charge_amount_2,
+max (i.delivery_charge_amount partition by  (invoice_number) end as delivery_charge_amount_2,
 
 i.delivery_charge_amount,
 
