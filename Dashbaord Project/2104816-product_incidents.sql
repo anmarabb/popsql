@@ -232,6 +232,8 @@ left join `floranow.erp_prod.shipments` as sh on li.shipment_id = sh.id
 left join  `floranow.erp_prod.master_shipments` as msh on sh.master_shipment_id = msh.id
 
 left join `floranow.erp_prod.feed_sources` as fs on li.feed_source_id = fs.id
+
+
 left join `floranow.erp_prod.stocks` as stock on p.stock_id = stock.id 
 
 
