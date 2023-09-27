@@ -557,6 +557,7 @@ case when li.product_name like 'Lily%'then substr(li.properties, strpos(li.prope
 
 i.source_system,
 routes.name as routes,
+
 i.delivery_charge_amount,
 
 case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_charge_applied,
