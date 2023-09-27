@@ -559,7 +559,7 @@ i.source_system,
 routes.name as routes,
 i.delivery_charge_amount,
 
-
+case when 
 --li.delivery_charge.amount as delivery_charge_amount,
 
 
