@@ -569,7 +569,7 @@ CASE
     WHEN SUM(ii.price_without_tax) OVER (PARTITION BY ii.invoice_id) > 200 AND 
          ROW_NUMBER() OVER (PARTITION BY ii.invoice_id ORDER BY ii.id) = 1 THEN 'Valid Delivery Charge' 
     ELSE 'cheack' 
-  END as delivery_charge_chec
+  END as delivery_charge_check,
 
 
 
