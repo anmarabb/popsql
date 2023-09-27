@@ -28,7 +28,7 @@ pi.incidentable_id,
 pi.inventory_cycle_check_id,
 --pi.accountable_id, --It is no longer used
 
-/
+/*
 case 
 when stg_suppliers.supplier_name in ('Fulfilled by Floranow','Fulfilled by Floranow SA','The Orchid Garden','Solai Roses','Selemo Valley Farms','Lomalinda','Gallica','Galleria Farms','Fresh Cap','Florius','Flores Del Este','Floranow Holland','Elite Flower Farm','Ecoflor','Capiro','Agroindustria','Smithers Oasis') then 'Re-Selling'
 when stg_suppliers.supplier_name in ('wish flower','ASTRA Farms') then 'Marketplace'
