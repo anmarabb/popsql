@@ -596,8 +596,6 @@ left join `floranow.erp_prod.routes` as routes on routes.id = pod.route_id
 
 where ii.deleted_at is null and  ii.__hevo__marked_deleted is not true
 
-
-
 --left join floranow.erp_prod.products as p on p.line_item_id = li.id
 --left join `floranow.erp_prod.stocks` as stock on p.stock_id = stock.id 
 --left join `floranow.erp_prod.warehouses` as w on w.id = stock.warehouse_id
