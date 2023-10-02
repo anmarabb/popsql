@@ -588,7 +588,7 @@ left join  prep_product_incidents AS product_incidents ON product_incidents.line
 left join `floranow.erp_prod.shipments` as sh on li.shipment_id = sh.id
 left join `floranow.erp_prod.proof_of_deliveries` as pod on li.proof_of_delivery_id = pod.id
 left join `floranow.erp_prod.feed_sources` as fs on li.feed_source_id = fs.id
-left join  `floranow.erp_prod.line_items` as parent_li on parent_li.id = li.parent_line_item_id
+left join `floranow.erp_prod.line_items` as parent_li on parent_li.id = li.parent_line_item_id
 left join `floranow.Floranow_ERP.suppliers` as parent_li_suppliers on parent_li_suppliers.id = parent_li.supplier_id
 left join `floranow.erp_prod.warehouses` as w on w.id = stg_users.warehouse_id
 
