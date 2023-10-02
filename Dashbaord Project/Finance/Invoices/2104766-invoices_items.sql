@@ -329,7 +329,7 @@ when ii.meta_data.supplier_name in ('Verdissimo - AWS','The Orchid garden Resell
 when li_suppliers.supplier_name in ('Ward Flowers') and fs.name in ('Ward Flower Inventory') then 'Trading'
 
 else 'Normal'
-end as trading_funcation,
+end as  v,
 
 case 
 when 
