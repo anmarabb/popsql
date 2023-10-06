@@ -70,7 +70,6 @@ i.generation_type,
 i.cancellation_reason,
 i.note,
 
-i.financial_administration_id as financial_administration_2,
 
 
 case
