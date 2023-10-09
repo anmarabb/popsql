@@ -318,7 +318,7 @@ when li_suppliers.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB ou
 when ii.meta_data.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB out') then 'Commission Based'
 when li_suppliers.supplier_name in ('Ward Flowers') and fs.name in ('Ward Flower Inventory') then 'Commission Based'
 else 'Pre-Selling'
-end as trading_model,
+end as st_model,
 
 case 
 when li_suppliers.supplier_name in ('wish flower','Fulfilled by Floranow','Fulfilled by Floranow SA','The Orchid Garden','Solai Roses','Selemo Valley Farms','Lomalinda','Gallica','Galleria Farms','Fresh Cap','Florius','Flores Del Este','Floranow Holland','Elite Flower Farm','Ecoflor','Capiro','Agroindustria','Smithers Oasis') then 'Trading'
