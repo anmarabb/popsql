@@ -306,7 +306,7 @@ end as marketplace_projects,
 
 
 case 
-when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') or ii.meta_data.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') then 'Marketplace'
+when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') or ii.meta_data.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') then 'Commission Based'
 when li_suppliers.supplier_name in ('Fulfilled by Floranow SA','The Orchid Garden','Solai Roses','Selemo Valley Farms','Lomalinda','Gallica','Galleria Farms','Fresh Cap','Florius','Flores Del Este','Elite Flower Farm','Ecoflor','Capiro','Agroindustria','Smithers Oasis') then 'Re-Selling'
 when stg_users.financial_administration = 'UAE' and li_suppliers.supplier_name in ('Fulfilled by Floranow') then 'Re-Selling'
 when li_suppliers.supplier_name in ('Floranow Flash Sale Dammam', 'Floranow Flash Sale Riyadh', 'Floranow Flash Sale Tabuk', 'Floranow Flash Sale Jeddah') then 'Re-Selling'
