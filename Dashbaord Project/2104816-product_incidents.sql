@@ -187,6 +187,7 @@ when pi.incident_type != 'DAMAGED'  then 'inventory_incidents'
 else null  
 end as report_filter,
 
+case when pi.stage in ('PACKING', 'RECEIVING') then 'supplier_incidents' else null end as  report_filter_supplier,
 
 
 case when pi.incident_type = 'EXTRA' then 'extra_report' else null end  as report_filter_extra,
