@@ -48,6 +48,8 @@ concat( "https://erp.floranow.com/products/", p.id) as products_link,
 
 
 
+
+
 stg_users.financial_administration,
 stg_users.customer,
 stg_users.debtor_number,
