@@ -22,7 +22,7 @@ else null end as astra_shop_sales_type,
 
 
 --abs(quantity)*unit_landed_cost
-case when i.invoice_type = 1 then quantity * unit_landed_cost else 0 end as total_cost_1, 
+case when i.invoice_type =  then quantity * unit_landed_cost else 0 end as total_cost_1, 
 
 ii.price_without_tax - (ii.quantity * li.unit_landed_cost) as profit,
 
