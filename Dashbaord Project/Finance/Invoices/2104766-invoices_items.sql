@@ -134,7 +134,6 @@ sh.name as shipment,
 concat(stg_users.debtor_number,ii.delivery_date) as drop_id, 
 
 
-case when i.invoice_type != 1 then ii.price_without_tax else 0 end as invoice_revenue,
 
 
 case when i.invoice_type = 1  then ii.price_without_tax else 0  end as credit_note_total,
