@@ -2,7 +2,6 @@ create or replace table `floranow.Floranow_ERP.move_items` as
 
 
 select
-category.name as category_name,
 
 --mi.balance,  
 mi.residual, --
