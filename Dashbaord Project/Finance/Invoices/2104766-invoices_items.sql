@@ -226,7 +226,6 @@ li.unit_landed_cost,
 
 --ii.quantity * li.unit_landed_cost  as total_cost, --we have problem that manual invoice not have line_item so we can't capture the landed cost
 
-ii.price_without_tax - (ii.quantity * li.unit_landed_cost) as profit,
 
 
 li.landed_currency,
