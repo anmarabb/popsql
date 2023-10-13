@@ -24,7 +24,7 @@ else null end as astra_shop_sales_type,
 --abs(quantity)*unit_landed_cost
 case when i.invoice_type = 0 then ii.quantity * li.unit_landed_cost else 0 end as total_cost, 
 
-ii.price_without_tax - (ii.quantity * li.unit_landed_cost) as profit,
+ii.price_without_tax - (case when i.invoice_type = 0 then ii.quantity * li.unit_landed_cost else 0 end) as profit,
 
 case when i.invoice_type != 1 then ii.price_without_tax else 0 end as invoice_revenue,
 
