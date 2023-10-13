@@ -13,6 +13,7 @@ case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) >
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 120 then mi.residual else 0 end as more_than_120_days,
 
 
+category.name as category_name,
 
 customer.name as Customer,
 customer.debtor_number,
