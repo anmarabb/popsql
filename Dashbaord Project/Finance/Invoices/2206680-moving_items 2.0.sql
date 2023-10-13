@@ -127,7 +127,7 @@ left join `floranow.erp_prod.manageable_accounts`  manageable_accounts on custom
 left join `floranow.erp_prod.account_managers`  am on manageable_accounts.account_manager_id = am.id
 left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 
-left join floranow.erp_prod.user_categories AS user_categories ON u.user_category_id = user_categories.id
+left join floranow.erp_prod.user_categories AS user_categories ON customer.user_category_id = user_categories.id
 
 
 where 
