@@ -19,6 +19,8 @@ customer.name as Customer,
 customer.debtor_number,
 customer.id as customer_id,
 customer.financial_administration_id,
+
+
 w.name as warehouses,
 
 case --financial ID
