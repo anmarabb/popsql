@@ -22,7 +22,7 @@ else null end as astra_shop_sales_type,
 
 
 --abs(quantity)*unit_landed_cost
--- case when invoice_type = 'invoice' thet quantity(_tt0._)unit_landed_cost_st else 0 end
+-- case when invoice_type = 'invoice' thet quantity)unit_landed_cost_st else 0 end
 case 
     when w.name in ('Riyadh Warehouse','Qassim Warehouse','Jouf WareHouse','Hail Warehouse') then 'Al Amir'
     when w.name in ('Dammam Warehouse','Hafar WareHouse') then 'Hani'
