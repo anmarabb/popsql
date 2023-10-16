@@ -596,6 +596,7 @@ when i.status = 9 then "voided"
 
 else "check_my_logic"
 end as status,
+
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
 left join `floranow.erp_prod.line_items` as li on ii.line_item_id = li.id
