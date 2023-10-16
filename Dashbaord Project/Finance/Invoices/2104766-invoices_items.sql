@@ -583,7 +583,7 @@ case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_char
 --li.delivery_charge.amount as delivery_charge_amount,
 
 
-i.status as invoice_status,
+i.status as invoice_headerstatus,
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
