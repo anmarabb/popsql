@@ -1,4 +1,4 @@
-create or replace table `floranow.Floranow_ERP.users` as 
+--create or replace table `floranow.Floranow_ERP.users` as 
 
 
 
