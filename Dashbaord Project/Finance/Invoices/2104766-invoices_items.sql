@@ -595,7 +595,7 @@ when i.status = 8 then "Rejected"
 when i.status = 9 then "voided"
 
 else "check_my_logic"
-end as status,
+end as invoice_header_status,
 
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
