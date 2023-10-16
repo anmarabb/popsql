@@ -50,7 +50,7 @@ user_categories.name As client_category,
 u2.name As account_manager,
 
 case when u.internal is true then 'Internal' else 'External' end as account_type,
-case when date_diff(cast(current_date() as date ),cast(u.created_at as date), MONTH) <7 then 1 else 0 end as new_client,
+case when date_diff(cast(current_date() as date ),cast(u.created_at as date), MONTH) <10 then 1 else 0 end as new_client,
 
 
 case --financial ID
