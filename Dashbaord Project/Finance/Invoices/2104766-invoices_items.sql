@@ -583,7 +583,6 @@ case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_char
 --li.delivery_charge.amount as delivery_charge_amount,
 
 
-i.status as invoice_header_status,
 case
 when i.status = 0 then "Draft"
 when i.status = 1 then "signed"
