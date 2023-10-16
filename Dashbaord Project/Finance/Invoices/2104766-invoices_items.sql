@@ -584,7 +584,18 @@ case when i.delivery_charge_amount > 0 then 'Yes' else 'No' end as delivery_char
 
 
 i.status as invoice_header_status,
+case
+when i.status = 0 then "Draft"
+when i.status = 1 then "signed"
+when i.status = 2 then "Open"
+when i.status = 3 then "Printed"
+when i.status = 6 then "Closed"
+when i.status = 7 then "Canceled"
+when i.status = 8 then "Rejected"
+when i.status = 9 then "voided"
 
+else "check_my_logic"
+end as status,
 from `floranow.erp_prod.invoice_items`  as ii 
 left join `floranow.Floranow_ERP.users` as stg_users on stg_users.id = ii.customer_id
 left join `floranow.erp_prod.line_items` as li on ii.line_item_id = li.id
