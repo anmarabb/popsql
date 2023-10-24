@@ -411,7 +411,7 @@ case
 
 
 --li_suppliers
-    li_suppliers.account_manager as supplier_account_manager,
+    li_suppliers.c as supplier_account_manager,
     li_suppliers.supplier_region,
     li_suppliers.supplier_type,
 
