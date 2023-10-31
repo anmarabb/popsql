@@ -1,3 +1,6 @@
+create or replace table `floranow.Floranow_ERP.users` as 
+
+
 WITH subquery_cte AS (
     SELECT invoices.customer_id, SUM(move_items.residual) AS total_residual
     FROM `floranow.erp_prod.move_items` As move_items
