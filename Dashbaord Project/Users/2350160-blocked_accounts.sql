@@ -20,7 +20,16 @@ SELECT
 
 u.name as customer,
  
-
+case --financial ID
+        when u.financial_administration_id = 1 then 'KSA'
+        when u.financial_administration_id = 2 then 'UAE'
+        when u.financial_administration_id = 3 then 'Jordan'
+        when u.financial_administration_id = 4 then 'kuwait'
+        when u.financial_administration_id = 5 then 'Qatar'
+        when u.financial_administration_id = 6 then 'Bulk'
+        when u.financial_administration_id = 7 then 'Internal'
+        else 'check_my_logic'
+        end as financial_administration,
 case 
 when u.order_block is true then '1. The customer is blocked manually by Growth team, from user settings page on ERP.'
 when credit_limit IS NOT NULL
