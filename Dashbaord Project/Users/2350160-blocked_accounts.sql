@@ -1,4 +1,4 @@
-create or replace table `floranow.Floranow_ERP.users` as 
+create or replace table `floranow.Floranow_ERP.blocked_account` as 
 
 WITH subquery_cte AS (
     SELECT invoices.customer_id, SUM(move_items.residual) AS total_residual
