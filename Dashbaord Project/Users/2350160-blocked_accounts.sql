@@ -1,4 +1,3 @@
-blocked_account
 create or replace table `floranow.Floranow_ERP.users` as 
 
 WITH subquery_cte AS (
