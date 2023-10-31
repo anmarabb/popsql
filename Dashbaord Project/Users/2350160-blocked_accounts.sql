@@ -30,6 +30,8 @@ case --financial ID
         when u.financial_administration_id = 7 then 'Internal'
         else 'check_my_logic'
         end as financial_administration,
+
+        
 case 
 when u.order_block is true then '1. The customer is blocked manually by Growth team, from user settings page on ERP.'
 when credit_limit IS NOT NULL
