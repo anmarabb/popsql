@@ -26,9 +26,9 @@ when credit_limit IS NOT NULL
         + COALESCE(u.pending_balance, 0)
         + COALESCE(u.pending_order_requests_balance, 0)
         + u.credit_limit + u.credit_balance) <= 0
-then '4. The user’s remaining credit is less than or equal to zero.'
+then '4. The user's remaining credit is less than or equal to zero.'
 
-when subquery_cte.total_residual > COALESCE(pt.unblock_amount, 0) then '3. The outstanding invoices due balance is greater than the unblocked amount configured on the user’s payment terms'
+when subquery_cte.total_residual > COALESCE(pt.unblock_amount, 0) then '3. The outstanding invoices due balance is greater than the unblocked amount configured on the user's payment terms'
 
 
 else 'To Be Scoped' end as blocked_account_logic,
