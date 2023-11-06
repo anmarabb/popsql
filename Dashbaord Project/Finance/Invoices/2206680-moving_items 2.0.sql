@@ -14,7 +14,7 @@ case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) >
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 120 then mi.residual else 0 end as more_than_120_days,
 
 
-case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then round(balance,2) else 0 end) as Payments
+case when entry_type = 'CREDIT' and mi.documentable_type = 'PaymentTransaction' then round(balance,2) else 0 end as Payments
 
 
 customer.name as Customer,
