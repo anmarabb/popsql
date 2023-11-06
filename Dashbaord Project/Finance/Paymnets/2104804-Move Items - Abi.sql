@@ -52,7 +52,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
                 else  'cheack'
                 end as company_name,
 pt.transaction_type,
-im
+inv
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
 from `floranow.erp_prod.payments` payments
