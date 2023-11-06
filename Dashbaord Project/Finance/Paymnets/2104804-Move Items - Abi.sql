@@ -95,7 +95,7 @@ case when (pt.id is null and cn.id is null and cmi.source_system = 'ODOO')   the
 case when (pt.id is null and cn.id is null and cmi.source_system = 'ODOO')   then 'ODOO' else cn.number end as credit_note_number,
 null as reconcile_source_system,
 null as odoo_id,
-           pt.approval_code,
+pt.approval_code,
            null as reconciled_anount,
            abs(cmi.residual) unreconciled_anount,
            abs(cmi.residual) amount,
