@@ -96,7 +96,7 @@ case when (pt.id is null and cn.id is null and cmi.source_system = 'ODOO')   the
 null as reconcile_source_system,
 null as odoo_id,
 pt.approval_code,
-           null as reconciled_anount,
+null as reconciled_anount,
            abs(cmi.residual) unreconciled_anount,
            abs(cmi.residual) amount,
            --fad.name financial_administration,
