@@ -113,7 +113,7 @@ end as financial_administration,
 fad.id financial_administration_id,
 
 case 
-                when customer.company_id = 3 then 'Bloomax Flowers LTD'
+when customer.company_id = 3 then 'Bloomax Flowers LTD'
                 when customer.company_id = 2 then 'Global Floral Arabia tr'
                 when customer.company_id = 1 then 'Flora Express Flower Trading LLC'
                 else  'cheack'
