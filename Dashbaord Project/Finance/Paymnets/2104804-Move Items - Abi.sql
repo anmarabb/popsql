@@ -103,7 +103,7 @@ abs(cmi.residual) amount,
 case --financial ID
 when fad.id = 1 then 'KSA'
 when fad.id = 2 then 'UAE'
-        when fad.id = 3 then 'Jordan'
+when fad.id = 3 then 'Jordan'
         when fad.id = 4 then 'kuwait'
         when fad.id = 5 then 'Qatar'
         when fad.id = 6 then 'Bulk'
