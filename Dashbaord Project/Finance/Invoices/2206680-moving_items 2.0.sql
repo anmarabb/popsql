@@ -80,7 +80,6 @@ case when entry_type = 'CREDIT' then mi.balance else 0 end as total_credits,
     case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then mi.balance else 0 end as credit_nots,
      case when entry_type = 'CREDIT' and (mi.documentable_id is null or mi.documentable_type is null) then mi.balance end  as other_credit,
 
-case when entry_type = 'CREDIT' and mi.documentable_type = 'Invoice' then balance else 0 end as credit_notes,
 case when entry_type = 'DEBIT' then balance else 0 end as gross_sales,
 
 
