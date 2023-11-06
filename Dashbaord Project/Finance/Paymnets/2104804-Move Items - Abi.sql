@@ -132,7 +132,7 @@ left join `floranow.erp_prod.manageable_accounts`  manageable_accounts on custom
 left join `floranow.erp_prod.account_managers`  am on manageable_accounts.account_manager_id = am.id
 left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 left join `floranow.erp_prod.financial_administrations`  fad on customer.financial_administration_id = fad.id
-    left join `floranow.erp_prod.warehouses`  warehouse on customer.warehouse_id = warehouse.id
+left join `floranow.erp_prod.warehouses`  warehouse on customer.warehouse_id = warehouse.id
     left join `floranow.erp_prod.invoices` as inv on cmi.documentable_id = inv.id and cmi.documentable_type = 'Invoice' and cmi.entry_type = 'DEBIT'
 where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT'
 
