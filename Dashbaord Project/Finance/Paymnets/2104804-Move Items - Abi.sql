@@ -98,7 +98,7 @@ null as odoo_id,
 pt.approval_code,
 null as reconciled_anount,
 abs(cmi.residual) unreconciled_anount,
-           abs(cmi.residual) amount,
+abs(cmi.residual) amount,
            --fad.name financial_administration,
                   case --financial ID
         when fad.id = 1 then 'KSA'
