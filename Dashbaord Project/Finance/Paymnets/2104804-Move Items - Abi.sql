@@ -97,7 +97,7 @@ null as reconcile_source_system,
 null as odoo_id,
 pt.approval_code,
 null as reconciled_anount,
-           abs(cmi.residual) unreconciled_anount,
+abs(cmi.residual) unreconciled_anount,
            abs(cmi.residual) amount,
            --fad.name financial_administration,
                   case --financial ID
