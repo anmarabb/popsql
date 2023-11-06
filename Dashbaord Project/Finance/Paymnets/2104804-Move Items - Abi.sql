@@ -100,7 +100,7 @@ null as reconciled_anount,
 abs(cmi.residual) unreconciled_anount,
 abs(cmi.residual) amount,
 --fad.name financial_administration,
-                  case --financial ID
+case --financial ID
         when fad.id = 1 then 'KSA'
         when fad.id = 2 then 'UAE'
         when fad.id = 3 then 'Jordan'
