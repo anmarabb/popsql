@@ -110,7 +110,7 @@ when fad.id = 6 then 'Bulk'
 when fad.id = 7 then 'Internal'
 else 'check_my_logic'
 end as financial_administration,
-           fad.id financial_administration_id,
+fad.id financial_administration_id,
 
             case 
                 when customer.company_id = 3 then 'Bloomax Flowers LTD'
