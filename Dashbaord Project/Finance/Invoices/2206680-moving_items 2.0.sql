@@ -82,6 +82,7 @@ case when entry_type = 'CREDIT' then mi.balance else 0 end as total_credits,
 
 
 
+
     CASE
         WHEN mi.documentable_id IS NOT NULL AND mi.documentable_type IS NOT NULL THEN
             CASE 
