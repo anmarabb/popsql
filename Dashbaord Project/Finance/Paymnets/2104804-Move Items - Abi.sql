@@ -136,7 +136,7 @@ case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
     left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
     left join `floranow.erp_prod.financial_administrations`  fad on customer.financial_administration_id = fad.id
     left join `floranow.erp_prod.warehouses`  warehouse on customer.warehouse_id = warehouse.id
-    l
+    left join 
 where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT'
 
 
