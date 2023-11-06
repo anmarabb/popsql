@@ -79,7 +79,7 @@ UNION ALL ------------------------------------query for unreconciled payment tra
 select date(cmi.date)  as cridet_date,
 warehouse.name as warehouse,
 customer.warehouse_id as customer_warehouse_id,
-           date(pt.payment_received_at)                                    payment_received_at,
+date(pt.payment_received_at)                                    payment_received_at,
            customer.name                                                   customer,
            customer.debtor_number                                          debtor_number,
            category.name as category_name,
