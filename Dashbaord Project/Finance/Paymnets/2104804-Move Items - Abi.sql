@@ -57,7 +57,6 @@ pt.transaction_type,
 inv.printed_at,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
-CNmi.total_amount
 
 from `floranow.erp_prod.payments` payments
 join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
