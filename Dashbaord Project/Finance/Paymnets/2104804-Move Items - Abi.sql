@@ -72,7 +72,7 @@ left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 left join `floranow.erp_prod.financial_administrations`  fad on dmi.financial_administration_id = fad.id
 left join `floranow.erp_prod.warehouses`  warehouse  on customer.warehouse_id = warehouse.id
 
-left join `floranow.erp_prod.payments` CNpayments on CNpayments.credit_move_item_id = cmi.id and cmi.documentable_type = 'Invoice'
+--left join `floranow.erp_prod.payments` CNpayments on CNpayments.credit_move_item_id = cmi.id and cmi.documentable_type = 'Invoice'
 
     ---- filters----
 UNION ALL ------------------------------------query for unreconciled payment transactions amount------------------------------------------------------------
