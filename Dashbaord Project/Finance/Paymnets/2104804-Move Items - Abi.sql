@@ -2,7 +2,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
 
     
     select 
-    case when pt.payment_received_at is not null then pt.payment_received_at else cmi.date end as
+    case when pt.payment_received_at is not null then pt.payment_received_at else cmi.date end as master
     date(cmi.date) as cridet_date, -- date of paymnet_transaction
      warehouse.name as warehouse,
 
