@@ -58,7 +58,7 @@ inv.printed_at,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
 case when cmi.documentable_type = 'Invoice' then payments.total_amount else 0 end  as  CN_amount,
-case when cmi.documentable_type = 'InvPaymentTransactionoice' then payments.total_amount else 0 end  as  P_amount,
+case when cmi.documentable_type = 'InvPaymentTransactionoice' then payments.total_amount else 0 end  as  PT_amount,
 
 from `floranow.erp_prod.payments` payments
 join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
