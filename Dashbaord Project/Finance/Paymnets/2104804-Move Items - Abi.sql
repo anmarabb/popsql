@@ -72,7 +72,7 @@ left join `floranow.erp_prod.users`  as amu on am.user_id = amu.id
 left join `floranow.erp_prod.financial_administrations`  fad on dmi.financial_administration_id = fad.id
 left join `floranow.erp_prod.warehouses`  warehouse  on customer.warehouse_id = warehouse.id
 
-left 
+left join 
 --left join `floranow.erp_prod.move_items`  CNmi on  payments.credit_move_item_id = cmi.id and CNmi.documentable_type = 'Invoice' 
 
     ---- filters----
