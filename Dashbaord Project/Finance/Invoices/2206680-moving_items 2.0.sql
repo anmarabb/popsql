@@ -134,10 +134,6 @@ left join floranow.erp_prod.user_categories AS user_categories ON customer.user_
 
 
 where 
-mi.deleted_at is null
-and mi.balance != 0
-and mi.__hevo__marked_deleted is not true
-
 
 mi.deleted_at is null
 and mi.balance != 0
