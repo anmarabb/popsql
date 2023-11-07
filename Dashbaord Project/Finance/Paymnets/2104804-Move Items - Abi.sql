@@ -79,7 +79,7 @@ UNION ALL ------------------------------------query for unreconciled payment tra
 
 
 select 
-case when cmi.date is not null then pt.payment_received_at else cmi.date end as master_date,
+case when cmi.date is not null then cmi.date else cmi.date end as master_date,
 
 date(cmi.date)  as cridet_date,
 warehouse.name as warehouse,
