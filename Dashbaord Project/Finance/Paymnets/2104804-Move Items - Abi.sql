@@ -130,7 +130,7 @@ inv.printed_at,
 
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
-CNmi.residual as CN_amount,
+CNmi.residual as CN_amount,\
 from `floranow.erp_prod.move_items`  cmi
 join `floranow.erp_prod.users`  customer on cmi.user_id = customer.id
 left join `floranow.erp_prod.payment_transactions`  pt on cmi.documentable_id = pt.id and cmi.documentable_type = 'PaymentTransaction' and cmi.entry_type = 'CREDIT'
