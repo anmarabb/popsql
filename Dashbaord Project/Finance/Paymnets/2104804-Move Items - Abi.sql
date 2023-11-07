@@ -143,7 +143,7 @@ left join `floranow.erp_prod.warehouses`  warehouse on customer.warehouse_id = w
 left join `floranow.erp_prod.invoices` as inv on cmi.documentable_id = inv.id and cmi.documentable_type = 'Invoice' and cmi.entry_type = 'DEBIT'
 
 
-left join `floranow.erp_prod.move_items`  CNmi on  payments.credit_move_item_id = cmi.id and CNmi.documentable_type = 'Invoice' 
+=left join `floranow.erp_prod.move_items`  CNmi on  payments.credit_move_item_id = cmi.id and CNmi.documentable_type = 'Invoice' 
 
 where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT'
 
