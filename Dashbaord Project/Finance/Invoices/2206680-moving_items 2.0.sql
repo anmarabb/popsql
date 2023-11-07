@@ -137,3 +137,9 @@ where
 mi.deleted_at is null
 and mi.balance != 0
 and mi.__hevo__marked_deleted is not true
+
+
+mi.deleted_at is null
+and mi.balance != 0
+and mi.documentable_id is not null
+and mi.__hevo__marked_deleted is not true
