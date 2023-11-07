@@ -57,7 +57,7 @@ pt.transaction_type,
 inv.printed_at,
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
-case when cmi.documentable_type = 'Invoice' then payments.total_amount else 0 end  as  CN_amount_,
+case when cmi.documentable_type = 'Invoice' then payments.total_amount else 0 end  as  CN_amount_payment,
 
 from `floranow.erp_prod.payments` payments
 join `floranow.erp_prod.users`  customer on payments.user_id = customer.id
@@ -130,7 +130,7 @@ inv.printed_at,
 
 case when pt.payment_gateway=0 then 'telr' else null end as payment_gateway,
 
-CNmi.residual as CN_amount,
+CNmi.residual as CN_amount_payment,
 
 from `floranow.erp_prod.move_items`  cmi
 join `floranow.erp_prod.users`  customer on cmi.user_id = customer.id
