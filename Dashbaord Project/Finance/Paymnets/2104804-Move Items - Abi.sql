@@ -2,7 +2,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
 
     
     select 
-    case when 
+    case when pt.payment_received_at
     date(cmi.date) as cridet_date, -- date of paymnet_transaction
      warehouse.name as warehouse,
 
