@@ -147,7 +147,7 @@ left join `floranow.erp_prod.invoices` as inv on cmi.documentable_id = inv.id an
 
 
 left join `floranow.erp_prod.move_items`  CNmi on  CNmi.id = cmi.id and CNmi.documentable_type = 'Invoice' 
-left join `floranow.erp_prod.move_items`  PTmi on  PTmi.id = cmi.id and CNmi.documentable_type = 'Invoice' 
+left join `floranow.erp_prod.move_items`  PTmi on  PTmi.id = cmi.id and PTmi.documentable_type = 'Invoice' 
 
 where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT'
 
