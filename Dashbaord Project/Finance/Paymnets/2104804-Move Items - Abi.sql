@@ -1,7 +1,8 @@
 create or replace table `floranow.Floranow_ERP.payments` as 
 
     
-    select date(cmi.date) as cridet_date, -- date of paymnet_transaction
+    select 
+    date(cmi.date) as cridet_date, -- date of paymnet_transaction
      warehouse.name as warehouse,
 
            customer.warehouse_id as customer_warehouse_id,
