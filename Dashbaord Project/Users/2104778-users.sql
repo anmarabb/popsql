@@ -378,7 +378,7 @@ left join `floranow.erp_prod.financial_administrations` as f on f.id = u.financi
 left join `floranow.erp_prod.warehouses`  w on u.warehouse_id = w.id
 
 
-where u.email not like '%fake_%' and u.email not like '%temp_%'
+--where u.email not like '%fake_%' and u.email not like '%temp_%'
 
 --where u.debtor_number = '10622'
 
