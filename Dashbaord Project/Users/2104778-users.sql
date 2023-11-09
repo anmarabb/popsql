@@ -292,7 +292,7 @@ stg_invoices.source_system,
 
 
 w.name as warehouses,
- case when u.email  like '%fake_%' or u.email  like '%temp_%' then 'fake_temp' else end as fake_temp,
+ case when u.email  like '%fake_%' or u.email  like '%temp_%' then 'fake_temp' else '' end as fake_temp,
 
 
 
