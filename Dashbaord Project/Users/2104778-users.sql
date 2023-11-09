@@ -293,7 +293,7 @@ stg_invoices.source_system,
 
 w.name as warehouses,
 case when u.email  like '%fake.com%' then 'fake.com' else 'normal' end as fake_email,
---where u.email not like '%fake_%' and u.email not like '%temp_%'
+ u.email not like '%fake_%' and u.email not like '%temp_%'
 
 
 
