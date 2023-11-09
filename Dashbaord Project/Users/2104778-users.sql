@@ -294,6 +294,8 @@ stg_invoices.source_system,
 w.name as warehouses,
 case when u.email  like '%fake.com%' then 'fake.com' else 'normal' end as fake_email,
 
+
+
  CASE
            WHEN u.debtor_number IN (
                '4383', '132005', '132013', '132014', '132031', '132077', '132081', '132083', '132091', '132092',
