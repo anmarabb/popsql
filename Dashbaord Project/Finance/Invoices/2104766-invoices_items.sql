@@ -328,7 +328,7 @@ when li_suppliers.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB ou
 when ii.meta_data.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB out') then 'Commission Based'
 when li_suppliers.supplier_name in ('Ward Flowers') and fs.name in ('Ward Flower Inventory') then 'Commission Based'
 
-
+parent_li_suppliers.supplier_name
 else 'Pre-Selling'
 end as stock_model,
 
