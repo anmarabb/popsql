@@ -316,6 +316,8 @@ end as marketplace_projects,
 
 
 case 
+when parent_li_suppliers.supplier_name in ('ASTRA Farms') then 'Commission Based'
+
 when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') or ii.meta_data.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') then 'Commission Based'
 when li_suppliers.supplier_name in ('Fulfilled by Floranow SA','The Orchid Garden','Solai Roses','Selemo Valley Farms','Lomalinda','Gallica','Galleria Farms','Fresh Cap','Florius','Flores Del Este','Elite Flower Farm','Ecoflor','Capiro','Agroindustria','Smithers Oasis') then 'Reselling'
 when stg_users.financial_administration = 'UAE' and li_suppliers.supplier_name in ('Fulfilled by Floranow') then 'Reselling'
