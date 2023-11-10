@@ -316,7 +316,7 @@ end as marketplace_projects,
 
 
 case 
-when parent_li_suppliers.supplier_name in ('ASTRA Farms') then 'Commission Based'
+when .supplier_name in ('ASTRA Farms') then 'Commission Based'
 
 when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') or ii.meta_data.supplier_name in ('Express Jeddah','Express Jeddah', 'Express Jeddah', 'Express Tabuk') then 'Commission Based'
 when li_suppliers.supplier_name in ('Fulfilled by Floranow SA','The Orchid Garden','Solai Roses','Selemo Valley Farms','Lomalinda','Gallica','Galleria Farms','Fresh Cap','Florius','Flores Del Este','Elite Flower Farm','Ecoflor','Capiro','Agroindustria','Smithers Oasis') then 'Reselling'
@@ -326,7 +326,7 @@ when ii.meta_data.supplier_name in ('Verdissimo - AWS','The Orchid garden Resell
 when li_suppliers.supplier_name in ('Floranow Holland') and fs.name in ('Holland Reselling','Holland Reselling Dammam','Holland Reselling Riyadh') then 'Reselling'
 when li_suppliers.supplier_name in ('Floranow Flash sale') and fs.name in ('Floranow Express Flash sale', 'Floranow Flash Sale Dammam','Floranow Flash Sale Riyadh','Floranow Flash Sale Tabuk', 'Floranow Flash Sale Jeddah') then 'Reselling'
 when li_suppliers.supplier_name in ('wish flower') then 'Reselling'
-when li_suppliers.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB out') then 'Commission Based'
+when li_suppliers.supplparent_li_suppliersier_name in ('ASTRA Farms') and fs.name in ('Astra DXB out') then 'Commission Based'
 when ii.meta_data.supplier_name in ('ASTRA Farms') and fs.name in ('Astra DXB out') then 'Commission Based'
 when li_suppliers.supplier_name in ('Ward Flowers') and fs.name in ('Ward Flower Inventory') then 'Commission Based'
 
