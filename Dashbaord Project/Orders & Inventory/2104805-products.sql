@@ -416,7 +416,6 @@ left join `floranow.erp_prod.additional_items_reports` as ad on ad.line_item_id=
 left join `floranow.erp_prod.order_requests` as orr on li.order_request_id = orr.id
 
 where p.deleted_at is  null
-  p.deleted_at is null 
   and p.__hevo__marked_deleted is not true
 
 
