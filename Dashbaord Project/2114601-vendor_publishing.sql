@@ -79,6 +79,7 @@ SELECT
   st.packing_method_data.stem_weight AS stem_weight,
   st.supplier_product_id,
   st.last_published_quantity AS last_published_quantity
+  
 FROM floranow.vendor_portal_prod.stocks AS st
 LEFT JOIN floranow.vendor_portal_prod.offers AS o ON st.stockable_id = o.id
 LEFT JOIN floranow.vendor_portal_prod.products AS p ON st.product_id = p.id
