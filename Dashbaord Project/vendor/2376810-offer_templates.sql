@@ -1,4 +1,11 @@
-with 
+WITH OfferPrices AS (
+  SELECT
+    COALESCE((CASE WHEN p.approval = TRUE THEN p.price END),p.price) AS price, -- last aprroved price or default price
+    p.stock_id,
+    ROW_NUMBER() OVER (PARTITION BY p.stock_id ORDER BY p.created_at DESC) AS PriceRank
+  FROM floranow.vendor_portal_prod.prices AS p
+  WHERE deleted_at is NULL
+), 
 OfferSpecs AS (
   SELECT
     s.stock_id,
@@ -39,7 +46,12 @@ CASE
   spec.p3,
   spec.p4,
 
-
+  rp.price AS price,
+  st.minimum_order_quantity,
+  st.packing_method_data.packing_rate,
+  st.packing_method_data.stem_weight,
+  st.packing_method_data.volumetric_weight,
+  st.packing_method_data.box_type,
 
 from floranow.vendor_portal_prod.offer_templates AS ot 
 LEFT JOIN floranow.vendor_portal_prod.feeds AS f ON f.id = ot.feed_id
@@ -51,7 +63,8 @@ LEFT JOIN floranow.vendor_portal_prod.accounts AS a ON g.account_id = a.id
 LEFT JOIN floranow.Floranow_ERP.suppliers AS s ON s.floranow_supplier_id = a.floranow_account_id
 LEFT JOIN OfferSpecs AS spec ON st.id = spec.stock_id
 
+LEFT JOIN OfferPrices AS rp ON st.id = rp.stock_id AND rp.PriceRank = 1
 
 where ot.deleted_at is null and st.deleted_at is null
 
-and a.id = '6e4d696b-1601-43dc-aa92-8ea7b6a3abf9'
+--and a.id = '6e4d696b-1601-43dc-aa92-8ea7b6a3abf9'
