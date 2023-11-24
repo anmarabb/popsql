@@ -1,3 +1,5 @@
+create or replace table `floranow.Floranow_ERP.vendor_publishing` as 
+
 WITH OfferPrices AS (
   SELECT
     COALESCE((CASE WHEN p.approval = TRUE THEN p.price END),p.price) AS price, -- last aprroved price or default price
