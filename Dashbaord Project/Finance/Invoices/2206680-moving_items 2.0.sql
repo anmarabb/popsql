@@ -7,7 +7,7 @@ mi.balance,
 mi.residual, --
 mi.id as move_item_id,
 
-case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 30 then mi.residual else 0 end as up_to_30_days,
+case when date_diff( cast(current_date() as date ) ,cast(mi.date as date), DAY) <= 30 then mi.residual else 0 end as up_to_30_days,
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 30 and date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 60 then mi.residual else 0 end as between_31_to_60_days,
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 60 and date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 90 then mi.residual else 0 end as between_61_to_90_days,
 case when date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) > 90 and date_diff( cast(current_date() as date ),cast(mi.date as date), DAY) <= 120 then mi.residual else 0 end as between_91_to_120_days,
