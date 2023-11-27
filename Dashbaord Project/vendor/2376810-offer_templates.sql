@@ -31,6 +31,8 @@ select
 g.name AS supplier,
   s.account_manager,
   s.supplier_region,
+    s.supplier_region as Origin,
+
 
 ot.name as offer_template,
 CASE
