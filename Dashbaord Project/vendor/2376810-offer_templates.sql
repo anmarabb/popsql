@@ -35,6 +35,8 @@ g.name AS supplier,
 
 
 ot.name as offer_template,
+ot.status as template_status,
+
 CASE
     WHEN ot.name LIKE '%Event%' THEN 'Event'
     WHEN ot.name LIKE '%Regular%' THEN 'Regular'
