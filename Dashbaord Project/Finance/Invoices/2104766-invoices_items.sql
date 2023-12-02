@@ -6,7 +6,7 @@ prep_registered_clients as (select financial_administration,count(*) as register
  group by financial_administration)   
 SELECT
 
-CASE 
+CASE  
     WHEN LOWER(stg_users.customer) LIKE '%tamimi%' THEN 'Tamimi Sales'
     WHEN stg_users.customer IN ('REMA1','REMA2','REMA3','REMA4','REMA5','REMA6','REMA7','REMA8') THEN 'REMA Sales'
     ELSE 'Astra Sales'
