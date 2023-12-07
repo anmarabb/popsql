@@ -20,7 +20,7 @@ c.country_name as country,
 case 
 when u.order_blocked_status = 0 then 'Unblocked'
 when u.order_blocked_status = 1 then 'Manually Blocked'
-when order_blocked_status = 2 then 'Exceeded Credit Limit'
+when uorder_blocked_status = 2 then 'Exceeded Credit Limit'
 when order_blocked_status = 3 then 'Overdue Invoices'
 else null end as order_blocked_status,
 
