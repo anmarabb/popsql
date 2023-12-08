@@ -18,6 +18,7 @@ u.country as row_country,
 c.country_name as country,
 
 case 
+
 when u.order_blocked_status = 0 then 'Unblocked'
 when u.order_blocked_status = 1 then 'Manually Blocked'
 when u.order_blocked_status = 2 then 'Exceeded Credit Limit'
