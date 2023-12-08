@@ -26,9 +26,7 @@ when u.order_blocked_status = 3 then 'Overdue Invoices'
 else null end as order_blocked_status,
 
 
-case 
-when order_blocked_status = 0  and allow_due_invoices is true then 'Temporal Unblocked By Finance'
-else 
+
 
 u.state,
 u.created_at,
