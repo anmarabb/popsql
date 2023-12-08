@@ -25,7 +25,7 @@ when u.order_blocked_status = 3 then 'Overdue Invoices'
 else null end as order_blocked_status,
 
 
-case when order_blocked_status = 0 t and allow_due_invoices is true then 'Tempo Unblocked By Finance'
+case when order_blocked_status = 0 t and allow_due_invoices is true then 'Tempor Unblocked By Finance'
 
 u.state,
 u.created_at,
