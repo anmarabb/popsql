@@ -29,7 +29,7 @@ u.created_at,
 
 u.order_block as row_order_block, 
 
-case when u.order_blocked_status in  then 'Blocked' else 'Unblocked' end as order_block,
+case when u.order_blocked_status in () then 'Blocked' else 'Unblocked' end as order_block,
 
 case when  u.order_block is true then '1' end as total_blocked,
 
