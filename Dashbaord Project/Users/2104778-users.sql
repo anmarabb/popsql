@@ -24,6 +24,9 @@ when u.order_blocked_status = 2 then 'Exceeded Credit Limit'
 when u.order_blocked_status = 3 then 'Overdue Invoices'
 else null end as order_blocked_status,
 
+
+
+
 u.state,
 u.created_at,
 
