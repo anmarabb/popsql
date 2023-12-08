@@ -31,7 +31,7 @@ u.order_block as row_order_block,
 
 case when u.order_blocked_status in (1,2,3) then 'Blocked' else 'Unblocked' end as order_block,
 
-case when  u.order_block is true then '1' end as total_blocked,
+case when  u.order_blocked_status in (1,2,3) then '1' end as total_blocked,
 
 case when  user_categories.name = 'Closed' then 'Deleted' else 'in business' end as deleted_accounts,
 
