@@ -91,6 +91,7 @@ customer.name as customer,
 customer.debtor_number as debtor_number,
 category.name as category_name,
 
+
 pt.payment_method,
 amu.name account_manager,
 customer.city,
