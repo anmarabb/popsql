@@ -21,6 +21,7 @@ customer.debtor_number,
 customer.id as customer_id,
 customer.financial_administration_id,
 customer.city,
+
 user_categories.name as category_name,
 
 
