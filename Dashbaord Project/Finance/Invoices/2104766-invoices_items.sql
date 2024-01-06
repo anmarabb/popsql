@@ -203,7 +203,7 @@ ii.creditable_id,
 
 case when ii.creditable_id is not null then 0 else 1 end as items_sold,
 
-case when li.parent_line_item_id is not null then parent_li.unit_fob_price else li.unit_unit_fob_price_2fob_price end as ,
+case when li.parent_line_item_id is not null then parent_li.unit_fob_price else li.unit_fob_price end as unit_fob_price_2,
 case when li.parent_line_item_id is not null then parent_li.fob_currency else li.fob_currency end as fob_currency_2,
 
 
