@@ -15,7 +15,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
            amu.name account_manager,
            customer.city,
            case when inv.id is null and dmi.source_system = 'ODOO'   then 'ODOO' else inv.number end as invoice_number,
-           inv.id                                                       as invoice_id,
+           inv.id as invoice_id,
            pt.id as pt_id,
            pt.trx_reference,
            case when cmi.documentable_type = 'PaymentTransaction' and cmi.documentable_id is not null then  'Payment' when ( cmi.documentable_type = 'Invoice' and cmi.documentable_id is not null ) then 'CreditNote' end as document_type,
