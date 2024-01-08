@@ -7,7 +7,7 @@ create or replace table `floranow.Floranow_ERP.payments` as
      warehouse.name as warehouse,
 
            customer.warehouse_id as customer_warehouse_id,
-           date(pt.payment_received_at)aspayment_received_at,
+           date(pt.payment_received_at) as payment_received_at,
            customer.name as customer,
            customer.debtor_number                                          debtor_number,
            category.name as category_name,
