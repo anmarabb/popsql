@@ -153,6 +153,8 @@ left join `floranow.erp_prod.warehouses`  warehouse on customer.warehouse_id = w
 
 left join `floranow.erp_prod.invoices` as inv on cmi.documentable_id = inv.id and cmi.documentable_type = 'Invoice' and cmi.entry_type = 'DEBIT'
 
+left join {{ref('stg_invoices')}} as i on mi.documentable_id = i.invoice_header_id and mi.documentable_type = 'Invoice' and mi.entry_type = 'DEBIT'
+left join {{ref('stg_invoices')}} as cn on mi.documentable_id = cn.invoice_header_id and mi.documentable_type = 'Invoice' and mi.entry_type = 'CREDIT'
 
 
 left join `floranow.erp_prod.move_items`  CNmi on  CNmi.id = cmi.id and CNmi.documentable_type = 'Invoice' 
