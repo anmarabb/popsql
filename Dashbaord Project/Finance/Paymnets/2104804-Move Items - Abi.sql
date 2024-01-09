@@ -159,10 +159,10 @@ left join `floranow.erp_prod.move_items`  CNmi on  CNmi.id = cmi.id and CNmi.doc
 left join `floranow.erp_prod.move_items`  PTmi on  PTmi.id = cmi.id and PTmi.documentable_type = 'PaymentTransaction' 
 
 where round(cmi.residual, 2) != 0 and cmi.entry_type='CREDIT' 
-and mi.balance != 0
+-and mi.balance != 0
 
 and cmi.deleted_at is null
-and cmi.documentable_id is not null
+and cmi.documentable_id is not null-
 and cmi.__hevo__marked_deleted is not true
 
 
