@@ -138,6 +138,7 @@ abs(PTmi.residual) as PT_amount,
 from `floranow.erp_prod.move_items`  cmi
 join `floranow.erp_prod.users`  customer on cmi.user_id = customer.id
 left join `floranow.erp_prod.payment_transactions`  pt on cmi.documentable_id = pt.id and cmi.documentable_type = 'PaymentTransaction' and cmi.entry_type = 'CREDIT'
+left join {{ ref('stg_payment_transactions') }} as pt on pt.payment_transaction_id = mi.documentable_id and mi.documentable_type = 'PaymentTransaction' and  mi.entry_type = 'CREDIT'
 
 left join  `floranow.erp_prod.invoices` cn on cmi.documentable_id = cn.id and cmi.documentable_type = 'Invoice' and cmi.entry_type = 'CREDIT'
 left join `floranow.erp_prod.user_categories`  category on customer.user_category_id = category.id
