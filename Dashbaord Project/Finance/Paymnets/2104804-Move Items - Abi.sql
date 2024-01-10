@@ -163,6 +163,7 @@ where
     and cmi.entry_type='CREDIT'
     and cmi.documentable_id is not null
 
+
     and cmi.deleted_at is null
     and cmi.balance != 0
     and cmi.__hevo__marked_deleted is not true
