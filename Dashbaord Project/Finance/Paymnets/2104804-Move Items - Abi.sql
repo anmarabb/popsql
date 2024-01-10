@@ -168,7 +168,7 @@ where
     and cmi.balance != 0
     and cmi.__hevo__marked_deleted is not true
     
-    and cmi.entry_type='CREDIT'
+    
 
 
 order by reconciled_anount, payment_transaction_number
