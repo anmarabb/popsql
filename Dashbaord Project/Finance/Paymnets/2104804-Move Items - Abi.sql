@@ -169,7 +169,4 @@ where
 
 
 
-      ---- more filters----
-
-
 order by reconciled_anount, payment_transaction_number
