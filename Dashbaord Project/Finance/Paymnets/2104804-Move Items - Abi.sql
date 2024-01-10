@@ -167,6 +167,4 @@ where
     and cmi.__hevo__marked_deleted is not true
 
 
-
-
 order by reconciled_anount, payment_transaction_number
