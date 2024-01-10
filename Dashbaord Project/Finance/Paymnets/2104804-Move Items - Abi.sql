@@ -160,7 +160,7 @@ left join `floranow.erp_prod.move_items`  PTmi on  PTmi.id = cmi.id and PTmi.doc
 
 where 
     round(cmi.residual, 2) != 0 
-        and cmi.balance != 0
+    and cmi.balance != 0
 
     and cmi.entry_type='CREDIT'
     and cmi.deleted_at is null
