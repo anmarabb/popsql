@@ -165,6 +165,7 @@ where
     and cmi.deleted_at is null
     and cmi.documentable_id is not null
     and cmi.__hevo__marked_deleted is not true
+    and cmi.entry_type='CREDIT'
 
 
 order by reconciled_anount, payment_transaction_number
