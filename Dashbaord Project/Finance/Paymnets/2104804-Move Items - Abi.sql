@@ -162,6 +162,7 @@ where
     round(cmi.residual, 2) != 0 
     
     
+    
     and cmi.documentable_id is not null
 
     and cmi.deleted_at is null
