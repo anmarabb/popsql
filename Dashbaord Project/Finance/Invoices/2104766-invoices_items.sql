@@ -519,7 +519,7 @@ ii.product_name as product,
 
 case 
 when ii.product_name like '%Chrysanthemum%' THEN 'Chrysanthemum'
-when ii.product_name like '%Eustoma%' THEN 'Chrysanthemum'
+when ii.product_name like '%Eustoma%' THEN 'Eustoma'
 
 when li.category is null then INITCAP(ii.category) 
 else INITCAP(li.category) 
