@@ -523,6 +523,7 @@ when ii.product_name like '%Eustoma%' THEN 'Eustoma'
 when ii.product_name like '%Gerbera%' THEN 'Gerbera'
 when ii.product_name like '%Spray Rose%' THEN 'Spray-Rose'
 when ii.product_name like '%Trachelium%' THEN 'Trachelium'
+when ii.product_name like '%Trachelium%' THEN 'Trachelium'
 
 when li.category is null then INITCAP(ii.category) 
 else INITCAP(li.category) 
