@@ -539,6 +539,7 @@ when ii.product_name like '%Lily Ot%' THEN 'Lily Or'
 when ii.product_name like '%Lily Or%' THEN 'Lily Or' 
 when ii.product_name like '%Lily La%' THEN 'Lily La' 
 when ii.product_name like '%Li La%'  THEN 'Lily La' 
+
 else INITCAP(li.category2) end as item_sub_category,
 
 
