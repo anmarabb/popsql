@@ -528,7 +528,12 @@ end as item_category,
 li.category2 as row_item_sub_category,
 
 case 
-
+when ii.product_name like '%Chrysanthemum%' THEN 'Chrysanthemum'
+when ii.product_name like '%Eustoma%' THEN 'Eustoma'
+when ii.product_name like '%Gerbera%' THEN 'Gerbera'
+when ii.product_name like '%Spray Rose%' THEN 'Spray-Rose'
+when ii.product_name like '%Trachelium%' THEN 'Trachelium'
+when ii.product_name like '%Aster Solidago Frida%' THEN 'Solidago'
 when ii.product_name like '%Lily Ot%' THEN 'Lily Or' 
 when ii.product_name like '%Lily Or%' THEN 'Lily Or' 
 when ii.product_name like '%Lily La%' THEN 'Lily La' 
