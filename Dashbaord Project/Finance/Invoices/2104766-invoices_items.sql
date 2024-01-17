@@ -518,7 +518,7 @@ li.stem_length,
 ii.product_name as product,
 
 case 
-when ii.product_name like '%Chrysanthemum%' THEN 'Lily Or'
+when ii.product_name like '%Chrysanthemum%' THEN 'Chrysanthemum'
 when li.category is null then INITCAP(ii.category) 
 else INITCAP(li.category) 
 end as item_category,
