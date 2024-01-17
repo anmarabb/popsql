@@ -521,6 +521,7 @@ case
 when ii.product_name like '%Chrysanthemum%' THEN 'Chrysanthemum'
 when ii.product_name like '%Eustoma%' THEN 'Eustoma'
 when ii.product_name like '%Gerbera%' THEN 'Gerbera'
+when ii.product_name like '%Spray Rose%' THEN 'Gerbera'
 when ii.product_name like '%Gerbera%' THEN 'Gerbera'
 
 when li.category is null then INITCAP(ii.category) 
