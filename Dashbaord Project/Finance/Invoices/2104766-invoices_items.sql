@@ -528,6 +528,7 @@ end as item_category,
 li.category2 as row_item_sub_category,
 
 case 
+
 when ii.product_name like '%Lily Ot%' THEN 'Lily Or' 
 when ii.product_name like '%Lily Or%' THEN 'Lily Or' 
 when ii.product_name like '%Lily La%' THEN 'Lily La' 
