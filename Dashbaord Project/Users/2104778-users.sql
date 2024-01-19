@@ -283,7 +283,6 @@ when u.master_id in (974,1119,407,1231,911,64,611) or u.debtor_number in ('10012
 when u.master_id in (322) then 'Maison Des Fleurs'
 
 
-
 when u.master_id in (1003) then 'FIKRA W HADIYA'
 when u.master_id in (1423) then 'Vera La Fleurisite Floral Boutique'
 else 'No Master'
