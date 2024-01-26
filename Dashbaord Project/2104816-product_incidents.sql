@@ -172,6 +172,8 @@ when stock.id in (165,64,569,451,450,415,414,571,570,408,411,410,572,407,406,413
 when stock.id in (613,614,615,606,607,608) then 'Internal'
 when stock.id in (616,617) then 'Internal'
 when stock.id in (621,620) then 'Internal'
+when stock.id in (622,623) then 'Internal'
+
 when stock.id in (522,484,567,566,531,530,523,485,373,372,301,300,199,198,131,130,127,126,57,56,21,20,7,6,2,1) then  case  when stg_suppliers.supplier_name = 'ASTRA Farms' then 'Commission Based' else 'Reselling' end 
 else 'Others'
 end as stock_model,
