@@ -54,7 +54,7 @@ case
 when parent_li_suppliers.supplier_name  = 'ASTRA Farms' then 'Astra'
 when li_suppliers.supplier_name = 'ASTRA Farms' then 'Astra'
 when ii.meta_data.supplier_name in ('Astra Farm','Astra farm Barcode','Astra Farm - Event','Astra Flash Sale - R','Astra Flash sale - W') then 'Astra'
-when 
+when ii.meta_data.supplier 
 --when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh') and  parent_li_suppliers.supplier_name in ('Holex','Floradelight', 'Waridi', 'Sierra','Vianen','PJ Dave Roses','Heritage Flowers','Décor Foliage','Sian Flowers', 'Flora Ola') then 'Non Astra'
 --when fs.name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') or li_suppliers.supplier_name in ('Express Jeddah','Express Dammam', 'Express Riyadh', 'Express Tabuk') then 'Astra'
 
